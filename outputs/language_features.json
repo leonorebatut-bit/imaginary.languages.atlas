@@ -177,7 +177,7 @@
       {
         "domain": "phonology",
         "examples": [
-          "« The tables below list the consonants (Q. ólamar ) and vowels of late colloquial Noldorin Quenya »"
+          "« The tables below list the consonants (Q. ólamar ) and vowels of late colloquial Noldorin Quenya [...] Nasal | m |  | n |  | ŋ [...] Plosive | p b |  | t d |  | k ɡ [...] Fricative | f v | ( θ ) | s ( z ) | ( ç ) | x | h [...] Trill |  |  | r |  | [...] Approximant | ( ʍ ) w |  | l | j | »"
         ],
         "feature_id": "phonology.consonant_inventory",
         "limits": "symboles entre parenthèses du tableau (θ z ç ʍ : variétés ou allophones) exclus",
@@ -727,7 +727,7 @@
       {
         "domain": "phonology",
         "examples": [
-          "« Sindarin was designed with a Welsh-like phonology . »"
+          "« Nasal | m |  | n |  |  | ŋ | [...] Plosive | p b |  | t d |  |  | k ɡ | [...] Fricative | f v | θ ð | s | ɬ |  |  | χ | h [...] Trill |  |  | r̥ r |  |  |  | [...] Approximant |  |  |  | l | j | ʍ w | »"
         ],
         "feature_id": "phonology.consonant_inventory",
         "limits": "inventaire relevé dans le tableau des consonnes",
@@ -1248,7 +1248,7 @@
       {
         "domain": "phonology",
         "examples": [
-          "« The following phonemes are attested in Tolkien's Khuzdul vocabulary. »"
+          "« The following phonemes are attested in Tolkien's Khuzdul vocabulary. [...] Plosive | b | t d |  |  | k ɡ |  | ʔ [...] Fricative | f | s z | ʃ |  | ( ɣ ) |  | h [...] Nasal | m | n |  |  |  | [...] Trill |  | (r) |  |  |  | ʀ [...] Approximant |  | l |  | j |  | [...] Aspirated plosive | | tʰ | | | kʰ ( ɡʰ ) »"
         ],
         "feature_id": "phonology.consonant_inventory",
         "limits": "phonèmes attestés dans un vocabulaire très réduit ; ɡʰ, ɣ et r (entre parenthèses, incertains ou tardifs) exclus",
@@ -1335,7 +1335,7 @@
       {
         "domain": "phonology",
         "examples": [
-          "« The following phonemes are attested in Tolkien's Khuzdul vocabulary. »"
+          "« The following phonemes are attested in Tolkien's Khuzdul vocabulary. [...] Close | i iː |  | u uː [...] Close-mid | e eː | ə | o oː [...] Open-mid |  |  | ʌ [...] Open |  | a aː »"
         ],
         "feature_id": "phonology.vowel_quality_inventory",
         "limits": "qualités vocaliques ; la longueur n'est pas comptée ; inventaire attesté, peut-être incomplet",
@@ -3662,7 +3662,7 @@
       {
         "domain": "phonology",
         "examples": [
-          "« θ ⟨ th ⟩ and x ⟨ kh ⟩ are not native to High Valyrian but are present in some loanwords »"
+          "« θ ⟨ th ⟩ and x ⟨ kh ⟩ are not native to High Valyrian but are present in some loanwords [...] Nasal | m ⟨ m ⟩ | n ⟨ n ⟩ | ɲ ⟨ ñ ⟩ |  | [...] Plosive | p ⟨ p ⟩ | b ⟨ b ⟩ | t ⟨ t ⟩ | d ⟨ d ⟩ | dʒ ~ ʒ ~ j ⟨ j ⟩ | k ⟨ k ⟩ | ɡ ⟨ g ⟩ | q ⟨ q ⟩ [...] Fricative | v ~ w ⟨ v ⟩ | s ⟨ s ⟩ | z ⟨ z ⟩ |  | ɣ ~ ʁ ⟨ gh ⟩ | h ⟨ h ⟩ [...] Trill |  | r̥ ⟨ rh ⟩ | r ⟨ r ⟩ |  |  | [...] Lateral |  | l ⟨ l ⟩ | ʎ ⟨ lj ⟩ |  | »"
         ],
         "feature_id": "phonology.consonant_inventory",
         "limits": "θ et x exclus (emprunts) ; variantes « ~ » comptées une fois",
@@ -3745,7 +3745,7 @@
       {
         "domain": "phonology",
         "examples": [
-          "« Vowels with a macron over them (ī, ȳ, ū, ē, ō and ā) are long »"
+          "« Vowels with a macron over them (ī, ȳ, ū, ē, ō and ā) are long [...] Close / High | short | i ⟨ i ⟩ | y ⟨ y ⟩ |  | u ⟨ u ⟩ [...] Mid | short | e ⟨ e ⟩ |  | o ⟨ o ⟩ [...] Open / Low | short |  | a ⟨ a ⟩ »"
         ],
         "feature_id": "phonology.vowel_quality_inventory",
         "limits": "qualités vocaliques ; la longueur n'est pas comptée",
@@ -4170,7 +4170,7 @@
       {
         "domain": "phonology",
         "examples": [
-          "« Atlantean's phonetic inventory includes a vowel system with five phonemes . »"
+          "« Nasal | m | n | [...] Plosive | voiceless | p | t |  | k [...] Fricative |  | s | ʃ | x [...] Approximant | w | l | j [...] Trill |  | r | [...] voiced | b | d | | ɡ »"
         ],
         "feature_id": "phonology.consonant_inventory",
         "limits": "inventaire relevé dans le tableau des consonnes ; la citation porte sur la section Phonology",
@@ -9377,7 +9377,7 @@
       {
         "domain": "phonology",
         "examples": [
-          "« Simlish consonants are limited »"
+          "« Nasal | m | n |  |  | ŋ [...] Plosive | p b | t d | tʃ dʒ | tɕ | k ɡ [...] Fricative | f v | s z | ʃ |  |  | h [...] Approximant |  | l | r | j | w »"
         ],
         "feature_id": "phonology.consonant_inventory",
         "limits": null,
@@ -9461,7 +9461,7 @@
       {
         "domain": "phonology",
         "examples": [
-          "« In Simlish, some vowels may become diphthongized. »"
+          "« Close | i ɪ |  | u [...] Close-mid | e | ə | o [...] Open-mid | æ |  | ʌ ɔ [...] Open |  |  | ɑ »"
         ],
         "feature_id": "phonology.vowel_quality_inventory",
         "limits": "inventaire relevé dans le tableau des voyelles",
@@ -11232,7 +11232,7 @@
       {
         "domain": "phonology",
         "examples": [
-          "« Sylvia Sotomayor analyses the voiceless alveolar fricative / s / as a stop »"
+          "« Nasal | m |  | n |  | ɲ ⟨ ñ ⟩ | ŋ [...] Plosive | p |  | t |  | c | k [...] Fricative | ɸ ⟨ w ⟩ | θ ⟨ þ ⟩ | s | ʃ ⟨ x ⟩ | ç ⟨ j ⟩ | x ⟨ h ⟩ [...] Lateral |  |  | l |  | ʎ ⟨ λ ⟩ [...] Trill |  |  | r |  | »"
         ],
         "feature_id": "phonology.consonant_inventory",
         "limits": "inventaire relevé dans le tableau ; géminées non comptées",
@@ -12290,7 +12290,7 @@
       {
         "domain": "phonology",
         "examples": [
-          "« The phonology of Volapük is as follows: »"
+          "« The phonology of Volapük is as follows: [...] Nasal | m | n |  |  | [...] Plosive | Voiced | b | d |  |  | ɡ [...] Affricate | Voiced |  | t͡s ~ d͡z ⟨ z ⟩ | t͡ʃ ~ d͡ʒ ⟨ c ⟩ |  | [...] Fricative | Voiced | v | s ~ z ⟨ s ⟩ | ʃ ~ ʒ ⟨ j ⟩ |  | [...] Approximant | w | l |  | j ⟨ y ⟩ | [...] Trill |  | r |  |  | [...] Voiceless | p | t | | | k [...] Voiceless | f | | | h »"
         ],
         "feature_id": "phonology.consonant_inventory",
         "limits": "variantes voisées/sourdes notées « ~ » comptées une fois",
@@ -12411,7 +12411,7 @@
       {
         "domain": "phonology",
         "examples": [
-          "« The phonology of Volapük is as follows: »"
+          "« The phonology of Volapük is as follows: [...] Close | i | y ⟨ ü (ꞟ) ⟩ | u [...] Close-mid | e | ø ⟨ ö (ꞝ) ⟩ | o ~ ɔ ⟨ o ⟩ [...] Open-mid | ɛ ~ æ ⟨ ä (ꞛ) ⟩ [...] Open | a ~ ɑ ⟨ a ⟩ »"
         ],
         "feature_id": "phonology.vowel_quality_inventory",
         "limits": null,

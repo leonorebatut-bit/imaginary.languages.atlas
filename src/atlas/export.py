@@ -13,7 +13,7 @@ import platform
 from pathlib import Path
 
 from . import __version__
-from .config import pipeline_config, project_path
+from .config import load_yaml, pipeline_config, project_path
 from .writing_utils import write_csv, write_json
 
 META_COLUMNS = ["id", "name", "category", "universe", "creator", "year", "documentation_level", "metadata_status",
@@ -29,7 +29,8 @@ def _sha_of_raw() -> dict[str, str]:
     return out
 
 
-def export_all(catalog: dict, metas: list[dict], processed: Path, out: Path) -> None:
+def export_all(catalog: dict, metas: list[dict], processed: Path, out: Path,
+               weights_profile: str | None = None) -> None:
     feats = {r["language_id"]: r["features"] for r in json.loads((processed / "features.json").read_text())}
     feature_ids = sorted({f["feature_id"] for fl in feats.values() for f in fl})
 
@@ -58,4 +59,5 @@ def export_all(catalog: dict, metas: list[dict], processed: Path, out: Path) -> 
         "raw_sha256": _sha_of_raw(),
         "n_languages": len(metas),
         "n_scripts": len(catalog.get("scripts", [])),
+        "weights_profile": weights_profile or load_yaml("weights.yaml").get("default_profile", "equal"),
     })

@@ -7,8 +7,10 @@ Fichier : data/languages/<id>/documented_features.csv, colonnes :
 - `evidence` est une citation courte et LITTÉRALE de la source qui justifie la
   valeur. Si le texte de la source est disponible localement, la citation y est
   recherchée (normalisation des espaces, guillemets et casse) : une citation
-  introuvable fait échouer le chargement. C'est ce qui rend chaque valeur
-  vérifiable ;
+  introuvable, ou une source dont le texte n'a pas pu être téléchargé, fait
+  échouer le chargement. C'est ce qui rend chaque valeur vérifiable. Pour un
+  inventaire, la citation doit porter sur l'inventaire lui-même (phrase ou
+  ligne du tableau), pas seulement sur la section ;
 - `value` est une chaîne ; les listes (inventaires IPA) sont séparées par des espaces.
 Une ligne sans source est rejetée : aucune valeur documentée sans référence.
 """
@@ -48,7 +50,12 @@ def load_documented(path: Path, known_source_ids: set[str],
                 if not evidence:
                     raise DocumentedFeatureError(f"{path}:{i}: {fid} sans citation de preuve")
                 text = source_texts.get(src)
-                if text is not None:
+                if text is None:
+                    # Source non téléchargée (hors ligne, erreur réseau) : la citation ne peut pas être
+                    # vérifiée, donc la valeur n'est pas acceptée.
+                    raise DocumentedFeatureError(
+                        f"{path}:{i}: texte de {src} indisponible, citation invérifiable (relancer la collecte)")
+                else:
                     for part in evidence.split(" [...] "):
                         if normalize_for_match(part) not in text:
                             raise DocumentedFeatureError(f"{path}:{i}: citation introuvable dans {src} : {part[:80]!r}")

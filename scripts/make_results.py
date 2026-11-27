@@ -1,6 +1,11 @@
-"""Génère docs/results.md à partir de outputs/ (résultats préliminaires).
+"""Génère docs/results.md à partir des exports versionnés (résultats préliminaires).
 
-Usage : python scripts/make_results.py
+Usage : python scripts/make_results.py   (après un `python scripts/rebuild_all.py` complet)
+
+Sources lues : outputs/ et frontend/public/data/languages.json, tous versionnés,
+donc le script fonctionne sur un dépôt fraîchement cloné. Il refuse de produire un
+rapport si outputs/ et les données du site ne viennent pas des mêmes données brutes,
+ou s'ils ont été produits avec un profil de poids autre que `equal`.
 """
 from __future__ import annotations
 
@@ -10,6 +15,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+SITE = ROOT / "frontend" / "public" / "data"
 sys.path.insert(0, str(ROOT / "src"))
 from atlas.config import pipeline_config  # noqa: E402
 
@@ -38,21 +44,31 @@ def main() -> None:
     cfg = pipeline_config()
     threshold = cfg["similarity"]["min_comparable_features"]
     out = ROOT / "outputs"
-    profiles = json.loads((ROOT / "data/processed/profiles.json").read_text(encoding="utf-8"))
-    langs = json.loads((out / "language_features.json").read_text(encoding="utf-8"))
-    names = {r["language"]["id"]: r["language"]["name"] for r in langs}
-    n_doc = {r["language"]["id"]: sum(f["status"] == "documented" for f in r["features"]) for r in langs}
+    manifest = json.loads((out / "run_manifest.json").read_text(encoding="utf-8"))
+    site_manifest = json.loads((SITE / "manifest.json").read_text(encoding="utf-8"))
+    if site_manifest.get("raw_sha256") != manifest.get("raw_sha256"):
+        sys.exit("outputs/ et frontend/public/data/ ne viennent pas de la même exécution : relancer rebuild_all.py")
+    weights = manifest.get("weights_profile", "equal")
+    if weights != "equal":
+        sys.exit(f"outputs/ produits avec le profil de poids « {weights} » : le rapport ne décrit que le profil equal")
+    site_langs = json.loads((SITE / "languages.json").read_text(encoding="utf-8"))
+    profiles = {l["id"]: l["wals_profile"] for l in site_langs}
+    names = {l["id"]: l["name"] for l in site_langs}
+    # Valeurs documentées = lignes des fichiers documented_features.csv (ce qui a été codé).
+    n_doc = {}
+    for lid in names:
+        f = ROOT / "data/languages" / lid / "documented_features.csv"
+        n_doc[lid] = len(read_csv(f)) if f.exists() else 0
     pairs = read_csv(out / "pairwise_similarity.csv")
     regions = read_csv(out / "regional_similarity.csv")
-    wals = {r["ID"]: r for r in read_csv(ROOT / "data/processed/wals_languages.csv")}
-    manifest = json.loads((out / "run_manifest.json").read_text(encoding="utf-8"))
+    wals = {w["id"]: w for w in json.loads((SITE / "wals_languages.json").read_text(encoding="utf-8"))}
 
     order = lambda k: int(k.rstrip("ABCDEFGHIJKLMNOPQRSTUVWXYZ"))  # noqa: E731
     scored = sorted(l for l, p in profiles.items() if len(p) >= threshold)
     lines = [
         "# Résultats préliminaires", "",
         f"Généré par `scripts/make_results.py` à partir de `outputs/` (pipeline {manifest.get('pipeline_version')}, "
-        f"WALS {cfg['reference_data']['wals']['version']}, poids égaux, seuil de {threshold} caractéristiques comparables).", "",
+        f"WALS {cfg['reference_data']['wals']['version']}, profil de poids {weights}, seuil de {threshold} caractéristiques comparables).", "",
         "> Proximité typologique uniquement : ni origine, ni parenté, ni influence. Les valeurs documentées ont été "
         "codées par un assistant IA à partir de Wikipédia et doivent être relues.", "",
         "## Caractéristiques par langue", "",
@@ -80,7 +96,7 @@ def main() -> None:
                   "", "| Langue WALS | Famille | Caract. comparées | Score |", "|---|---|---|---|"]
         for p in ps[:5]:
             w = wals.get(p["wals_id"], {})
-            lines.append(f"| {w.get('Name', p['wals_id'])} | {w.get('Family') or '—'} | {p['n_compared']} | {float(p['score']):.3f} |")
+            lines.append(f"| {w.get('name', p['wals_id'])} | {w.get('family') or '—'} | {p['n_compared']} | {float(p['score']):.3f} |")
 
     lines += ["", "## Aires linguistiques les plus proches (résultats robustes uniquement)", "",
               "Score pondéré par genre, intervalle de confiance à 95 % par bootstrap sur les genres. Une aire est "

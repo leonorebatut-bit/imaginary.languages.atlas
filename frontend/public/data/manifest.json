@@ -71,5 +71,6 @@
       "license": "CC-BY-4.0",
       "version": "v2020.4"
     }
-  }
+  },
+  "weights_profile": "equal"
 }

@@ -1,6 +1,6 @@
 # Résultats préliminaires
 
-Généré par `scripts/make_results.py` à partir de `outputs/` (pipeline 0.1.0, WALS v2020.4, poids égaux, seuil de 8 caractéristiques comparables).
+Généré par `scripts/make_results.py` à partir de `outputs/` (pipeline 0.1.0, WALS v2020.4, profil de poids equal, seuil de 8 caractéristiques comparables).
 
 > Proximité typologique uniquement : ni origine, ni parenté, ni influence. Les valeurs documentées ont été codées par un assistant IA à partir de Wikipédia et doivent être relues.
 
@@ -9,35 +9,35 @@ Généré par `scripts/make_results.py` à partir de `outputs/` (pipeline 0.1.0,
 | Langue | Valeurs documentées | Caractéristiques WALS | Score calculable |
 |---|---|---|---|
 | Al Bhed | 0 | 0 | non (< 8) |
-| Atlante | 10 | 10 (1A, 2A, 33A, 49A, 81A, 83A, 85A, 86A, 87A, 116A) | oui |
-| Noir Parler (Black Speech) | 2 | 0 | non (< 8) |
+| Atlante | 9 | 10 (1A, 2A, 33A, 49A, 81A, 83A, 85A, 86A, 87A, 116A) | oui |
+| Noir Parler (Black Speech) | 1 | 0 | non (< 8) |
 | Chakobsa (films Dune) | 0 | 0 | non (< 8) |
-| Dothraki | 10 | 10 (1A, 2A, 30A, 49A, 81A, 83A, 85A, 86A, 87A, 88A) | oui |
+| Dothraki | 9 | 10 (1A, 2A, 30A, 49A, 81A, 83A, 85A, 86A, 87A, 88A) | oui |
 | Dovahzul (langue des dragons) | 0 | 0 | non (< 8) |
 | Espéranto | 11 | 11 (1A, 2A, 12A, 13A, 30A, 33A, 49A, 81A, 83A, 85A, 88A) | oui |
 | Haut valyrien | 6 | 6 (1A, 2A, 30A, 49A, 85A, 87A) | non (< 8) |
 | Huttese | 0 | 0 | non (< 8) |
 | Ithkuil | 2 | 2 (1A, 2A) | non (< 8) |
-| Kēlen | 5 | 6 (1A, 2A, 12A, 33A, 87A, 88A) | non (< 8) |
+| Kēlen | 6 | 6 (1A, 2A, 12A, 33A, 87A, 88A) | non (< 8) |
 | Khuzdul | 4 | 4 (1A, 2A, 12A, 33A) | non (< 8) |
-| Klingon (tlhIngan Hol) | 8 | 7 (1A, 2A, 12A, 33A, 81A, 83A, 87A) | non (< 8) |
+| Klingon (tlhIngan Hol) | 7 | 7 (1A, 2A, 12A, 33A, 81A, 83A, 87A) | non (< 8) |
 | Kryptonien | 1 | 1 (33A) | non (< 8) |
-| Láadan | 7 | 6 (1A, 2A, 13A, 81A, 83A, 116A) | non (< 8) |
+| Láadan | 6 | 6 (1A, 2A, 13A, 81A, 83A, 116A) | non (< 8) |
 | Lapine | 1 | 1 (33A) | non (< 8) |
 | Lingua Ignota | 0 | 0 | non (< 8) |
-| Lojban | 3 | 2 (2A, 81A) | non (< 8) |
+| Lojban | 2 | 2 (2A, 81A) | non (< 8) |
 | Mando'a | 2 | 1 (30A) | non (< 8) |
 | Langage des Minions | 0 | 0 | non (< 8) |
 | Nadsat | 0 | 0 | non (< 8) |
 | Na'vi | 9 | 8 (1A, 2A, 12A, 13A, 33A, 81A, 85A, 87A) | oui |
 | Novlangue (Newspeak) | 0 | 0 | non (< 8) |
-| Quenya | 10 | 8 (1A, 2A, 33A, 49A, 81A, 83A, 85A, 87A) | oui |
+| Quenya | 8 | 8 (1A, 2A, 33A, 49A, 81A, 83A, 85A, 87A) | oui |
 | Simlish | 2 | 2 (1A, 2A) | non (< 8) |
-| Sindarin | 6 | 4 (1A, 30A, 33A, 85A) | non (< 8) |
+| Sindarin | 5 | 4 (1A, 30A, 33A, 85A) | non (< 8) |
 | Toki pona | 8 | 8 (1A, 2A, 12A, 13A, 81A, 83A, 85A, 87A) | oui |
 | Trigedasleng | 0 | 0 | non (< 8) |
 | Volapük | 8 | 7 (1A, 2A, 30A, 33A, 49A, 87A, 116A) | non (< 8) |
-| Parler de Yoda | 2 | 2 (81A, 83A) | non (< 8) |
+| Parler de Yoda | 1 | 2 (81A, 83A) | non (< 8) |
 
 6 langues sur 30 ont un score. 21 ont au moins une valeur documentée.
 

@@ -1,5 +1,5 @@
 feature_id,value,source_id,locator,evidence,note,coded_by,coded_on
-phonology.consonant_inventory,m n ŋ p b t d k ɡ f v θ ð s ɬ χ h r̥ r l j ʍ w,sindarin-s01,§ Consonants (tableau),Sindarin was designed with a Welsh-like phonology .,inventaire relevé dans le tableau des consonnes,"Claude (assistant IA), à relire",2026-11-27
+phonology.consonant_inventory,m n ŋ p b t d k ɡ f v θ ð s ɬ χ h r̥ r l j ʍ w,sindarin-s01,§ Consonants (tableau),Nasal | m |  | n |  |  | ŋ | [...] Plosive | p b |  | t d |  |  | k ɡ | [...] Fricative | f v | θ ð | s | ɬ |  |  | χ | h [...] Trill |  |  | r̥ r |  |  |  | [...] Approximant |  |  |  | l | j | ʍ w |,inventaire relevé dans le tableau des consonnes,"Claude (assistant IA), à relire",2026-11-27
 morphology.number_of_genders,None,sindarin-s01,§ Nouns,While Sindarin does not have a grammatical gender,,"Claude (assistant IA), à relire",2026-11-27
 morphology.nominal_plurality_coding,Plural stem change,sindarin-s01,§ Plural forms,Most Sindarin plurals are formed by vowel change and are characterised by i-mutation .,,"Claude (assistant IA), à relire",2026-11-27
 syntax.adposition_order,Prepositions,sindarin-s01,§ Pronouns,Sindarin pronouns could combine with prepositions,seules des prépositions sont mentionnées,"Claude (assistant IA), à relire",2026-11-27
