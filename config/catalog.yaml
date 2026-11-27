@@ -45,6 +45,7 @@ languages:
     sources:
       - {url: "https://en.wikipedia.org/wiki/Quenya", title: "Quenya", type: encyclopedia, license: *wplicense}
       - {url: "https://downloads.tatoeba.org/exports/per_language/qya/qya_sentences.tsv.bz2", title: "Tatoeba — phrases en quenya", type: sentence_corpus, license: *tatoebalicense}
+      - {url: "https://en.wikipedia.org/wiki/Quenya_grammar", title: "Quenya grammar", type: encyclopedia, license: *wplicense}
 
   - id: sindarin
     name: Sindarin
@@ -111,6 +112,7 @@ languages:
     sources:
       - {url: "https://en.wikipedia.org/wiki/Klingon_language", title: "Klingon language", type: encyclopedia, license: *wplicense}
       - {url: "https://downloads.tatoeba.org/exports/per_language/tlh/tlh_sentences.tsv.bz2", title: "Tatoeba — phrases en klingon", type: sentence_corpus, license: *tatoebalicense}
+      - {url: "https://en.wikipedia.org/wiki/Klingon_grammar", title: "Klingon grammar", type: encyclopedia, license: *wplicense}
 
   - id: navi
     name: Na'vi
@@ -435,6 +437,8 @@ languages:
     sources:
       - {url: "https://en.wikipedia.org/wiki/Esperanto", title: "Esperanto", type: encyclopedia, license: *wplicense}
       - {url: "https://downloads.tatoeba.org/exports/per_language/epo/epo_sentences.tsv.bz2", title: "Tatoeba — phrases en espéranto", type: sentence_corpus, license: *tatoebalicense}
+      - {url: "https://en.wikipedia.org/wiki/Esperanto_grammar", title: "Esperanto grammar", type: encyclopedia, license: *wplicense}
+      - {url: "https://en.wikipedia.org/wiki/Esperanto_phonology", title: "Esperanto phonology", type: encyclopedia, license: *wplicense}
 
   - id: volapuk
     name: Volapük
@@ -483,6 +487,7 @@ languages:
     sources:
       - {url: "https://en.wikipedia.org/wiki/Lojban", title: "Lojban", type: encyclopedia, license: *wplicense}
       - {url: "https://downloads.tatoeba.org/exports/per_language/jbo/jbo_sentences.tsv.bz2", title: "Tatoeba — phrases en lojban", type: sentence_corpus, license: *tatoebalicense}
+      - {url: "https://en.wikipedia.org/wiki/Lojban_grammar", title: "Lojban grammar", type: encyclopedia, license: *wplicense}
 
   - id: ithkuil
     name: Ithkuil

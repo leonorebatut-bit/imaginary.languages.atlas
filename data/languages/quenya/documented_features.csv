@@ -1,0 +1,9 @@
+feature_id,value,source_id,locator,evidence,note,coded_by,coded_on
+phonology.consonant_inventory,m n ŋ p b t d k ɡ f v s x h r w l j,quenya-s01,§ Consonants (tableau),The tables below list the consonants (Q. ólamar ) and vowels of late colloquial Noldorin Quenya,symboles entre parenthèses du tableau (θ z ç ʍ : variétés ou allophones) exclus,"Claude (assistant IA), à relire",2026-11-27
+phonology.vowel_quality_inventory_size,5,quenya-s01,§ Vowels,"Quenya has five vowels (Q. ómar ), and a distinction of length .",,"Claude (assistant IA), à relire",2026-11-27
+syntax.basic_word_order,SVO,quenya-s01,§ Syntax,The usual syntax structure is subject-verb-object .,ordre souple selon la même source,"Claude (assistant IA), à relire",2026-11-27
+syntax.adjective_noun_order,No dominant order,quenya-s01,§ Syntax,The adjective can be placed before or after the noun that it modifies.,,"Claude (assistant IA), à relire",2026-11-27
+syntax.adposition_order,Prepositions,quenya-s01,§ Grammar,"It has basic word classes of verbs , nouns and pronouns /determiners, adjectives and prepositions .",seules des prépositions sont mentionnées,"Claude (assistant IA), à relire",2026-11-27
+morphology.number_of_cases,10 or more cases,quenya-s01,§ Nouns,Parmaquesta Quenya has ten cases .,,"Claude (assistant IA), à relire",2026-11-27
+morphology.nominal_plurality_coding,Plural suffix,quenya-s01,§ Nouns,the plural is formed by a suffix to the subjective form of the noun,,"Claude (assistant IA), à relire",2026-11-27
+typology.morphological_type,agglutinative,quenya-s01,§ Grammar,The grammar of Quenya is agglutinative and mostly suffixing,,"Claude (assistant IA), à relire",2026-11-27

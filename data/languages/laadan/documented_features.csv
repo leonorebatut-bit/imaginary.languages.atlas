@@ -1,0 +1,7 @@
+feature_id,value,source_id,locator,evidence,note,coded_by,coded_on
+phonology.consonant_inventory,b d ʃ m n l ɹ w j h θ ʒ ɬ,laadan-s01,§ Consonants,"It uses b , d , sh ( /ʃ/ ), m , n , l , r , w , y ( /j/ ), h with the same phonetic value as English. Three digraphs require further explanation:","13 consonnes : 10 lettres simples et 3 digrammes (th, zh, lh)","Claude (assistant IA), à relire",2026-11-27
+phonology.vowel_quality_inventory_size,5,laadan-s01,§ Vowels,Láadan has five vowels,,"Claude (assistant IA), à relire",2026-11-27
+phonology.tone,Simple tone system,laadan-s01,§ Tones,Láadan utilises two distinct tones:,deux tons de niveau,"Claude (assistant IA), à relire",2026-11-27
+syntax.basic_word_order,VSO,laadan-s01,§ Word order,"In active voice , it is a verb–subject–object (VSO) language",OVS au passif,"Claude (assistant IA), à relire",2026-11-27
+syntax.polar_question_strategy,Question particle,laadan-s01,§ Grammar,"The speech-act particle – this occurs at the beginning of the sentence and marks it as either a statement ( bíi ), a question ( báa )",,"Claude (assistant IA), à relire",2026-11-27
+typology.morphological_type,agglutinative,laadan-s01,§ Grammar,Láadan has an agglutinative morphology,,"Claude (assistant IA), à relire",2026-11-27

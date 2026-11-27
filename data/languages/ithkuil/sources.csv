@@ -1,2 +1,2 @@
-source_id,url,title,author,published,type,license,nature,retrieved_at,status,error,sha256,redistributable,available_items,kept_items
-ithkuil-s01,https://en.wikipedia.org/wiki/Ithkuil,Ithkuil,null,null,encyclopedia,CC BY-SA 4.0,encyclopedia,2026-11-27T18:33:27+00:00,ok,null,91f2be09a3a9144e3c000c4e908d82c3e150968d18a4c086aa4b53ec4b7a8452,True,null,null
+source_id,url,title,author,published,type,license,nature,retrieved_at,status,error,sha256,redistributable,available_items,kept_items,raw_file
+ithkuil-s01,https://en.wikipedia.org/wiki/Ithkuil,Ithkuil,null,null,encyclopedia,CC BY-SA 4.0,encyclopedia,2026-11-27T18:33:27+00:00,ok,null,91f2be09a3a9144e3c000c4e908d82c3e150968d18a4c086aa4b53ec4b7a8452,True,null,null,sources/ithkuil/Ithkuil

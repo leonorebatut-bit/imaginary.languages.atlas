@@ -19,6 +19,7 @@ import pandas as pd
 
 from . import __version__
 from .collection.catalog import load_catalog
+from .collection.html_text import normalize_for_match, source_text
 from .collection.collect import collect_all, read_metadata, read_sources
 from .comparison.feature_mapping import load_mappings, mapping_table, validate_against_wals
 from .comparison.regional_analysis import aggregate, assign_areas
@@ -97,8 +98,13 @@ class Runner:
         records = []
         for lang in catalog["languages"]:
             ldir = project_path("languages") / lang["id"]
-            sources = {r["source_id"] for r in read_sources(ldir)}
-            feats = language_features(lang, ldir, sources, scripts, self.cfg)
+            rows = read_sources(ldir)
+            sources = {r["source_id"] for r in rows}
+            texts = {}
+            for r in rows:
+                if r.get("raw_file") not in (None, "", "null") and r["type"] != "sentence_corpus":
+                    texts[r["source_id"]] = normalize_for_match(source_text(project_path("raw") / r["raw_file"]))
+            feats = language_features(lang, ldir, sources, scripts, self.cfg, texts)
             records.append({"language_id": lang["id"], "features": [f.to_dict() for f in feats]})
         write_json(self.processed / "features.json", records)
 
@@ -131,8 +137,22 @@ class Runner:
             profiles[rec["language_id"]] = prof
         w = load_wals()
         mappings = validate_against_wals(mappings, w)
-        converted = {lid: {m.wals_id: m.convert(p.get(m.wals_id)) for m in mappings if m.convert(p.get(m.wals_id)) is not None}
-                     for lid, p in profiles.items()}
+        converted, rejected = {}, []
+        for lid, p in profiles.items():
+            converted[lid] = {}
+            for m in mappings:
+                if m.wals_id not in p:
+                    continue
+                label = m.convert(p[m.wals_id])
+                if label is None:
+                    rejected.append({"language_id": lid, "wals_id": m.wals_id, "value": p[m.wals_id]})
+                else:
+                    converted[lid][m.wals_id] = label
+        if rejected:
+            # Une valeur documentée qui ne correspond à aucun code WALS est une erreur de codage
+            # ou une fourchette à cheval sur deux classes : elle est signalée, jamais devinée.
+            log.warning("valeurs non convertibles en codes WALS : %s", rejected)
+        write_json(self.processed / "harmonise_rejected.json", rejected)
         write_json(self.processed / "profiles.json", converted)
 
     def similarity(self) -> None:

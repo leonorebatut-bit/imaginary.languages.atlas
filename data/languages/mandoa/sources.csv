@@ -1,2 +1,2 @@
-source_id,url,title,author,published,type,license,nature,retrieved_at,status,error,sha256,redistributable,available_items,kept_items
-mandoa-s01,https://en.wikipedia.org/wiki/Languages_in_Star_Wars,Languages in Star Wars,null,null,encyclopedia,CC BY-SA 4.0,encyclopedia,2026-11-27T18:33:08+00:00,ok,null,e681ab699b0de24b29488fc9cef5044ba12d99891b67d4cb26f32cc522a3062a,True,null,null
+source_id,url,title,author,published,type,license,nature,retrieved_at,status,error,sha256,redistributable,available_items,kept_items,raw_file
+mandoa-s01,https://en.wikipedia.org/wiki/Languages_in_Star_Wars,Languages in Star Wars,null,null,encyclopedia,CC BY-SA 4.0,encyclopedia,2026-11-27T18:33:08+00:00,ok,null,e681ab699b0de24b29488fc9cef5044ba12d99891b67d4cb26f32cc522a3062a,True,null,null,sources/mandoa/Languages_in_Star_Wars

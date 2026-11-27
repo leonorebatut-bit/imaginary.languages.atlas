@@ -1,0 +1,7 @@
+feature_id,value,source_id,locator,evidence,note,coded_by,coded_on
+phonology.consonant_inventory,m n ɲ p b t d dʒ k ɡ q v s z ɣ h r̥ r l ʎ,high_valyrian-s01,§ Phonology (tableau),θ ⟨ th ⟩ and x ⟨ kh ⟩ are not native to High Valyrian but are present in some loanwords,θ et x exclus (emprunts) ; variantes « ~ » comptées une fois,"Claude (assistant IA), à relire",2026-11-27
+phonology.vowel_quality_inventory,i y u e o a,high_valyrian-s01,§ Phonology (tableau),"Vowels with a macron over them (ī, ȳ, ū, ē, ō and ā) are long",qualités vocaliques ; la longueur n'est pas comptée,"Claude (assistant IA), à relire",2026-11-27
+syntax.adjective_noun_order,No dominant order,high_valyrian-s01,§ Adjectives,Adjectives may be both prepositive,,"Claude (assistant IA), à relire",2026-11-27
+syntax.adposition_order,No dominant order,high_valyrian-s01,§ Nouns,Both prepositions and postpositions are used to form other cases,,"Claude (assistant IA), à relire",2026-11-27
+morphology.number_of_cases,8-9 cases,high_valyrian-s01,§ Nouns,Nouns have eight cases,,"Claude (assistant IA), à relire",2026-11-27
+morphology.number_of_genders,Four,high_valyrian-s01,§ Nouns,"There are four grammatical genders , which do not align with biological sex.",,"Claude (assistant IA), à relire",2026-11-27

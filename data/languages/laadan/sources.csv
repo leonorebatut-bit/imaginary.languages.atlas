@@ -1,3 +1,3 @@
-source_id,url,title,author,published,type,license,nature,retrieved_at,status,error,sha256,redistributable,available_items,kept_items
-laadan-s01,https://en.wikipedia.org/wiki/L%C3%A1adan,Láadan,null,null,encyclopedia,CC BY-SA 4.0,encyclopedia,2026-11-27T18:35:34+00:00,ok,null,23bf7fe9628019a47fd3caec2ce68ef36182d1567d47db174f7a20f08e8b2d21,True,null,null
-laadan-s02,https://downloads.tatoeba.org/exports/per_language/ldn/ldn_sentences.tsv.bz2,Tatoeba — phrases en láadan,null,null,sentence_corpus,CC BY 2.0 FR,sentence_corpus,2026-11-27T18:33:13+00:00,ok,null,ccb9f29f186cd95c1fee06ae4b904dc997d140ee952b9eb266ac1b6a0c994fbb,True,208,208
+source_id,url,title,author,published,type,license,nature,retrieved_at,status,error,sha256,redistributable,available_items,kept_items,raw_file
+laadan-s01,https://en.wikipedia.org/wiki/L%C3%A1adan,Láadan,null,null,encyclopedia,CC BY-SA 4.0,encyclopedia,2026-11-27T18:35:34+00:00,ok,null,23bf7fe9628019a47fd3caec2ce68ef36182d1567d47db174f7a20f08e8b2d21,True,null,null,sources/laadan/L%C3%A1adan
+laadan-s02,https://downloads.tatoeba.org/exports/per_language/ldn/ldn_sentences.tsv.bz2,Tatoeba — phrases en láadan,null,null,sentence_corpus,CC BY 2.0 FR,sentence_corpus,2026-11-27T18:33:13+00:00,ok,null,ccb9f29f186cd95c1fee06ae4b904dc997d140ee952b9eb266ac1b6a0c994fbb,True,208,208,sources/laadan/ldn_sentences.tsv.bz2

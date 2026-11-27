@@ -13,14 +13,15 @@ langues naturelles de WALS.
 |---|---|
 | 1. Audit et conception | terminée (2026-11-27) |
 | 2. Constitution du corpus | en cours : catalogue de 30 langues et 6 écritures, collecte automatique opérationnelle |
-| 3. Analyse linguistique | modules écrits et testés ; caractéristiques documentées pas encore codées |
+| 3. Analyse linguistique | en cours : 11 langues codées (79 valeurs documentées, citations vérifiées automatiquement) |
 | 4. Comparaison WALS | chargeur, correspondances (20 caractéristiques), Gower et agrégation par aire écrits et testés |
 | 5. Site web | à faire |
 | 6. Intégration | API en lecture seule écrite et testée |
 | 7. Documentation et déploiement | documentation méthodologique commencée |
 
-Aucun score de proximité n'est encore produit : il faut d'abord coder, avec
-leurs sources, les caractéristiques documentées des langues (étape 3).
+Premiers scores de proximité pour 5 langues (dothraki, espéranto, na'vi,
+quenya, toki pona) : voir `docs/results.md`. Ils sont préliminaires et
+reposent sur 8 à 11 caractéristiques.
 
 ## Installation
 

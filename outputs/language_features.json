@@ -124,6 +124,36 @@
       },
       {
         "domain": "morphology",
+        "examples": [
+          "« the plural is formed by a suffix to the subjective form of the noun »"
+        ],
+        "feature_id": "morphology.nominal_plurality_coding",
+        "limits": null,
+        "method": "documented:grammar",
+        "source_ids": [
+          "quenya-s01@§ Nouns"
+        ],
+        "status": "documented",
+        "unit": null,
+        "value": "Plural suffix"
+      },
+      {
+        "domain": "morphology",
+        "examples": [
+          "« Parmaquesta Quenya has ten cases . »"
+        ],
+        "feature_id": "morphology.number_of_cases",
+        "limits": null,
+        "method": "documented:grammar",
+        "source_ids": [
+          "quenya-s01@§ Nouns"
+        ],
+        "status": "documented",
+        "unit": null,
+        "value": "10 or more cases"
+      },
+      {
+        "domain": "morphology",
         "examples": [],
         "feature_id": "morphology.prefix_share",
         "limits": "segmentation glosée insuffisante (0 mots < 30)",
@@ -146,25 +176,53 @@
       },
       {
         "domain": "phonology",
-        "examples": [],
+        "examples": [
+          "« The tables below list the consonants (Q. ólamar ) and vowels of late colloquial Noldorin Quenya »"
+        ],
+        "feature_id": "phonology.consonant_inventory",
+        "limits": "symboles entre parenthèses du tableau (θ z ç ʍ : variétés ou allophones) exclus",
+        "method": "documented:grammar",
+        "source_ids": [
+          "quenya-s01@§ Consonants (tableau)"
+        ],
+        "status": "documented",
+        "unit": null,
+        "value": "m n ŋ p b t d k ɡ f v s x h r w l j"
+      },
+      {
+        "domain": "phonology",
+        "examples": [
+          "m n ŋ p b t d k ɡ f v s x h r w l j"
+        ],
         "feature_id": "phonology.consonant_inventory_size",
-        "limits": "aucun inventaire documenté",
-        "method": "phonology/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": null,
+        "method": "phonology/1:count_documented_inventory",
+        "source_ids": [
+          "quenya-s01@§ Consonants (tableau)"
+        ],
+        "status": "computed",
         "unit": "phonèmes",
-        "value": null
+        "value": 18
       },
       {
         "domain": "phonology",
         "examples": [],
         "feature_id": "phonology.consonant_types",
-        "limits": "aucun inventaire documenté",
-        "method": "phonology/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": "table API réduite ; les symboles non reconnus sont comptés « non_classé »",
+        "method": "phonology/1:ipa_manner_table",
+        "source_ids": [
+          "quenya-s01@§ Consonants (tableau)"
+        ],
+        "status": "computed",
         "unit": null,
-        "value": null
+        "value": {
+          "approximant": 2,
+          "fricative": 5,
+          "lateral_approximant": 1,
+          "nasal": 3,
+          "plosive": 6,
+          "trill": 1
+        }
       },
       {
         "domain": "phonology",
@@ -234,47 +292,63 @@
       },
       {
         "domain": "phonology",
-        "examples": [],
+        "examples": [
+          "« Quenya has five vowels (Q. ómar ), and a distinction of length . »"
+        ],
         "feature_id": "phonology.vowel_quality_inventory_size",
-        "limits": "aucun inventaire documenté",
-        "method": "phonology/1",
-        "source_ids": [],
-        "status": "unavailable",
-        "unit": "phonèmes",
-        "value": null
+        "limits": null,
+        "method": "documented:grammar",
+        "source_ids": [
+          "quenya-s01@§ Vowels"
+        ],
+        "status": "documented",
+        "unit": null,
+        "value": "5"
       },
       {
         "domain": "syntax",
-        "examples": [],
+        "examples": [
+          "« The adjective can be placed before or after the noun that it modifies. »"
+        ],
         "feature_id": "syntax.adjective_noun_order",
-        "limits": "non documenté",
-        "method": "syntax/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": null,
+        "method": "documented:grammar",
+        "source_ids": [
+          "quenya-s01@§ Syntax"
+        ],
+        "status": "documented",
         "unit": null,
-        "value": null
+        "value": "No dominant order"
       },
       {
         "domain": "syntax",
-        "examples": [],
+        "examples": [
+          "« It has basic word classes of verbs , nouns and pronouns /determiners, adjectives and prepositions . »"
+        ],
         "feature_id": "syntax.adposition_order",
-        "limits": "non documenté",
-        "method": "syntax/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": "seules des prépositions sont mentionnées",
+        "method": "documented:grammar",
+        "source_ids": [
+          "quenya-s01@§ Grammar"
+        ],
+        "status": "documented",
         "unit": null,
-        "value": null
+        "value": "Prepositions"
       },
       {
         "domain": "syntax",
-        "examples": [],
+        "examples": [
+          "« The usual syntax structure is subject-verb-object . »"
+        ],
         "feature_id": "syntax.basic_word_order",
-        "limits": "non documenté",
-        "method": "syntax/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": "ordre souple selon la même source",
+        "method": "documented:grammar",
+        "source_ids": [
+          "quenya-s01@§ Syntax"
+        ],
+        "status": "documented",
         "unit": null,
-        "value": null
+        "value": "SVO"
       },
       {
         "domain": "syntax",
@@ -322,14 +396,18 @@
       },
       {
         "domain": "syntax",
-        "examples": [],
+        "examples": [
+          "« The usual syntax structure is subject-verb-object . »"
+        ],
         "feature_id": "syntax.object_verb_order",
-        "limits": "non documenté",
-        "method": "syntax/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": "déduit de l'ordre dominant documenté (S, O et V)",
+        "method": "syntax/1:derived_from_basic_word_order",
+        "source_ids": [
+          "quenya-s01@§ Syntax"
+        ],
+        "status": "computed",
         "unit": null,
-        "value": null
+        "value": "VO"
       },
       {
         "domain": "syntax",
@@ -390,23 +468,29 @@
         "domain": "typology",
         "examples": [],
         "feature_id": "typology.dominant_word_order",
-        "limits": "non documenté",
-        "method": "typology/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": null,
+        "method": "documented:via_syntax.basic_word_order",
+        "source_ids": [
+          "quenya-s01@§ Syntax"
+        ],
+        "status": "documented",
         "unit": null,
-        "value": null
+        "value": "SVO"
       },
       {
         "domain": "typology",
-        "examples": [],
+        "examples": [
+          "« The grammar of Quenya is agglutinative and mostly suffixing »"
+        ],
         "feature_id": "typology.morphological_type",
-        "limits": "non documenté",
-        "method": "typology/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": null,
+        "method": "documented:grammar",
+        "source_ids": [
+          "quenya-s01@§ Grammar"
+        ],
+        "status": "documented",
         "unit": null,
-        "value": null
+        "value": "agglutinative"
       },
       {
         "domain": "typology",
@@ -457,7 +541,8 @@
       ],
       "source_ids": [
         "quenya-s01",
-        "quenya-s02"
+        "quenya-s02",
+        "quenya-s03"
       ],
       "universe": "Tolkien (légendaire)",
       "year": 1915,
@@ -589,6 +674,36 @@
       },
       {
         "domain": "morphology",
+        "examples": [
+          "« Most Sindarin plurals are formed by vowel change and are characterised by i-mutation . »"
+        ],
+        "feature_id": "morphology.nominal_plurality_coding",
+        "limits": null,
+        "method": "documented:grammar",
+        "source_ids": [
+          "sindarin-s01@§ Plural forms"
+        ],
+        "status": "documented",
+        "unit": null,
+        "value": "Plural stem change"
+      },
+      {
+        "domain": "morphology",
+        "examples": [
+          "« While Sindarin does not have a grammatical gender »"
+        ],
+        "feature_id": "morphology.number_of_genders",
+        "limits": null,
+        "method": "documented:grammar",
+        "source_ids": [
+          "sindarin-s01@§ Nouns"
+        ],
+        "status": "documented",
+        "unit": null,
+        "value": "None"
+      },
+      {
+        "domain": "morphology",
         "examples": [],
         "feature_id": "morphology.prefix_share",
         "limits": "segmentation glosée insuffisante (0 mots < 30)",
@@ -611,25 +726,55 @@
       },
       {
         "domain": "phonology",
-        "examples": [],
+        "examples": [
+          "« Sindarin was designed with a Welsh-like phonology . »"
+        ],
+        "feature_id": "phonology.consonant_inventory",
+        "limits": "inventaire relevé dans le tableau des consonnes",
+        "method": "documented:grammar",
+        "source_ids": [
+          "sindarin-s01@§ Consonants (tableau)"
+        ],
+        "status": "documented",
+        "unit": null,
+        "value": "m n ŋ p b t d k ɡ f v θ ð s ɬ χ h r̥ r l j ʍ w"
+      },
+      {
+        "domain": "phonology",
+        "examples": [
+          "m n ŋ p b t d k ɡ f v θ ð s ɬ χ h r̥ r l j ʍ w"
+        ],
         "feature_id": "phonology.consonant_inventory_size",
-        "limits": "aucun inventaire documenté",
-        "method": "phonology/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": null,
+        "method": "phonology/1:count_documented_inventory",
+        "source_ids": [
+          "sindarin-s01@§ Consonants (tableau)"
+        ],
+        "status": "computed",
         "unit": "phonèmes",
-        "value": null
+        "value": 23
       },
       {
         "domain": "phonology",
         "examples": [],
         "feature_id": "phonology.consonant_types",
-        "limits": "aucun inventaire documenté",
-        "method": "phonology/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": "table API réduite ; les symboles non reconnus sont comptés « non_classé »",
+        "method": "phonology/1:ipa_manner_table",
+        "source_ids": [
+          "sindarin-s01@§ Consonants (tableau)"
+        ],
+        "status": "computed",
         "unit": null,
-        "value": null
+        "value": {
+          "approximant": 2,
+          "fricative": 7,
+          "lateral_approximant": 1,
+          "lateral_fricative": 1,
+          "nasal": 3,
+          "non_classé": 1,
+          "plosive": 6,
+          "trill": 2
+        }
       },
       {
         "domain": "phonology",
@@ -721,14 +866,18 @@
       },
       {
         "domain": "syntax",
-        "examples": [],
+        "examples": [
+          "« Sindarin pronouns could combine with prepositions »"
+        ],
         "feature_id": "syntax.adposition_order",
-        "limits": "non documenté",
-        "method": "syntax/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": "seules des prépositions sont mentionnées",
+        "method": "documented:grammar",
+        "source_ids": [
+          "sindarin-s01@§ Pronouns"
+        ],
+        "status": "documented",
         "unit": null,
-        "value": null
+        "value": "Prepositions"
       },
       {
         "domain": "syntax",
@@ -864,14 +1013,18 @@
       },
       {
         "domain": "typology",
-        "examples": [],
+        "examples": [
+          "« Sindarin is mainly a fusional language with some analytic tendencies. »"
+        ],
         "feature_id": "typology.morphological_type",
-        "limits": "non documenté",
-        "method": "typology/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": null,
+        "method": "documented:grammar",
+        "source_ids": [
+          "sindarin-s01@§ Grammar"
+        ],
+        "status": "documented",
         "unit": null,
-        "value": null
+        "value": "fusional"
       },
       {
         "domain": "typology",
@@ -1915,6 +2068,21 @@
       },
       {
         "domain": "morphology",
+        "examples": [
+          "« most nouns require a suffix to express plurality explicitly »"
+        ],
+        "feature_id": "morphology.nominal_plurality_coding",
+        "limits": "le pluriel n'est jamais obligatoire selon la même source",
+        "method": "documented:grammar",
+        "source_ids": [
+          "klingon-s01@§ Grammar"
+        ],
+        "status": "documented",
+        "unit": null,
+        "value": "Plural suffix"
+      },
+      {
+        "domain": "morphology",
         "examples": [],
         "feature_id": "morphology.prefix_share",
         "limits": "segmentation glosée insuffisante (0 mots < 30)",
@@ -1937,14 +2105,18 @@
       },
       {
         "domain": "phonology",
-        "examples": [],
+        "examples": [
+          "« Klingon has twenty-one consonants and five vowels. »"
+        ],
         "feature_id": "phonology.consonant_inventory_size",
-        "limits": "aucun inventaire documenté",
-        "method": "phonology/1",
-        "source_ids": [],
-        "status": "unavailable",
-        "unit": "phonèmes",
-        "value": null
+        "limits": null,
+        "method": "documented:grammar",
+        "source_ids": [
+          "klingon-s01@§ Phonology"
+        ],
+        "status": "documented",
+        "unit": null,
+        "value": "21"
       },
       {
         "domain": "phonology",
@@ -2004,14 +2176,18 @@
       },
       {
         "domain": "phonology",
-        "examples": [],
+        "examples": [
+          "CVCC"
+        ],
         "feature_id": "phonology.syllable_structure",
-        "limits": "structure syllabique non documentée",
-        "method": "phonology/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": "WALS restreint aussi la nature de la\nseconde consonne d'attaque, ce que le gabarit seul ne dit pas.",
+        "method": "phonology/1:template_to_wals12A",
+        "source_ids": [
+          "klingon-s01@§ Syllable structure"
+        ],
+        "status": "computed",
         "unit": null,
-        "value": null
+        "value": "Complex"
       },
       {
         "domain": "phonology",
@@ -2026,25 +2202,33 @@
       },
       {
         "domain": "phonology",
-        "examples": [],
+        "examples": [
+          "« Klingon has twenty-one consonants and five vowels. »"
+        ],
         "feature_id": "phonology.vowel_quality_inventory_size",
-        "limits": "aucun inventaire documenté",
-        "method": "phonology/1",
-        "source_ids": [],
-        "status": "unavailable",
-        "unit": "phonèmes",
-        "value": null
+        "limits": null,
+        "method": "documented:grammar",
+        "source_ids": [
+          "klingon-s01@§ Phonology"
+        ],
+        "status": "documented",
+        "unit": null,
+        "value": "5"
       },
       {
         "domain": "syntax",
-        "examples": [],
+        "examples": [
+          "« many intransitive verbs can be used as adjectives, in which case they follow the noun they modify. »"
+        ],
         "feature_id": "syntax.adjective_noun_order",
-        "limits": "non documenté",
-        "method": "syntax/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": "pas de classe d'adjectifs : verbes intransitifs en fonction d'épithète",
+        "method": "documented:grammar",
+        "source_ids": [
+          "klingon-s03@§ Adjectives"
+        ],
+        "status": "documented",
         "unit": null,
-        "value": null
+        "value": "Noun-Adjective"
       },
       {
         "domain": "syntax",
@@ -2059,14 +2243,18 @@
       },
       {
         "domain": "syntax",
-        "examples": [],
+        "examples": [
+          "« It is a nominative–accusative , primarily suffixing agglutinative language, and has an object–verb–subject word order. »"
+        ],
         "feature_id": "syntax.basic_word_order",
-        "limits": "non documenté",
-        "method": "syntax/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": null,
+        "method": "documented:grammar",
+        "source_ids": [
+          "klingon-s03@§ (introduction)"
+        ],
+        "status": "documented",
         "unit": null,
-        "value": null
+        "value": "OVS"
       },
       {
         "domain": "syntax",
@@ -2114,14 +2302,18 @@
       },
       {
         "domain": "syntax",
-        "examples": [],
+        "examples": [
+          "« It is a nominative–accusative , primarily suffixing agglutinative language, and has an object–verb–subject word order. »"
+        ],
         "feature_id": "syntax.object_verb_order",
-        "limits": "non documenté",
-        "method": "syntax/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": "déduit de l'ordre dominant documenté (S, O et V)",
+        "method": "syntax/1:derived_from_basic_word_order",
+        "source_ids": [
+          "klingon-s03@§ (introduction)"
+        ],
+        "status": "computed",
         "unit": null,
-        "value": null
+        "value": "OV"
       },
       {
         "domain": "syntax",
@@ -2182,23 +2374,29 @@
         "domain": "typology",
         "examples": [],
         "feature_id": "typology.dominant_word_order",
-        "limits": "non documenté",
-        "method": "typology/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": null,
+        "method": "documented:via_syntax.basic_word_order",
+        "source_ids": [
+          "klingon-s03@§ (introduction)"
+        ],
+        "status": "documented",
         "unit": null,
-        "value": null
+        "value": "OVS"
       },
       {
         "domain": "typology",
-        "examples": [],
+        "examples": [
+          "« primarily suffixing agglutinative language »"
+        ],
         "feature_id": "typology.morphological_type",
-        "limits": "non documenté",
-        "method": "typology/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": null,
+        "method": "documented:grammar",
+        "source_ids": [
+          "klingon-s03@§ (introduction)"
+        ],
+        "status": "documented",
         "unit": null,
-        "value": null
+        "value": "agglutinative"
       },
       {
         "domain": "typology",
@@ -2249,7 +2447,8 @@
       ],
       "source_ids": [
         "klingon-s01",
-        "klingon-s02"
+        "klingon-s02",
+        "klingon-s03"
       ],
       "universe": "Star Trek",
       "year": 1984,
@@ -2381,6 +2580,21 @@
       },
       {
         "domain": "morphology",
+        "examples": [
+          "« The plural prefix is ay+ »"
+        ],
+        "feature_id": "morphology.nominal_plurality_coding",
+        "limits": null,
+        "method": "documented:grammar",
+        "source_ids": [
+          "navi-s01@§ Nouns"
+        ],
+        "status": "documented",
+        "unit": null,
+        "value": "Plural prefix"
+      },
+      {
+        "domain": "morphology",
         "examples": [],
         "feature_id": "morphology.prefix_share",
         "limits": "segmentation glosée insuffisante (0 mots < 30)",
@@ -2403,14 +2617,18 @@
       },
       {
         "domain": "phonology",
-        "examples": [],
+        "examples": [
+          "« There are 20 consonants. »"
+        ],
         "feature_id": "phonology.consonant_inventory_size",
-        "limits": "aucun inventaire documenté",
-        "method": "phonology/1",
-        "source_ids": [],
-        "status": "unavailable",
-        "unit": "phonèmes",
-        "value": null
+        "limits": null,
+        "method": "documented:grammar",
+        "source_ids": [
+          "navi-s01@§ Consonants"
+        ],
+        "status": "documented",
+        "unit": null,
+        "value": "20"
       },
       {
         "domain": "phonology",
@@ -2436,69 +2654,93 @@
       },
       {
         "domain": "phonology",
-        "examples": [],
+        "examples": [
+          "CCVC"
+        ],
         "feature_id": "phonology.syllable_structure",
-        "limits": "structure syllabique non documentée",
-        "method": "phonology/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": "WALS restreint aussi la nature de la\nseconde consonne d'attaque, ce que le gabarit seul ne dit pas.",
+        "method": "phonology/1:template_to_wals12A",
+        "source_ids": [
+          "navi-s01@§ Phonology"
+        ],
+        "status": "computed",
         "unit": null,
-        "value": null
+        "value": "Moderately complex"
       },
       {
         "domain": "phonology",
-        "examples": [],
+        "examples": [
+          "« Naʼvi does not have vowel length or tone »"
+        ],
         "feature_id": "phonology.tone",
-        "limits": "présence de tons non documentée",
-        "method": "phonology/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": null,
+        "method": "documented:grammar",
+        "source_ids": [
+          "navi-s01@§ Vowels"
+        ],
+        "status": "documented",
         "unit": null,
-        "value": null
+        "value": "No tones"
       },
       {
         "domain": "phonology",
-        "examples": [],
+        "examples": [
+          "« There are seven vowels, a ä e i ì o u . »"
+        ],
         "feature_id": "phonology.vowel_quality_inventory_size",
-        "limits": "aucun inventaire documenté",
-        "method": "phonology/1",
-        "source_ids": [],
-        "status": "unavailable",
-        "unit": "phonèmes",
-        "value": null
+        "limits": null,
+        "method": "documented:grammar",
+        "source_ids": [
+          "navi-s01@§ Phonology"
+        ],
+        "status": "documented",
+        "unit": null,
+        "value": "7"
       },
       {
         "domain": "syntax",
-        "examples": [],
+        "examples": [
+          "« as long as it follows or precedes the noun, the sentence is fine. »"
+        ],
         "feature_id": "syntax.adjective_noun_order",
-        "limits": "non documenté",
-        "method": "syntax/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": null,
+        "method": "documented:grammar",
+        "source_ids": [
+          "navi-s01@§ Grammar"
+        ],
+        "status": "documented",
         "unit": null,
-        "value": null
+        "value": "No dominant order"
       },
       {
         "domain": "syntax",
-        "examples": [],
+        "examples": [
+          "« Any adposition may occur as either as a preposition before the noun, or as an enclitic after the noun »"
+        ],
         "feature_id": "syntax.adposition_order",
-        "limits": "non documenté",
-        "method": "syntax/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": null,
+        "method": "documented:grammar",
+        "source_ids": [
+          "navi-s01@§ Nouns"
+        ],
+        "status": "documented",
         "unit": null,
-        "value": null
+        "value": "No dominant order"
       },
       {
         "domain": "syntax",
-        "examples": [],
+        "examples": [
+          "« It has free word order . »"
+        ],
         "feature_id": "syntax.basic_word_order",
-        "limits": "non documenté",
-        "method": "syntax/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": null,
+        "method": "documented:grammar",
+        "source_ids": [
+          "navi-s01@§ Grammar"
+        ],
+        "status": "documented",
         "unit": null,
-        "value": null
+        "value": "No dominant order"
       },
       {
         "domain": "syntax",
@@ -2614,23 +2856,29 @@
         "domain": "typology",
         "examples": [],
         "feature_id": "typology.dominant_word_order",
-        "limits": "non documenté",
-        "method": "typology/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": null,
+        "method": "documented:via_syntax.basic_word_order",
+        "source_ids": [
+          "navi-s01@§ Grammar"
+        ],
+        "status": "documented",
         "unit": null,
-        "value": null
+        "value": "No dominant order"
       },
       {
         "domain": "typology",
-        "examples": [],
+        "examples": [
+          "« Naʼvi is a tripartite , primarily affixing agglutinative language. »"
+        ],
         "feature_id": "typology.morphological_type",
-        "limits": "non documenté",
-        "method": "typology/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": null,
+        "method": "documented:grammar",
+        "source_ids": [
+          "navi-s01@§ Grammar"
+        ],
+        "status": "documented",
         "unit": null,
-        "value": null
+        "value": "agglutinative"
       },
       {
         "domain": "typology",
@@ -2804,6 +3052,36 @@
       },
       {
         "domain": "morphology",
+        "examples": [
+          "« They decline in five cases , nominative , accusative , genitive , allative and ablative . »"
+        ],
+        "feature_id": "morphology.number_of_cases",
+        "limits": null,
+        "method": "documented:grammar",
+        "source_ids": [
+          "dothraki-s01@§ Grammar"
+        ],
+        "status": "documented",
+        "unit": null,
+        "value": "5 cases"
+      },
+      {
+        "domain": "morphology",
+        "examples": [
+          "« Nouns divide into two classes, inanimate and animate . »"
+        ],
+        "feature_id": "morphology.number_of_genders",
+        "limits": "classes fondées sur l'animéité, comptées comme genres au sens de WALS 30A",
+        "method": "documented:grammar",
+        "source_ids": [
+          "dothraki-s01@§ Grammar"
+        ],
+        "status": "documented",
+        "unit": null,
+        "value": "Two"
+      },
+      {
+        "domain": "morphology",
         "examples": [],
         "feature_id": "morphology.prefix_share",
         "limits": "segmentation glosée insuffisante (0 mots < 30)",
@@ -2826,14 +3104,18 @@
       },
       {
         "domain": "phonology",
-        "examples": [],
+        "examples": [
+          "« There are 23 consonant phonemes in the Dothraki language. »"
+        ],
         "feature_id": "phonology.consonant_inventory_size",
-        "limits": "aucun inventaire documenté",
-        "method": "phonology/1",
-        "source_ids": [],
-        "status": "unavailable",
-        "unit": "phonèmes",
-        "value": null
+        "limits": null,
+        "method": "documented:grammar",
+        "source_ids": [
+          "dothraki-s01@§ Consonants"
+        ],
+        "status": "documented",
+        "unit": null,
+        "value": "23"
       },
       {
         "domain": "phonology",
@@ -2881,69 +3163,93 @@
       },
       {
         "domain": "phonology",
-        "examples": [],
+        "examples": [
+          "« Dothraki has a four vowel system shown below: »"
+        ],
         "feature_id": "phonology.vowel_quality_inventory_size",
-        "limits": "aucun inventaire documenté",
-        "method": "phonology/1",
-        "source_ids": [],
-        "status": "unavailable",
-        "unit": "phonèmes",
-        "value": null
+        "limits": null,
+        "method": "documented:grammar",
+        "source_ids": [
+          "dothraki-s01@§ Vowels"
+        ],
+        "status": "documented",
+        "unit": null,
+        "value": "4"
       },
       {
         "domain": "syntax",
-        "examples": [],
+        "examples": [
+          "« this father very violent of.mine with.a.whip [...] demonstrative noun adverb adjective genitive noun prepositional phrase »"
+        ],
         "feature_id": "syntax.adjective_noun_order",
-        "limits": "non documenté",
-        "method": "syntax/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": "ordre relevé dans le syntagme nominal donné en exemple",
+        "method": "documented:grammar",
+        "source_ids": [
+          "dothraki-s01@§ Word order"
+        ],
+        "status": "documented",
         "unit": null,
-        "value": null
+        "value": "Noun-Adjective"
       },
       {
         "domain": "syntax",
-        "examples": [],
+        "examples": [
+          "« In prepositional phrases, prepositions always precede their noun complements . »"
+        ],
         "feature_id": "syntax.adposition_order",
-        "limits": "non documenté",
-        "method": "syntax/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": null,
+        "method": "documented:grammar",
+        "source_ids": [
+          "dothraki-s01@§ Word order"
+        ],
+        "status": "documented",
         "unit": null,
-        "value": null
+        "value": "Prepositions"
       },
       {
         "domain": "syntax",
-        "examples": [],
+        "examples": [
+          "« The basic word order is SVO ( subject–verb–object ). »"
+        ],
         "feature_id": "syntax.basic_word_order",
-        "limits": "non documenté",
-        "method": "syntax/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": null,
+        "method": "documented:grammar",
+        "source_ids": [
+          "dothraki-s01@§ Word order"
+        ],
+        "status": "documented",
         "unit": null,
-        "value": null
+        "value": "SVO"
       },
       {
         "domain": "syntax",
-        "examples": [],
+        "examples": [
+          "« demonstrative noun adverb adjective genitive noun prepositional phrase »"
+        ],
         "feature_id": "syntax.demonstrative_noun_order",
-        "limits": "non documenté",
-        "method": "syntax/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": "ordre relevé dans le syntagme nominal donné en exemple",
+        "method": "documented:grammar",
+        "source_ids": [
+          "dothraki-s01@§ Word order"
+        ],
+        "status": "documented",
         "unit": null,
-        "value": null
+        "value": "Demonstrative-Noun"
       },
       {
         "domain": "syntax",
-        "examples": [],
+        "examples": [
+          "« demonstrative noun adverb adjective genitive noun prepositional phrase »"
+        ],
         "feature_id": "syntax.genitive_noun_order",
-        "limits": "non documenté",
-        "method": "syntax/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": "ordre relevé dans le syntagme nominal donné en exemple",
+        "method": "documented:grammar",
+        "source_ids": [
+          "dothraki-s01@§ Word order"
+        ],
+        "status": "documented",
         "unit": null,
-        "value": null
+        "value": "Noun-Genitive"
       },
       {
         "domain": "syntax",
@@ -2969,14 +3275,18 @@
       },
       {
         "domain": "syntax",
-        "examples": [],
+        "examples": [
+          "« The basic word order is SVO ( subject–verb–object ). »"
+        ],
         "feature_id": "syntax.object_verb_order",
-        "limits": "non documenté",
-        "method": "syntax/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": "déduit de l'ordre dominant documenté (S, O et V)",
+        "method": "syntax/1:derived_from_basic_word_order",
+        "source_ids": [
+          "dothraki-s01@§ Word order"
+        ],
+        "status": "computed",
         "unit": null,
-        "value": null
+        "value": "VO"
       },
       {
         "domain": "syntax",
@@ -3037,12 +3347,14 @@
         "domain": "typology",
         "examples": [],
         "feature_id": "typology.dominant_word_order",
-        "limits": "non documenté",
-        "method": "typology/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": null,
+        "method": "documented:via_syntax.basic_word_order",
+        "source_ids": [
+          "dothraki-s01@§ Word order"
+        ],
+        "status": "documented",
         "unit": null,
-        "value": null
+        "value": "SVO"
       },
       {
         "domain": "typology",
@@ -3227,6 +3539,36 @@
       },
       {
         "domain": "morphology",
+        "examples": [
+          "« Nouns have eight cases »"
+        ],
+        "feature_id": "morphology.number_of_cases",
+        "limits": null,
+        "method": "documented:grammar",
+        "source_ids": [
+          "high_valyrian-s01@§ Nouns"
+        ],
+        "status": "documented",
+        "unit": null,
+        "value": "8-9 cases"
+      },
+      {
+        "domain": "morphology",
+        "examples": [
+          "« There are four grammatical genders , which do not align with biological sex. »"
+        ],
+        "feature_id": "morphology.number_of_genders",
+        "limits": null,
+        "method": "documented:grammar",
+        "source_ids": [
+          "high_valyrian-s01@§ Nouns"
+        ],
+        "status": "documented",
+        "unit": null,
+        "value": "Four"
+      },
+      {
+        "domain": "morphology",
         "examples": [],
         "feature_id": "morphology.prefix_share",
         "limits": "segmentation glosée insuffisante (0 mots < 30)",
@@ -3249,25 +3591,53 @@
       },
       {
         "domain": "phonology",
-        "examples": [],
+        "examples": [
+          "« θ ⟨ th ⟩ and x ⟨ kh ⟩ are not native to High Valyrian but are present in some loanwords »"
+        ],
+        "feature_id": "phonology.consonant_inventory",
+        "limits": "θ et x exclus (emprunts) ; variantes « ~ » comptées une fois",
+        "method": "documented:grammar",
+        "source_ids": [
+          "high_valyrian-s01@§ Phonology (tableau)"
+        ],
+        "status": "documented",
+        "unit": null,
+        "value": "m n ɲ p b t d dʒ k ɡ q v s z ɣ h r̥ r l ʎ"
+      },
+      {
+        "domain": "phonology",
+        "examples": [
+          "m n ɲ p b t d dʒ k ɡ q v s z ɣ h r̥ r l ʎ"
+        ],
         "feature_id": "phonology.consonant_inventory_size",
-        "limits": "aucun inventaire documenté",
-        "method": "phonology/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": null,
+        "method": "phonology/1:count_documented_inventory",
+        "source_ids": [
+          "high_valyrian-s01@§ Phonology (tableau)"
+        ],
+        "status": "computed",
         "unit": "phonèmes",
-        "value": null
+        "value": 20
       },
       {
         "domain": "phonology",
         "examples": [],
         "feature_id": "phonology.consonant_types",
-        "limits": "aucun inventaire documenté",
-        "method": "phonology/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": "table API réduite ; les symboles non reconnus sont comptés « non_classé »",
+        "method": "phonology/1:ipa_manner_table",
+        "source_ids": [
+          "high_valyrian-s01@§ Phonology (tableau)"
+        ],
+        "status": "computed",
         "unit": null,
-        "value": null
+        "value": {
+          "affricate": 1,
+          "fricative": 5,
+          "lateral_approximant": 2,
+          "nasal": 3,
+          "plosive": 7,
+          "trill": 2
+        }
       },
       {
         "domain": "phonology",
@@ -3304,36 +3674,63 @@
       },
       {
         "domain": "phonology",
-        "examples": [],
+        "examples": [
+          "« Vowels with a macron over them (ī, ȳ, ū, ē, ō and ā) are long »"
+        ],
+        "feature_id": "phonology.vowel_quality_inventory",
+        "limits": "qualités vocaliques ; la longueur n'est pas comptée",
+        "method": "documented:grammar",
+        "source_ids": [
+          "high_valyrian-s01@§ Phonology (tableau)"
+        ],
+        "status": "documented",
+        "unit": null,
+        "value": "i y u e o a"
+      },
+      {
+        "domain": "phonology",
+        "examples": [
+          "i y u e o a"
+        ],
         "feature_id": "phonology.vowel_quality_inventory_size",
-        "limits": "aucun inventaire documenté",
-        "method": "phonology/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": null,
+        "method": "phonology/1:count_documented_inventory",
+        "source_ids": [
+          "high_valyrian-s01@§ Phonology (tableau)"
+        ],
+        "status": "computed",
         "unit": "phonèmes",
-        "value": null
+        "value": 6
       },
       {
         "domain": "syntax",
-        "examples": [],
+        "examples": [
+          "« Adjectives may be both prepositive »"
+        ],
         "feature_id": "syntax.adjective_noun_order",
-        "limits": "non documenté",
-        "method": "syntax/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": null,
+        "method": "documented:grammar",
+        "source_ids": [
+          "high_valyrian-s01@§ Adjectives"
+        ],
+        "status": "documented",
         "unit": null,
-        "value": null
+        "value": "No dominant order"
       },
       {
         "domain": "syntax",
-        "examples": [],
+        "examples": [
+          "« Both prepositions and postpositions are used to form other cases »"
+        ],
         "feature_id": "syntax.adposition_order",
-        "limits": "non documenté",
-        "method": "syntax/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": null,
+        "method": "documented:grammar",
+        "source_ids": [
+          "high_valyrian-s01@§ Nouns"
+        ],
+        "status": "documented",
         "unit": null,
-        "value": null
+        "value": "No dominant order"
       },
       {
         "domain": "syntax",
@@ -9630,25 +10027,53 @@
       },
       {
         "domain": "phonology",
-        "examples": [],
+        "examples": [
+          "« It uses b , d , sh ( /ʃ/ ), m , n , l , r , w , y ( /j/ ), h with the same phonetic value as English. Three digraphs require further explanation: »"
+        ],
+        "feature_id": "phonology.consonant_inventory",
+        "limits": "13 consonnes : 10 lettres simples et 3 digrammes (th, zh, lh)",
+        "method": "documented:grammar",
+        "source_ids": [
+          "laadan-s01@§ Consonants"
+        ],
+        "status": "documented",
+        "unit": null,
+        "value": "b d ʃ m n l ɹ w j h θ ʒ ɬ"
+      },
+      {
+        "domain": "phonology",
+        "examples": [
+          "b d ʃ m n l ɹ w j h θ ʒ ɬ"
+        ],
         "feature_id": "phonology.consonant_inventory_size",
-        "limits": "aucun inventaire documenté",
-        "method": "phonology/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": null,
+        "method": "phonology/1:count_documented_inventory",
+        "source_ids": [
+          "laadan-s01@§ Consonants"
+        ],
+        "status": "computed",
         "unit": "phonèmes",
-        "value": null
+        "value": 13
       },
       {
         "domain": "phonology",
         "examples": [],
         "feature_id": "phonology.consonant_types",
-        "limits": "aucun inventaire documenté",
-        "method": "phonology/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": "table API réduite ; les symboles non reconnus sont comptés « non_classé »",
+        "method": "phonology/1:ipa_manner_table",
+        "source_ids": [
+          "laadan-s01@§ Consonants"
+        ],
+        "status": "computed",
         "unit": null,
-        "value": null
+        "value": {
+          "approximant": 3,
+          "fricative": 4,
+          "lateral_approximant": 1,
+          "lateral_fricative": 1,
+          "nasal": 2,
+          "plosive": 2
+        }
       },
       {
         "domain": "phonology",
@@ -9698,25 +10123,33 @@
       },
       {
         "domain": "phonology",
-        "examples": [],
+        "examples": [
+          "« Láadan utilises two distinct tones: »"
+        ],
         "feature_id": "phonology.tone",
-        "limits": "présence de tons non documentée",
-        "method": "phonology/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": "deux tons de niveau",
+        "method": "documented:grammar",
+        "source_ids": [
+          "laadan-s01@§ Tones"
+        ],
+        "status": "documented",
         "unit": null,
-        "value": null
+        "value": "Simple tone system"
       },
       {
         "domain": "phonology",
-        "examples": [],
+        "examples": [
+          "« Láadan has five vowels »"
+        ],
         "feature_id": "phonology.vowel_quality_inventory_size",
-        "limits": "aucun inventaire documenté",
-        "method": "phonology/1",
-        "source_ids": [],
-        "status": "unavailable",
-        "unit": "phonèmes",
-        "value": null
+        "limits": null,
+        "method": "documented:grammar",
+        "source_ids": [
+          "laadan-s01@§ Vowels"
+        ],
+        "status": "documented",
+        "unit": null,
+        "value": "5"
       },
       {
         "domain": "syntax",
@@ -9742,14 +10175,18 @@
       },
       {
         "domain": "syntax",
-        "examples": [],
+        "examples": [
+          "« In active voice , it is a verb–subject–object (VSO) language »"
+        ],
         "feature_id": "syntax.basic_word_order",
-        "limits": "non documenté",
-        "method": "syntax/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": "OVS au passif",
+        "method": "documented:grammar",
+        "source_ids": [
+          "laadan-s01@§ Word order"
+        ],
+        "status": "documented",
         "unit": null,
-        "value": null
+        "value": "VSO"
       },
       {
         "domain": "syntax",
@@ -9797,25 +10234,33 @@
       },
       {
         "domain": "syntax",
-        "examples": [],
+        "examples": [
+          "« In active voice , it is a verb–subject–object (VSO) language »"
+        ],
         "feature_id": "syntax.object_verb_order",
-        "limits": "non documenté",
-        "method": "syntax/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": "déduit de l'ordre dominant documenté (S, O et V)",
+        "method": "syntax/1:derived_from_basic_word_order",
+        "source_ids": [
+          "laadan-s01@§ Word order"
+        ],
+        "status": "computed",
         "unit": null,
-        "value": null
+        "value": "VO"
       },
       {
         "domain": "syntax",
-        "examples": [],
+        "examples": [
+          "« The speech-act particle – this occurs at the beginning of the sentence and marks it as either a statement ( bíi ), a question ( báa ) »"
+        ],
         "feature_id": "syntax.polar_question_strategy",
-        "limits": "non documenté",
-        "method": "syntax/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": null,
+        "method": "documented:grammar",
+        "source_ids": [
+          "laadan-s01@§ Grammar"
+        ],
+        "status": "documented",
         "unit": null,
-        "value": null
+        "value": "Question particle"
       },
       {
         "domain": "syntax",
@@ -9865,23 +10310,29 @@
         "domain": "typology",
         "examples": [],
         "feature_id": "typology.dominant_word_order",
-        "limits": "non documenté",
-        "method": "typology/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": null,
+        "method": "documented:via_syntax.basic_word_order",
+        "source_ids": [
+          "laadan-s01@§ Word order"
+        ],
+        "status": "documented",
         "unit": null,
-        "value": null
+        "value": "VSO"
       },
       {
         "domain": "typology",
-        "examples": [],
+        "examples": [
+          "« Láadan has an agglutinative morphology »"
+        ],
         "feature_id": "typology.morphological_type",
-        "limits": "non documenté",
-        "method": "typology/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": null,
+        "method": "documented:grammar",
+        "source_ids": [
+          "laadan-s01@§ Grammar"
+        ],
+        "status": "documented",
         "unit": null,
-        "value": null
+        "value": "agglutinative"
       },
       {
         "domain": "typology",
@@ -10908,6 +11359,51 @@
       },
       {
         "domain": "morphology",
+        "examples": [
+          "« To make a word plural, the suffix -j is added to the -o . »"
+        ],
+        "feature_id": "morphology.nominal_plurality_coding",
+        "limits": null,
+        "method": "documented:grammar",
+        "source_ids": [
+          "esperanto-s03@§ Nouns and adjectives"
+        ],
+        "status": "documented",
+        "unit": null,
+        "value": "Plural suffix"
+      },
+      {
+        "domain": "morphology",
+        "examples": [
+          "« Direct objects take an accusative case suffix -n [...] in Esperanto all prepositions govern the nominative »"
+        ],
+        "feature_id": "morphology.number_of_cases",
+        "limits": "nominatif et accusatif",
+        "method": "documented:grammar",
+        "source_ids": [
+          "esperanto-s03@§ Nouns and adjectives ; § Prepositions"
+        ],
+        "status": "documented",
+        "unit": null,
+        "value": "2 cases"
+      },
+      {
+        "domain": "morphology",
+        "examples": [
+          "« Esperanto has an agglutinative morphology , no grammatical gender »"
+        ],
+        "feature_id": "morphology.number_of_genders",
+        "limits": null,
+        "method": "documented:grammar",
+        "source_ids": [
+          "esperanto-s03@§ (introduction)"
+        ],
+        "status": "documented",
+        "unit": null,
+        "value": "None"
+      },
+      {
+        "domain": "morphology",
         "examples": [],
         "feature_id": "morphology.prefix_share",
         "limits": "segmentation glosée insuffisante (0 mots < 30)",
@@ -10930,14 +11426,18 @@
       },
       {
         "domain": "phonology",
-        "examples": [],
+        "examples": [
+          "« Esperanto typically has 22 to 24 consonants (depending on the phonemic analysis and individual speaker), five vowels »"
+        ],
         "feature_id": "phonology.consonant_inventory_size",
-        "limits": "aucun inventaire documenté",
-        "method": "phonology/1",
-        "source_ids": [],
-        "status": "unavailable",
-        "unit": "phonèmes",
-        "value": null
+        "limits": "fourchette selon l'analyse phonémique",
+        "method": "documented:grammar",
+        "source_ids": [
+          "esperanto-s01@§ Phonology"
+        ],
+        "status": "documented",
+        "unit": null,
+        "value": "22-24"
       },
       {
         "domain": "phonology",
@@ -10999,36 +11499,48 @@
       },
       {
         "domain": "phonology",
-        "examples": [],
+        "examples": [
+          "CCCVCC"
+        ],
         "feature_id": "phonology.syllable_structure",
-        "limits": "structure syllabique non documentée",
-        "method": "phonology/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": "WALS restreint aussi la nature de la\nseconde consonne d'attaque, ce que le gabarit seul ne dit pas.",
+        "method": "phonology/1:template_to_wals12A",
+        "source_ids": [
+          "esperanto-s04@§ Phonotactics"
+        ],
+        "status": "computed",
         "unit": null,
-        "value": null
+        "value": "Complex"
       },
       {
         "domain": "phonology",
-        "examples": [],
+        "examples": [
+          "« Lexical tone is not phonemic. »"
+        ],
         "feature_id": "phonology.tone",
-        "limits": "présence de tons non documentée",
-        "method": "phonology/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": null,
+        "method": "documented:grammar",
+        "source_ids": [
+          "esperanto-s04@§ Prosody"
+        ],
+        "status": "documented",
         "unit": null,
-        "value": null
+        "value": "No tones"
       },
       {
         "domain": "phonology",
-        "examples": [],
+        "examples": [
+          "« Since there are only five vowel qualities »"
+        ],
         "feature_id": "phonology.vowel_quality_inventory_size",
-        "limits": "aucun inventaire documenté",
-        "method": "phonology/1",
-        "source_ids": [],
-        "status": "unavailable",
-        "unit": "phonèmes",
-        "value": null
+        "limits": null,
+        "method": "documented:grammar",
+        "source_ids": [
+          "esperanto-s01@§ Vowels"
+        ],
+        "status": "documented",
+        "unit": null,
+        "value": "5"
       },
       {
         "domain": "syntax",
@@ -11043,36 +11555,48 @@
       },
       {
         "domain": "syntax",
-        "examples": [],
+        "examples": [
+          "« Typologically , Esperanto has prepositions »"
+        ],
         "feature_id": "syntax.adposition_order",
-        "limits": "non documenté",
-        "method": "syntax/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": null,
+        "method": "documented:grammar",
+        "source_ids": [
+          "esperanto-s01@§ Linguistic properties"
+        ],
+        "status": "documented",
         "unit": null,
-        "value": null
+        "value": "Prepositions"
       },
       {
         "domain": "syntax",
-        "examples": [],
+        "examples": [
+          "« a pragmatic word order that by default is subject–verb–object (SVO) »"
+        ],
         "feature_id": "syntax.basic_word_order",
-        "limits": "non documenté",
-        "method": "syntax/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": null,
+        "method": "documented:grammar",
+        "source_ids": [
+          "esperanto-s01@§ Linguistic properties"
+        ],
+        "status": "documented",
         "unit": null,
-        "value": null
+        "value": "SVO"
       },
       {
         "domain": "syntax",
-        "examples": [],
+        "examples": [
+          "« demonstratives such as tiu \"that\" and prepositions (such as ĉe \"at\") must come before their related nouns. »"
+        ],
         "feature_id": "syntax.demonstrative_noun_order",
-        "limits": "non documenté",
-        "method": "syntax/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": null,
+        "method": "documented:grammar",
+        "source_ids": [
+          "esperanto-s01@§ Linguistic properties"
+        ],
+        "status": "documented",
         "unit": null,
-        "value": null
+        "value": "Demonstrative-Noun"
       },
       {
         "domain": "syntax",
@@ -11109,14 +11633,18 @@
       },
       {
         "domain": "syntax",
-        "examples": [],
+        "examples": [
+          "« a pragmatic word order that by default is subject–verb–object (SVO) »"
+        ],
         "feature_id": "syntax.object_verb_order",
-        "limits": "non documenté",
-        "method": "syntax/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": "déduit de l'ordre dominant documenté (S, O et V)",
+        "method": "syntax/1:derived_from_basic_word_order",
+        "source_ids": [
+          "esperanto-s01@§ Linguistic properties"
+        ],
+        "status": "computed",
         "unit": null,
-        "value": null
+        "value": "VO"
       },
       {
         "domain": "syntax",
@@ -11177,23 +11705,29 @@
         "domain": "typology",
         "examples": [],
         "feature_id": "typology.dominant_word_order",
-        "limits": "non documenté",
-        "method": "typology/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": null,
+        "method": "documented:via_syntax.basic_word_order",
+        "source_ids": [
+          "esperanto-s01@§ Linguistic properties"
+        ],
+        "status": "documented",
         "unit": null,
-        "value": null
+        "value": "SVO"
       },
       {
         "domain": "typology",
-        "examples": [],
+        "examples": [
+          "« Esperanto has an agglutinative morphology »"
+        ],
         "feature_id": "typology.morphological_type",
-        "limits": "non documenté",
-        "method": "typology/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": null,
+        "method": "documented:grammar",
+        "source_ids": [
+          "esperanto-s03@§ (introduction)"
+        ],
+        "status": "documented",
         "unit": null,
-        "value": null
+        "value": "agglutinative"
       },
       {
         "domain": "typology",
@@ -11238,7 +11772,9 @@
       "scripts": [],
       "source_ids": [
         "esperanto-s01",
-        "esperanto-s02"
+        "esperanto-s02",
+        "esperanto-s03",
+        "esperanto-s04"
       ],
       "universe": "hors fiction (langue auxiliaire)",
       "year": 1887,
@@ -11370,6 +11906,51 @@
       },
       {
         "domain": "morphology",
+        "examples": [
+          "« Accusative | voli (world) | volis (worlds) »"
+        ],
+        "feature_id": "morphology.nominal_plurality_coding",
+        "limits": null,
+        "method": "documented:grammar",
+        "source_ids": [
+          "volapuk-s01@§ Nouns (tableau)"
+        ],
+        "status": "documented",
+        "unit": null,
+        "value": "Plural suffix"
+      },
+      {
+        "domain": "morphology",
+        "examples": [
+          "« the Volapük noun has four cases: nominative , genitive , dative and accusative . »"
+        ],
+        "feature_id": "morphology.number_of_cases",
+        "limits": null,
+        "method": "documented:grammar",
+        "source_ids": [
+          "volapuk-s01@§ Nouns"
+        ],
+        "status": "documented",
+        "unit": null,
+        "value": "4 cases"
+      },
+      {
+        "domain": "morphology",
+        "examples": [
+          "« Nouns inflect for case and number, but not for gender. »"
+        ],
+        "feature_id": "morphology.number_of_genders",
+        "limits": "le verbe marque le genre du sujet à la 3e personne",
+        "method": "documented:grammar",
+        "source_ids": [
+          "volapuk-s01@§ Nouns"
+        ],
+        "status": "documented",
+        "unit": null,
+        "value": "None"
+      },
+      {
+        "domain": "morphology",
         "examples": [],
         "feature_id": "morphology.prefix_share",
         "limits": "segmentation glosée insuffisante (0 mots < 30)",
@@ -11392,25 +11973,54 @@
       },
       {
         "domain": "phonology",
-        "examples": [],
+        "examples": [
+          "« The phonology of Volapük is as follows: »"
+        ],
+        "feature_id": "phonology.consonant_inventory",
+        "limits": "variantes voisées/sourdes notées « ~ » comptées une fois",
+        "method": "documented:grammar",
+        "source_ids": [
+          "volapuk-s01@§ Phonology and orthography (tableau)"
+        ],
+        "status": "documented",
+        "unit": null,
+        "value": "m n b d ɡ p t k t͡s t͡ʃ v s ʃ f h w l j r"
+      },
+      {
+        "domain": "phonology",
+        "examples": [
+          "m n b d ɡ p t k t͡s t͡ʃ v s ʃ f h w l j r"
+        ],
         "feature_id": "phonology.consonant_inventory_size",
-        "limits": "aucun inventaire documenté",
-        "method": "phonology/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": null,
+        "method": "phonology/1:count_documented_inventory",
+        "source_ids": [
+          "volapuk-s01@§ Phonology and orthography (tableau)"
+        ],
+        "status": "computed",
         "unit": "phonèmes",
-        "value": null
+        "value": 19
       },
       {
         "domain": "phonology",
         "examples": [],
         "feature_id": "phonology.consonant_types",
-        "limits": "aucun inventaire documenté",
-        "method": "phonology/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": "table API réduite ; les symboles non reconnus sont comptés « non_classé »",
+        "method": "phonology/1:ipa_manner_table",
+        "source_ids": [
+          "volapuk-s01@§ Phonology and orthography (tableau)"
+        ],
+        "status": "computed",
         "unit": null,
-        "value": null
+        "value": {
+          "affricate": 2,
+          "approximant": 2,
+          "fricative": 5,
+          "lateral_approximant": 1,
+          "nasal": 2,
+          "plosive": 6,
+          "trill": 1
+        }
       },
       {
         "domain": "phonology",
@@ -11484,25 +12094,48 @@
       },
       {
         "domain": "phonology",
-        "examples": [],
+        "examples": [
+          "« The phonology of Volapük is as follows: »"
+        ],
+        "feature_id": "phonology.vowel_quality_inventory",
+        "limits": null,
+        "method": "documented:grammar",
+        "source_ids": [
+          "volapuk-s01@§ Phonology and orthography (tableau)"
+        ],
+        "status": "documented",
+        "unit": null,
+        "value": "i y u e ø o ɛ a"
+      },
+      {
+        "domain": "phonology",
+        "examples": [
+          "i y u e ø o ɛ a"
+        ],
         "feature_id": "phonology.vowel_quality_inventory_size",
-        "limits": "aucun inventaire documenté",
-        "method": "phonology/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": null,
+        "method": "phonology/1:count_documented_inventory",
+        "source_ids": [
+          "volapuk-s01@§ Phonology and orthography (tableau)"
+        ],
+        "status": "computed",
         "unit": "phonèmes",
-        "value": null
+        "value": 8
       },
       {
         "domain": "syntax",
-        "examples": [],
+        "examples": [
+          "« Adjectives , formed by the suffix -ik , normally follow the noun they qualify. »"
+        ],
         "feature_id": "syntax.adjective_noun_order",
-        "limits": "non documenté",
-        "method": "syntax/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": null,
+        "method": "documented:grammar",
+        "source_ids": [
+          "volapuk-s01@§ Adjectives and adverbs"
+        ],
+        "status": "documented",
         "unit": null,
-        "value": null
+        "value": "Noun-Adjective"
       },
       {
         "domain": "syntax",
@@ -11583,14 +12216,18 @@
       },
       {
         "domain": "syntax",
-        "examples": [],
+        "examples": [
+          "« Yes–no questions are indicated with the particle li »"
+        ],
         "feature_id": "syntax.polar_question_strategy",
-        "limits": "non documenté",
-        "method": "syntax/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": null,
+        "method": "documented:grammar",
+        "source_ids": [
+          "volapuk-s01@§ Verbs"
+        ],
+        "status": "documented",
         "unit": null,
-        "value": null
+        "value": "Question particle"
       },
       {
         "domain": "syntax",
@@ -11649,14 +12286,18 @@
       },
       {
         "domain": "typology",
-        "examples": [],
+        "examples": [
+          "« The grammar is based on that of typical European languages, but with an agglutinative character »"
+        ],
         "feature_id": "typology.morphological_type",
-        "limits": "non documenté",
-        "method": "typology/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": null,
+        "method": "documented:grammar",
+        "source_ids": [
+          "volapuk-s01@§ Grammar"
+        ],
+        "status": "documented",
         "unit": null,
-        "value": null
+        "value": "agglutinative"
       },
       {
         "domain": "typology",
@@ -11855,25 +12496,52 @@
       },
       {
         "domain": "phonology",
-        "examples": [],
+        "examples": [
+          "« Toki Pona has nine consonants ( /p, t, k, s, m, n, l, j, w/ ) and five vowels ( /a, e, i, o, u/ ). »"
+        ],
+        "feature_id": "phonology.consonant_inventory",
+        "limits": null,
+        "method": "documented:grammar",
+        "source_ids": [
+          "toki_pona-s01@§ Phonology"
+        ],
+        "status": "documented",
+        "unit": null,
+        "value": "p t k s m n l j w"
+      },
+      {
+        "domain": "phonology",
+        "examples": [
+          "p t k s m n l j w"
+        ],
         "feature_id": "phonology.consonant_inventory_size",
-        "limits": "aucun inventaire documenté",
-        "method": "phonology/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": null,
+        "method": "phonology/1:count_documented_inventory",
+        "source_ids": [
+          "toki_pona-s01@§ Phonology"
+        ],
+        "status": "computed",
         "unit": "phonèmes",
-        "value": null
+        "value": 9
       },
       {
         "domain": "phonology",
         "examples": [],
         "feature_id": "phonology.consonant_types",
-        "limits": "aucun inventaire documenté",
-        "method": "phonology/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": "table API réduite ; les symboles non reconnus sont comptés « non_classé »",
+        "method": "phonology/1:ipa_manner_table",
+        "source_ids": [
+          "toki_pona-s01@§ Phonology"
+        ],
+        "status": "computed",
         "unit": null,
-        "value": null
+        "value": {
+          "approximant": 2,
+          "fricative": 1,
+          "lateral_approximant": 1,
+          "nasal": 2,
+          "plosive": 3
+        }
       },
       {
         "domain": "phonology",
@@ -11915,69 +12583,93 @@
       },
       {
         "domain": "phonology",
-        "examples": [],
+        "examples": [
+          "(C)V(C)"
+        ],
         "feature_id": "phonology.syllable_structure",
-        "limits": "structure syllabique non documentée",
-        "method": "phonology/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": "WALS restreint aussi la nature de la\nseconde consonne d'attaque, ce que le gabarit seul ne dit pas.",
+        "method": "phonology/1:template_to_wals12A",
+        "source_ids": [
+          "toki_pona-s01@§ Phonotactics"
+        ],
+        "status": "computed",
         "unit": null,
-        "value": null
+        "value": "Moderately complex"
       },
       {
         "domain": "phonology",
-        "examples": [],
+        "examples": [
+          "« There are no diphthongs , vowel hiatus , contrasting vowel length , consonant clusters (except those starting with the nasal coda ), or tones . »"
+        ],
         "feature_id": "phonology.tone",
-        "limits": "présence de tons non documentée",
-        "method": "phonology/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": null,
+        "method": "documented:grammar",
+        "source_ids": [
+          "toki_pona-s01@§ Phonology"
+        ],
+        "status": "documented",
         "unit": null,
-        "value": null
+        "value": "No tones"
       },
       {
         "domain": "phonology",
-        "examples": [],
+        "examples": [
+          "« Toki Pona has nine consonants ( /p, t, k, s, m, n, l, j, w/ ) and five vowels »"
+        ],
         "feature_id": "phonology.vowel_quality_inventory_size",
-        "limits": "aucun inventaire documenté",
-        "method": "phonology/1",
-        "source_ids": [],
-        "status": "unavailable",
-        "unit": "phonèmes",
-        "value": null
+        "limits": null,
+        "method": "documented:grammar",
+        "source_ids": [
+          "toki_pona-s01@§ Phonology"
+        ],
+        "status": "documented",
+        "unit": null,
+        "value": "5"
       },
       {
         "domain": "syntax",
-        "examples": [],
+        "examples": [
+          "« Toki Pona is head-initial : a noun or verb is followed by its modifiers . »"
+        ],
         "feature_id": "syntax.adjective_noun_order",
-        "limits": "non documenté",
-        "method": "syntax/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": "les mots de contenu ne forment pas de classe adjectivale distincte",
+        "method": "documented:grammar",
+        "source_ids": [
+          "toki_pona-s01@§ Syntax"
+        ],
+        "status": "documented",
         "unit": null,
-        "value": null
+        "value": "Noun-Adjective"
       },
       {
         "domain": "syntax",
-        "examples": [],
+        "examples": [
+          "« There are closed classes of content words that can act as preverbs and prepositions »"
+        ],
         "feature_id": "syntax.adposition_order",
-        "limits": "non documenté",
-        "method": "syntax/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": null,
+        "method": "documented:grammar",
+        "source_ids": [
+          "toki_pona-s01@§ Syntax"
+        ],
+        "status": "documented",
         "unit": null,
-        "value": null
+        "value": "Prepositions"
       },
       {
         "domain": "syntax",
-        "examples": [],
+        "examples": [
+          "« Toki Pona's word order is subject–verb–object . »"
+        ],
         "feature_id": "syntax.basic_word_order",
-        "limits": "non documenté",
-        "method": "syntax/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": null,
+        "method": "documented:grammar",
+        "source_ids": [
+          "toki_pona-s01@§ Syntax"
+        ],
+        "status": "documented",
         "unit": null,
-        "value": null
+        "value": "SVO"
       },
       {
         "domain": "syntax",
@@ -12025,14 +12717,18 @@
       },
       {
         "domain": "syntax",
-        "examples": [],
+        "examples": [
+          "« Toki Pona's word order is subject–verb–object . »"
+        ],
         "feature_id": "syntax.object_verb_order",
-        "limits": "non documenté",
-        "method": "syntax/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": "déduit de l'ordre dominant documenté (S, O et V)",
+        "method": "syntax/1:derived_from_basic_word_order",
+        "source_ids": [
+          "toki_pona-s01@§ Syntax"
+        ],
+        "status": "computed",
         "unit": null,
-        "value": null
+        "value": "VO"
       },
       {
         "domain": "syntax",
@@ -12093,23 +12789,29 @@
         "domain": "typology",
         "examples": [],
         "feature_id": "typology.dominant_word_order",
-        "limits": "non documenté",
-        "method": "typology/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": null,
+        "method": "documented:via_syntax.basic_word_order",
+        "source_ids": [
+          "toki_pona-s01@§ Syntax"
+        ],
+        "status": "documented",
         "unit": null,
-        "value": null
+        "value": "SVO"
       },
       {
         "domain": "typology",
-        "examples": [],
+        "examples": [
+          "« Toki Pona is an isolating language »"
+        ],
         "feature_id": "typology.morphological_type",
-        "limits": "non documenté",
-        "method": "typology/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": null,
+        "method": "documented:grammar",
+        "source_ids": [
+          "toki_pona-s01@§ (introduction)"
+        ],
+        "status": "documented",
         "unit": null,
-        "value": null
+        "value": "isolating"
       },
       {
         "domain": "typology",
@@ -12402,14 +13104,18 @@
       },
       {
         "domain": "phonology",
-        "examples": [],
+        "examples": [
+          "« Lojban has 6 vowels and 18 consonants . »"
+        ],
         "feature_id": "phonology.vowel_quality_inventory_size",
-        "limits": "aucun inventaire documenté",
-        "method": "phonology/1",
-        "source_ids": [],
-        "status": "unavailable",
-        "unit": "phonèmes",
-        "value": null
+        "limits": "les deux sources donnent 18 et 21 consonnes : taille de l'inventaire consonantique non codée",
+        "method": "documented:grammar",
+        "source_ids": [
+          "lojban-s01@§ Phonology"
+        ],
+        "status": "documented",
+        "unit": null,
+        "value": "6"
       },
       {
         "domain": "syntax",
@@ -12435,14 +13141,18 @@
       },
       {
         "domain": "syntax",
-        "examples": [],
+        "examples": [
+          "« The word order in Lojban is basically free. »"
+        ],
         "feature_id": "syntax.basic_word_order",
-        "limits": "non documenté",
-        "method": "syntax/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": null,
+        "method": "documented:grammar",
+        "source_ids": [
+          "lojban-s03@§ Word order"
+        ],
+        "status": "documented",
         "unit": null,
-        "value": null
+        "value": "No dominant order"
       },
       {
         "domain": "syntax",
@@ -12558,12 +13268,14 @@
         "domain": "typology",
         "examples": [],
         "feature_id": "typology.dominant_word_order",
-        "limits": "non documenté",
-        "method": "typology/1",
-        "source_ids": [],
-        "status": "unavailable",
+        "limits": null,
+        "method": "documented:via_syntax.basic_word_order",
+        "source_ids": [
+          "lojban-s03@§ Word order"
+        ],
+        "status": "documented",
         "unit": null,
-        "value": null
+        "value": "No dominant order"
       },
       {
         "domain": "typology",
@@ -12619,7 +13331,8 @@
       "scripts": [],
       "source_ids": [
         "lojban-s01",
-        "lojban-s02"
+        "lojban-s02",
+        "lojban-s03"
       ],
       "universe": "hors fiction (langue logique)",
       "year": 1987,

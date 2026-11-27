@@ -1,2 +1,2 @@
-source_id,url,title,author,published,type,license,nature,retrieved_at,status,error,sha256,redistributable,available_items,kept_items
-dovahzul-s01,https://en.wikipedia.org/wiki/The_Elder_Scrolls_V:_Skyrim,The Elder Scrolls V: Skyrim,null,null,encyclopedia,CC BY-SA 4.0,encyclopedia,2026-11-27T18:35:29+00:00,ok,null,966f9bc09d23fa95efa136197176c55e87b47d82537cc79e8b5631bffee396c1,True,null,null
+source_id,url,title,author,published,type,license,nature,retrieved_at,status,error,sha256,redistributable,available_items,kept_items,raw_file
+dovahzul-s01,https://en.wikipedia.org/wiki/The_Elder_Scrolls_V:_Skyrim,The Elder Scrolls V: Skyrim,null,null,encyclopedia,CC BY-SA 4.0,encyclopedia,2026-11-27T18:35:29+00:00,ok,null,966f9bc09d23fa95efa136197176c55e87b47d82537cc79e8b5631bffee396c1,True,null,null,sources/dovahzul/The_Elder_Scrolls_V:_Skyrim

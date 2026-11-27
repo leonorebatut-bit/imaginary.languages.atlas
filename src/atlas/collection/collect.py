@@ -31,7 +31,7 @@ log = logging.getLogger(__name__)
 REDISTRIBUTABLE_PREFIXES = ("CC BY ", "CC BY-SA", "CC0", "Public domain")
 
 SOURCE_COLUMNS = ["source_id", "url", "title", "author", "published", "type", "license", "nature",
-                  "retrieved_at", "status", "error", "sha256", "redistributable", "available_items", "kept_items"]
+                  "retrieved_at", "status", "error", "sha256", "redistributable", "available_items", "kept_items", "raw_file"]
 MANIFEST_COLUMNS = ["source_id", "origin_id", "line_no"]
 
 
@@ -59,6 +59,8 @@ def sample_sentences(sentences: list[tuple[str, str]], max_n: int, seed: int) ->
 
 
 def _source_id(lang_id: str, i: int) -> str:
+    # Identifiant positionnel : on n'insère jamais une source au milieu de la liste du
+    # catalogue, on l'ajoute à la fin, pour que les identifiants déjà cités restent stables.
     return f"{lang_id}-s{i:02d}"
 
 
@@ -80,6 +82,7 @@ def collect_language(lang: dict, languages_dir: Path, raw_dir: Path, fetcher=fet
             "nature": src.get("nature", src.get("type")), "retrieved_at": res.retrieved_at,
             "status": "ok" if res.ok else "unavailable", "error": res.error, "sha256": res.sha256,
             "redistributable": redistrib,
+            "raw_file": str((raw_dir / "sources" / lang["id"] / fname).relative_to(raw_dir)) if res.ok else None,
         })
         if not res.ok:
             errors.append({"language_id": lang["id"], "source_id": sid, "url": src["url"], "error": res.error,

@@ -1,2 +1,2 @@
-source_id,url,title,author,published,type,license,nature,retrieved_at,status,error,sha256,redistributable,available_items,kept_items
-chakobsa-s01,https://en.wikipedia.org/wiki/Chakobsa,Chakobsa,null,null,encyclopedia,CC BY-SA 4.0,encyclopedia,2026-11-27T18:35:31+00:00,ok,null,c788bca39c5fb70241c48cdf3cd9f7ff4dff61615f8cb9b649b1ec0829f0bd8a,True,null,null
+source_id,url,title,author,published,type,license,nature,retrieved_at,status,error,sha256,redistributable,available_items,kept_items,raw_file
+chakobsa-s01,https://en.wikipedia.org/wiki/Chakobsa,Chakobsa,null,null,encyclopedia,CC BY-SA 4.0,encyclopedia,2026-11-27T18:35:31+00:00,ok,null,c788bca39c5fb70241c48cdf3cd9f7ff4dff61615f8cb9b649b1ec0829f0bd8a,True,null,null,sources/chakobsa/Chakobsa

@@ -1,2 +1,2 @@
-source_id,url,title,author,published,type,license,nature,retrieved_at,status,error,sha256,redistributable,available_items,kept_items
-lapine-s01,https://en.wikipedia.org/wiki/Lapine_language,Lapine language,null,null,encyclopedia,CC BY-SA 4.0,encyclopedia,2026-11-27T18:33:12+00:00,ok,null,7a492718450b66eed9cefce65f4e7cc3fab3d9aa467ab7dadb668957cb958592,True,null,null
+source_id,url,title,author,published,type,license,nature,retrieved_at,status,error,sha256,redistributable,available_items,kept_items,raw_file
+lapine-s01,https://en.wikipedia.org/wiki/Lapine_language,Lapine language,null,null,encyclopedia,CC BY-SA 4.0,encyclopedia,2026-11-27T18:33:12+00:00,ok,null,7a492718450b66eed9cefce65f4e7cc3fab3d9aa467ab7dadb668957cb958592,True,null,null,sources/lapine/Lapine_language

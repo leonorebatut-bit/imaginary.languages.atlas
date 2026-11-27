@@ -1,2 +1,2 @@
-source_id,url,title,author,published,type,license,nature,retrieved_at,status,error,sha256,redistributable,available_items,kept_items
-high_valyrian-s01,https://en.wikipedia.org/wiki/Valyrian_languages,Valyrian languages,null,null,encyclopedia,CC BY-SA 4.0,encyclopedia,2026-11-27T18:33:06+00:00,ok,null,146d59eb24faf3644b089cc55c47a01fe44c23e2bb89aed3f11e261e5fb0a2b0,True,null,null
+source_id,url,title,author,published,type,license,nature,retrieved_at,status,error,sha256,redistributable,available_items,kept_items,raw_file
+high_valyrian-s01,https://en.wikipedia.org/wiki/Valyrian_languages,Valyrian languages,null,null,encyclopedia,CC BY-SA 4.0,encyclopedia,2026-11-27T18:33:06+00:00,ok,null,146d59eb24faf3644b089cc55c47a01fe44c23e2bb89aed3f11e261e5fb0a2b0,True,null,null,sources/high_valyrian/Valyrian_languages

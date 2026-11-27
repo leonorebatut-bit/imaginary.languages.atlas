@@ -1,0 +1,9 @@
+feature_id,value,source_id,locator,evidence,note,coded_by,coded_on
+phonology.consonant_inventory,m n b d ɡ p t k t͡s t͡ʃ v s ʃ f h w l j r,volapuk-s01,§ Phonology and orthography (tableau),The phonology of Volapük is as follows:,variantes voisées/sourdes notées « ~ » comptées une fois,"Claude (assistant IA), à relire",2026-11-27
+phonology.vowel_quality_inventory,i y u e ø o ɛ a,volapuk-s01,§ Phonology and orthography (tableau),The phonology of Volapük is as follows:,,"Claude (assistant IA), à relire",2026-11-27
+syntax.adjective_noun_order,Noun-Adjective,volapuk-s01,§ Adjectives and adverbs,"Adjectives , formed by the suffix -ik , normally follow the noun they qualify.",,"Claude (assistant IA), à relire",2026-11-27
+syntax.polar_question_strategy,Question particle,volapuk-s01,§ Verbs,Yes–no questions are indicated with the particle li,,"Claude (assistant IA), à relire",2026-11-27
+morphology.number_of_cases,4 cases,volapuk-s01,§ Nouns,"the Volapük noun has four cases: nominative , genitive , dative and accusative .",,"Claude (assistant IA), à relire",2026-11-27
+morphology.number_of_genders,None,volapuk-s01,§ Nouns,"Nouns inflect for case and number, but not for gender.",le verbe marque le genre du sujet à la 3e personne,"Claude (assistant IA), à relire",2026-11-27
+morphology.nominal_plurality_coding,Plural suffix,volapuk-s01,§ Nouns (tableau),Accusative | voli (world) | volis (worlds),,"Claude (assistant IA), à relire",2026-11-27
+typology.morphological_type,agglutinative,volapuk-s01,§ Grammar,"The grammar is based on that of typical European languages, but with an agglutinative character",,"Claude (assistant IA), à relire",2026-11-27

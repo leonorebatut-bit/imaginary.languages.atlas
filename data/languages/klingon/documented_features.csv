@@ -1,0 +1,8 @@
+feature_id,value,source_id,locator,evidence,note,coded_by,coded_on
+phonology.consonant_inventory_size,21,klingon-s01,§ Phonology,Klingon has twenty-one consonants and five vowels.,,"Claude (assistant IA), à relire",2026-11-27
+phonology.vowel_quality_inventory_size,5,klingon-s01,§ Phonology,Klingon has twenty-one consonants and five vowels.,,"Claude (assistant IA), à relire",2026-11-27
+phonology.syllable_template,CVCC,klingon-s01,§ Syllable structure,A syllable must start with a consonant (including the glottal stop) followed by one vowel. [...] this consonant-vowel pair is followed by one consonant or one of three biconsonantal codas,"codas biconsonantiques limitées à trois groupes (-wʼ, -yʼ, -rgh)","Claude (assistant IA), à relire",2026-11-27
+syntax.basic_word_order,OVS,klingon-s03,§ (introduction),"It is a nominative–accusative , primarily suffixing agglutinative language, and has an object–verb–subject word order.",,"Claude (assistant IA), à relire",2026-11-27
+syntax.adjective_noun_order,Noun-Adjective,klingon-s03,§ Adjectives,"many intransitive verbs can be used as adjectives, in which case they follow the noun they modify.",pas de classe d'adjectifs : verbes intransitifs en fonction d'épithète,"Claude (assistant IA), à relire",2026-11-27
+morphology.nominal_plurality_coding,Plural suffix,klingon-s01,§ Grammar,most nouns require a suffix to express plurality explicitly,le pluriel n'est jamais obligatoire selon la même source,"Claude (assistant IA), à relire",2026-11-27
+typology.morphological_type,agglutinative,klingon-s03,§ (introduction),primarily suffixing agglutinative language,,"Claude (assistant IA), à relire",2026-11-27

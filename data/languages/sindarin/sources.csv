@@ -1,3 +1,3 @@
-source_id,url,title,author,published,type,license,nature,retrieved_at,status,error,sha256,redistributable,available_items,kept_items
-sindarin-s01,https://en.wikipedia.org/wiki/Sindarin,Sindarin,null,null,encyclopedia,CC BY-SA 4.0,encyclopedia,2026-11-27T18:33:01+00:00,ok,null,b015a212a63f64bfc786c9c3b362a6ed4cc24ba378cad6191c3013d407e1ec61,True,null,null
-sindarin-s02,https://downloads.tatoeba.org/exports/per_language/sjn/sjn_sentences.tsv.bz2,Tatoeba — phrases en sindarin,null,null,sentence_corpus,CC BY 2.0 FR,sentence_corpus,2026-11-27T18:35:26+00:00,ok,null,04ce91cd5061ce0a81918ea091f0f72b40f1205dc5e2eeee7db05d89cace9abf,True,232,232
+source_id,url,title,author,published,type,license,nature,retrieved_at,status,error,sha256,redistributable,available_items,kept_items,raw_file
+sindarin-s01,https://en.wikipedia.org/wiki/Sindarin,Sindarin,null,null,encyclopedia,CC BY-SA 4.0,encyclopedia,2026-11-27T18:33:01+00:00,ok,null,b015a212a63f64bfc786c9c3b362a6ed4cc24ba378cad6191c3013d407e1ec61,True,null,null,sources/sindarin/Sindarin
+sindarin-s02,https://downloads.tatoeba.org/exports/per_language/sjn/sjn_sentences.tsv.bz2,Tatoeba — phrases en sindarin,null,null,sentence_corpus,CC BY 2.0 FR,sentence_corpus,2026-11-27T18:35:26+00:00,ok,null,04ce91cd5061ce0a81918ea091f0f72b40f1205dc5e2eeee7db05d89cace9abf,True,232,232,sources/sindarin/sjn_sentences.tsv.bz2

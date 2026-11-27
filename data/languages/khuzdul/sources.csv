@@ -1,2 +1,2 @@
-source_id,url,title,author,published,type,license,nature,retrieved_at,status,error,sha256,redistributable,available_items,kept_items
-khuzdul-s01,https://en.wikipedia.org/wiki/Khuzdul,Khuzdul,null,null,encyclopedia,CC BY-SA 4.0,encyclopedia,2026-11-27T18:33:02+00:00,ok,null,04dd7b63bed785750f0279456bd6eb78c46a76aa65deb43ec4002720d3b91bff,True,null,null
+source_id,url,title,author,published,type,license,nature,retrieved_at,status,error,sha256,redistributable,available_items,kept_items,raw_file
+khuzdul-s01,https://en.wikipedia.org/wiki/Khuzdul,Khuzdul,null,null,encyclopedia,CC BY-SA 4.0,encyclopedia,2026-11-27T18:33:02+00:00,ok,null,04dd7b63bed785750f0279456bd6eb78c46a76aa65deb43ec4002720d3b91bff,True,null,null,sources/khuzdul/Khuzdul
