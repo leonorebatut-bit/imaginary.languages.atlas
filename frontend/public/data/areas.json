@@ -1,0 +1,146 @@
+[
+  {
+    "area": "African Savannah",
+    "lat": 9.5,
+    "lon": 8.833,
+    "n_languages": 345
+  },
+  {
+    "area": "Alaska-Oregon",
+    "lat": 50.167,
+    "lon": -124.708,
+    "n_languages": 62
+  },
+  {
+    "area": "Andean",
+    "lat": -8.5,
+    "lon": -76.0,
+    "n_languages": 39
+  },
+  {
+    "area": "Basin and Plains",
+    "lat": 37.833,
+    "lon": -108.833,
+    "n_languages": 63
+  },
+  {
+    "area": "California",
+    "lat": 39.0,
+    "lon": -121.875,
+    "n_languages": 44
+  },
+  {
+    "area": "E North America",
+    "lat": 42.75,
+    "lon": -80.5,
+    "n_languages": 61
+  },
+  {
+    "area": "Europe",
+    "lat": 47.583,
+    "lon": 8.5,
+    "n_languages": 113
+  },
+  {
+    "area": "Greater Abyssinia",
+    "lat": 7.125,
+    "lon": 37.042,
+    "n_languages": 52
+  },
+  {
+    "area": "Greater Mesopotamia",
+    "lat": 38.125,
+    "lon": 46.125,
+    "n_languages": 106
+  },
+  {
+    "area": "Indic",
+    "lat": 27.5,
+    "lon": 83.417,
+    "n_languages": 169
+  },
+  {
+    "area": "Inner Asia",
+    "lat": 52.5,
+    "lon": 73.5,
+    "n_languages": 102
+  },
+  {
+    "area": "Interior New Guinea",
+    "lat": -6.083,
+    "lon": 144.717,
+    "n_languages": 53
+  },
+  {
+    "area": "Mesoamerica",
+    "lat": 17.25,
+    "lon": -96.667,
+    "n_languages": 163
+  },
+  {
+    "area": "N Africa",
+    "lat": 31.958,
+    "lon": 8.625,
+    "n_languages": 20
+  },
+  {
+    "area": "N Australia",
+    "lat": -14.333,
+    "lon": 134.583,
+    "n_languages": 102
+  },
+  {
+    "area": "N Coast Asia",
+    "lat": 53.0,
+    "lon": 137.5,
+    "n_languages": 25
+  },
+  {
+    "area": "N Coast New Guinea",
+    "lat": -3.583,
+    "lon": 142.833,
+    "n_languages": 155
+  },
+  {
+    "area": "NE South America",
+    "lat": -2.0,
+    "lon": -68.0,
+    "n_languages": 193
+  },
+  {
+    "area": "Oceania",
+    "lat": -5.533,
+    "lon": 127.5,
+    "n_languages": 237
+  },
+  {
+    "area": "S Africa",
+    "lat": -4.0,
+    "lon": 29.0,
+    "n_languages": 187
+  },
+  {
+    "area": "S Australia",
+    "lat": -27.0,
+    "lon": 137.0,
+    "n_languages": 83
+  },
+  {
+    "area": "S New Guinea",
+    "lat": -8.042,
+    "lon": 146.042,
+    "n_languages": 70
+  },
+  {
+    "area": "SE South America",
+    "lat": -25.0,
+    "lon": -59.625,
+    "n_languages": 28
+  },
+  {
+    "area": "Southeast Asia",
+    "lat": 15.167,
+    "lon": 102.75,
+    "n_languages": 189
+  }
+]

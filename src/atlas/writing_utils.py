@@ -24,6 +24,7 @@ def write_csv(path: Path, rows: Iterable[dict], columns: list[str]) -> None:
             w.writerow({k: _cell(r.get(k)) for k in columns})
 
 
-def write_json(path: Path, data: Any) -> None:
+def write_json(path: Path, data: Any, compact: bool = False) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(data, ensure_ascii=False, indent=2, sort_keys=True, allow_nan=False) + "\n", encoding="utf-8")
+    opts = {"separators": (",", ":")} if compact else {"indent": 2}
+    path.write_text(json.dumps(data, ensure_ascii=False, sort_keys=True, allow_nan=False, **opts) + "\n", encoding="utf-8")

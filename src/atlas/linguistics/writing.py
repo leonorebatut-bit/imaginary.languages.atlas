@@ -27,9 +27,15 @@ def script_record(script: dict) -> dict:
 
 def writing_features(language: dict, scripts: dict[str, dict]) -> list[FeatureValue]:
     ids = [s for s in language.get("scripts", []) if s in scripts]
-    documented_links = [s for s in ids if language["id"] in scripts[s].get("represents", [])]
+    # Un lien n'est « documenté » que si la fiche de l'écriture cite au moins une source.
+    documented_links = [s for s in ids if language["id"] in scripts[s].get("represents", [])
+                        and scripts[s].get("sources")]
     if documented_links:
         return [FeatureValue("writing.scripts", "writing", documented_links, Status.DOCUMENTED, f"{METHOD_VERSION}:catalog",
                              source_ids=[f"script:{s}" for s in documented_links],
                              limits="relation langue-écriture issue du catalogue, métadonnées à vérifier")]
+    unsourced = [s for s in ids if s not in documented_links]
+    if unsourced:
+        return [unavailable("writing.scripts", "writing", METHOD_VERSION,
+                            f"écriture mentionnée au catalogue ({', '.join(unsourced)}) mais sans source : non retenue")]
     return [unavailable("writing.scripts", "writing", METHOD_VERSION, "aucune écriture propre documentée")]

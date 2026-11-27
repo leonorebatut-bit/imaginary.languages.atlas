@@ -209,6 +209,9 @@ calculé sur les gloses, distinct d'une classification.
 Type (alphabet, abjad, abugida, syllabaire, logographie), sens d'écriture et
 correspondances graphèmes-phonèmes : renseignés seulement s'ils sont
 documentés. Les six écritures du catalogue ont pour l'instant un type `null`.
+Le lien langue-écriture (`writing.scripts`) n'a le statut `documented` que si la
+fiche de l'écriture cite au moins une source ; sinon il vaut `null` (cas de
+l'écriture kryptonienne, sans source au catalogue).
 
 ## 6. Comparaison avec WALS
 

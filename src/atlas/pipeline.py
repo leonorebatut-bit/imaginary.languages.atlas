@@ -10,7 +10,6 @@ from __future__ import annotations
 import hashlib
 import json
 import logging
-import shutil
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Callable
@@ -27,6 +26,7 @@ from .comparison.similarity import compare_to_all, resolve_weights
 from .comparison.wals_loader import download_wals, load_wals
 from .config import PROJECT_ROOT, load_yaml, pipeline_config, project_path
 from .export import export_all
+from .site_data import build_site_data
 from .features import language_features
 from .http_cache import fetch
 from .linguistics.writing import script_record
@@ -87,6 +87,9 @@ class Runner:
         fetcher = fetch if not self.offline else _offline_fetch
         collect_all(catalog, project_path("languages"), project_path("raw"), self.out / "collection_errors.csv", fetcher)
         write_json(project_path("scripts") / "scripts.json", [script_record(s) for s in catalog.get("scripts", [])])
+        # Fond de carte du site : terres émergées Natural Earth (domaine public).
+        ne = self.cfg["reference_data"]["natural_earth"]
+        fetcher(ne["url"], project_path("raw") / "geography" / ne["file"])
         # Registre AUTOTYP pour les aires linguistiques.
         at = self.cfg["reference_data"]["autotyp"]
         for f in at["files"]:
@@ -194,12 +197,9 @@ class Runner:
         export_all(catalog, metas, self.processed, self.out)
 
     def site_data(self) -> None:
-        dest = project_path("site_data")
-        dest.mkdir(parents=True, exist_ok=True)
-        for name in ("language_features.json", "regional_similarity.csv", "wals_mapping.json", "run_manifest.json"):
-            src = self.out / name
-            if src.exists():
-                shutil.copy2(src, dest / name)
+        build_site_data(self.out, self.processed, project_path("geography"), project_path("scripts") / "scripts.json",
+                        project_path("raw"), project_path("site_data"), self.cfg["similarity"]["min_comparable_features"],
+                        project_path("languages"))
 
     def run(self, only: list[str] | None = None) -> dict[str, str]:
         L, P, O, C = project_path("languages"), self.processed, self.out, PROJECT_ROOT / "config"
