@@ -12,12 +12,12 @@ langues naturelles de WALS.
 | Étape | État |
 |---|---|
 | 1. Audit et conception | terminée (2026-11-27) |
-| 2. Constitution du corpus | en cours : catalogue de 30 langues et 6 écritures, collecte automatique opérationnelle |
+| 2. Constitution du corpus | catalogue de 30 langues et 6 écritures, collecte automatique opérationnelle ; métadonnées à relire |
 | 3. Analyse linguistique | 21 langues codées (108 valeurs documentées, citations vérifiées automatiquement) ; 9 langues sans description exploitable dans les sources actuelles |
 | 4. Comparaison WALS | chargeur, correspondances (20 caractéristiques), Gower et agrégation par aire écrits et testés |
 | 5. Site web | carte, liste, fiches (10 sections) et comparaison écrites, testées (vitest) et vérifiées dans Chromium ; publication par GitHub Pages |
-| 6. Intégration | API en lecture seule écrite et testée |
-| 7. Documentation et déploiement | documentation méthodologique commencée |
+| 6. Intégration | reproductibilité vérifiée sur un clone neuf ; tests d'intégration (exports, API et site cohérents) |
+| 7. Documentation et déploiement | guide d'utilisation (`docs/guide.md`), méthodologie, résultats ; publication GitHub Pages prête, en attente d'activation dans les réglages du dépôt |
 
 Premiers scores de proximité pour 6 langues (atlante, dothraki, espéranto,
 na'vi, quenya, toki pona) : voir `docs/results.md`
@@ -98,4 +98,5 @@ docs/            méthodologie, sources, bibliographie, hébergement
   (`corpus_local.txt`, ignoré par git) ; seules leurs références et les
   statistiques dérivées sont publiées.
 
-Voir `docs/methodology.md`, `docs/sources.md` et `docs/bibliography.md`.
+Voir `docs/guide.md` (utilisation, ajout et relecture de données),
+`docs/methodology.md`, `docs/sources.md` et `docs/bibliography.md`.
