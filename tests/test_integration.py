@@ -29,8 +29,9 @@ def load(p: Path):
 
 @pytest.fixture(scope="module")
 def api():
-    main.OUTPUTS = OUT
-    return TestClient(main.app)
+    with pytest.MonkeyPatch.context() as mp:  # chemin restauré après ces tests
+        mp.setattr(main, "OUTPUTS", OUT)
+        yield TestClient(main.app)
 
 
 @pytest.fixture(scope="module")
@@ -50,8 +51,15 @@ def test_catalog_outputs_site_and_api_list_the_same_languages(api, site):
 def test_same_run_for_outputs_and_site(site):
     run = load(OUT / "run_manifest.json")
     assert site["manifest"]["raw_sha256"] == run["raw_sha256"]
-    assert site["manifest"]["weights_profile"] == run["weights_profile"]
-    assert len(site["mapping"]) == len(load(OUT / "wals_mapping.json"))
+    # Tout ce que le site reprend du manifeste d'exécution doit être identique.
+    for key, value in run.items():
+        assert site["manifest"].get(key) == value, key
+
+
+def test_mappings_identical_everywhere(api, site):
+    exported = load(OUT / "wals_mapping.json")
+    assert site["mapping"] == exported
+    assert api.get("/api/wals/mapping").json() == exported
 
 
 def test_api_regions_match_site(api, site):
@@ -64,6 +72,9 @@ def test_api_regions_match_site(api, site):
 
 
 def test_api_nearest_match_site(api, site):
+    scored = {l["id"] for l in site["languages"] if l["scored"]}
+    with_api_results = {l for l in scored if api.get(f"/api/languages/{l}/nearest").json()}
+    assert set(site["nearest"]) == with_api_results == scored
     for lid, pairs in site["nearest"].items():
         top = api.get(f"/api/languages/{lid}/nearest", params={"limit": 10}).json()
         assert [p["wals_id"] for p in top] == [p["wals_id"] for p in pairs[:10]], lid

@@ -29,7 +29,9 @@ cd frontend && npm test                    # tests du site
 ```
 
 Une étape dont les entrées n'ont pas changé est sautée. Après une interruption,
-une nouvelle commande reprend à l'étape en échec. Les journaux sont dans
+une nouvelle commande reprend à l'étape en échec : le marqueur d'une étape est
+effacé avant son exécution, donc une étape interrompue n'est jamais tenue pour
+terminée. Les journaux sont dans
 `outputs/logs/`.
 
 La collecte respecte les serveurs : une requête toutes les 1,5 s par site, avec
@@ -42,7 +44,7 @@ retentée au lancement suivant.
 | Où | Quoi |
 |---|---|
 | Site (`cd frontend && npm run dev`) | carte, liste, fiches, comparaison |
-| API (`uvicorn backend.api.main:app`) | `/api/languages`, `/api/languages/{id}`, `/{id}/regions`, `/{id}/nearest`, `/api/wals/mapping` ; documentation sur `/docs` |
+| API (`uvicorn backend.api.main:app`) | `/api/languages`, `/api/languages/{id}`, `/api/languages/{id}/regions`, `/api/languages/{id}/nearest`, `/api/wals/mapping` ; documentation sur `/docs` |
 | `outputs/*.csv` et `*.json` | exports complets, décrits dans le README |
 | `docs/results.md` | synthèse des résultats préliminaires |
 
@@ -52,11 +54,17 @@ influence. Une langue sans score n'a pas assez de caractéristiques comparables
 
 ## 4. Ajouter une langue
 
-1. Ajouter une entrée dans `config/catalog.yaml`, sur le modèle des autres :
-   `id`, `name`, `category`, `universe`, `creator`, `year`, `description`,
-   `documentation_level`, `corpus_type`, `scripts`, `metadata_status: unverified`
-   et `sources`. Une valeur inconnue vaut `null`.
-2. Dans `sources`, citer des sources accessibles et indiquer leur licence. Un
+1. Ajouter une entrée dans `config/catalog.yaml`, sur le modèle des autres.
+   Champs obligatoires : `id`, `name`, `category`, `universe`, `creator`,
+   `year`, `description`, `documentation_level`, `corpus_type`,
+   `real_language_reference`, `metadata_status: unverified` et `sources` ;
+   `scripts` est facultatif. Une valeur inconnue vaut `null`. L'identifiant ne
+   contient que des minuscules, des chiffres et `_` (il sert de nom de dossier).
+2. Dans `sources`, citer des sources accessibles et indiquer leur licence. Les
+   URL doivent être en HTTPS, sur un hôte listé dans `http.allowed_hosts`
+   (`config/pipeline.yaml`) : Wikipédia, Tatoeba, GitHub brut. Pour un autre
+   site, l'ajouter d'abord à cette liste, après avoir vérifié qu'il s'agit bien
+   d'une source publique. Un
    corpus de phrases (`type: sentence_corpus`) n'est redistribué que si sa
    licence le permet ; sinon, il reste en local dans `corpus_local.txt`.
 3. **Ajouter une source uniquement en fin de liste.** Les identifiants
@@ -80,6 +88,9 @@ Règles, vérifiées automatiquement quand c'est possible :
   valeur elle-même, et pas seulement la section. Plusieurs extraits se séparent
   par ` [...] `. Le pipeline cherche chaque extrait dans le texte téléchargé et
   échoue s'il ne le trouve pas, ou si la source n'a pas été téléchargée.
+- La source citée doit être un texte (article, grammaire) : un corpus de phrases
+  (`type: sentence_corpus`) sert aux mesures lexicales, pas de preuve pour une
+  valeur documentée, et une telle citation est refusée.
 - Pour un **inventaire** (`phonology.consonant_inventory`,
   `phonology.vowel_quality_inventory`), citer les lignes du tableau de la source,
   par exemple `Nasal | m | n | | ŋ`. Chaque symbole est recherché dans la source.

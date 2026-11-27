@@ -67,6 +67,8 @@ def fetch(url: str, dest: Path, force: bool = False, session: requests.Session |
         return FetchResult(url, str(dest), True, True, meta.get("status_code"), meta.get("sha256"), meta.get("retrieved_at"))
 
     http = pipeline_config()["http"]
+    from .collection.catalog import check_url  # import local : évite un cycle
+    check_url(url, http["allowed_hosts"])
     sess = session or requests.Session()
     last_error: str | None = None
     status: int | None = None
@@ -75,6 +77,8 @@ def fetch(url: str, dest: Path, force: bool = False, session: requests.Session |
             _throttle(url, http.get("min_delay_per_host_s", 0))
             resp = sess.get(url, timeout=http["timeout_s"], headers={"User-Agent": _user_agent()})
             status = resp.status_code
+            for hop in [*resp.history, resp]:
+                check_url(hop.url, http["allowed_hosts"])  # une redirection ne doit pas sortir des hôtes autorisés
             if resp.status_code == 200:
                 dest.parent.mkdir(parents=True, exist_ok=True)
                 tmp = dest.with_name(dest.name + ".part")
