@@ -1,0 +1,3 @@
+feature_id,value,source_id,locator,evidence,note,coded_by,coded_on
+phonology.consonant_inventory_size,31,ithkuil-s01,"§ Phonology (New Ithkuil, 2023)",The phonology consists of 31 consonants and 9 vowels.,version New Ithkuil (2023) ; la version de 2004 comptait 65 consonnes et 17 voyelles,"Claude (assistant IA), à relire",2026-11-27
+phonology.vowel_quality_inventory_size,9,ithkuil-s01,"§ Phonology (New Ithkuil, 2023)",The phonology consists of 31 consonants and 9 vowels.,version New Ithkuil (2023),"Claude (assistant IA), à relire",2026-11-27

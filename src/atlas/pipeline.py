@@ -194,7 +194,7 @@ class Runner:
     def export(self) -> None:
         catalog = load_catalog()
         metas = [read_metadata(project_path("languages") / l["id"]) for l in catalog["languages"]]
-        export_all(catalog, metas, self.processed, self.out)
+        export_all(catalog, metas, self.processed, self.out, self.weights_profile)
 
     def site_data(self) -> None:
         build_site_data(self.out, self.processed, project_path("geography"), project_path("scripts") / "scripts.json",

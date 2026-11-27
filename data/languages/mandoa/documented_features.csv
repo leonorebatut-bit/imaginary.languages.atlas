@@ -1,0 +1,3 @@
+feature_id,value,source_id,locator,evidence,note,coded_by,coded_on
+morphology.number_of_genders,None,mandoa-s01,§ Mando'a,agglutinative language lacking grammatical gender in nouns and pronouns,,"Claude (assistant IA), à relire",2026-11-27
+typology.morphological_type,agglutinative,mandoa-s01,§ Mando'a,"Mando'a is identified as a primarily spoken, agglutinative language",,"Claude (assistant IA), à relire",2026-11-27

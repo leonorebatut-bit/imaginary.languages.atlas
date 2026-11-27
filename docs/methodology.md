@@ -134,8 +134,14 @@ pipeline. Toute valeur documentée est donc vérifiable par un lecteur.
 4. Une valeur qui ne correspond à aucun code WALS est consignée dans
    `data/processed/harmonise_rejected.json`, jamais devinée.
 
-État au 2026-11-27 : 11 langues codées (79 valeurs) à partir des articles de
-Wikipédia en anglais (CC BY-SA 4.0) téléchargés par la collecte. Le codage a
+État au 2026-11-27 : 21 langues codées (108 valeurs) à partir des articles de
+Wikipédia en anglais (CC BY-SA 4.0) téléchargés par la collecte. Les 9 autres
+langues n'ont aucune description grammaticale dans les sources actuelles : elles
+restent sans valeur, et la raison est donnée dans `docs/results.md`. Pour une
+langue à plusieurs versions (Ithkuil), la version codée est indiquée dans la note
+de chaque valeur ; on ne mélange pas les versions. La source du chakobsa décrit en
+réalité la langue secrète circassienne homonyme : elle n'est pas utilisée et doit
+être remplacée. Le codage a
 été fait par un assistant IA (Claude) et **doit être relu** par une personne ;
 les citations rendent cette relecture rapide.
 

@@ -113,3 +113,11 @@ def _wals_labels(wals_id):
         pytest.skip("WALS absent du cache local : lancer scripts/rebuild_all.py")
     with path.open(encoding="utf-8") as fh:
         return {r["Name"] for r in csv.DictReader(fh) if r["Parameter_ID"] == wals_id}
+
+
+def test_unavailable_source_text_fails(tmp_path):
+    # Une source connue mais non téléchargée : la citation ne peut pas être vérifiée.
+    f = tmp_path / "d.csv"
+    f.write_text(HEADER + "syntax.basic_word_order,OVS,x-s02,,The basic order,,,\n", encoding="utf-8")
+    with pytest.raises(DocumentedFeatureError, match="indisponible"):
+        load_documented(f, {"x-s01", "x-s02"}, _texts(tmp_path))

@@ -329,6 +329,7 @@ languages:
     metadata_status: unverified
     sources:
       - {url: "https://en.wikipedia.org/wiki/Yoda", title: "Yoda", type: encyclopedia, license: *wplicense}
+      - {url: "https://en.wikipedia.org/wiki/Languages_in_Star_Wars", title: "Languages in Star Wars", type: encyclopedia, license: *wplicense}
 
   - id: minionese
     name: Langage des Minions

@@ -51,6 +51,7 @@
     "sources/trigedasleng/The_100_(TV_series)": "2332c8d237a5969d6efa902fbc4367f108ce9aa328d7195af313babac9f45570",
     "sources/volapuk/Volap%C3%BCk": "c1ec7a92fe655f88a62dc359d7d333244ca89bdf79e828491008669e78467c56",
     "sources/volapuk/vol_sentences.tsv.bz2": "9a59f3f8cd2a571d881bf0503981ce75c1baf3046b4ac9ef091666078a8cb131",
+    "sources/yoda/Languages_in_Star_Wars": "0be6c51367e3985fa971bf951b5b466658822eb63dd9bd2d95fd6a6adb70fbb5",
     "sources/yoda/Yoda": "e838476bf778dc9e99d5d6e687b13840638c0e70b3722db3dfd523623b0182d3",
     "wals/v2020.4/codes.csv": "88c402d840ddeaf08545aea8395b593e9a1c44fe18353306a01dc839ea6a49b9",
     "wals/v2020.4/languages.csv": "f802b0993bb0769a877e307e14bdb9ae471f06806a96e292e6ad6aec351b3060",
@@ -70,5 +71,6 @@
       "license": "CC-BY-4.0",
       "version": "v2020.4"
     }
-  }
+  },
+  "weights_profile": "equal"
 }
