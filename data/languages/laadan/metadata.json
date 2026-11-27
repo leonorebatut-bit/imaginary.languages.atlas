@@ -1,0 +1,26 @@
+{
+  "category": "constructed_fictional",
+  "corpus": {
+    "file": "corpus.txt",
+    "lines": 208,
+    "redistributable": true,
+    "status": "available"
+  },
+  "corpus_type": "grammaire et dictionnaire publiés, phrases",
+  "creator": "Suzette Haden Elgin",
+  "description": "Langue construite pour exprimer le point de vue des femmes, utilisée dans un cycle de romans.",
+  "documentation_level": "medium",
+  "id": "laadan",
+  "metadata_status": "unverified",
+  "name": "Láadan",
+  "real_language_inspiration_note": null,
+  "real_language_reference": null,
+  "scripts": [],
+  "source_ids": [
+    "laadan-s01",
+    "laadan-s02"
+  ],
+  "universe": "Native Tongue (Suzette Haden Elgin)",
+  "year": 1982,
+  "year_note": null
+}

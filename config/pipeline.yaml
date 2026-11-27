@@ -1,0 +1,65 @@
+# Configuration centrale du pipeline. Toute valeur utilisée par le code est ici.
+pipeline_version: "0.1.0"
+
+paths:
+  raw: data/raw
+  languages: data/languages
+  scripts: data/scripts
+  processed: data/processed
+  geography: data/geography
+  outputs: outputs
+  site_data: frontend/public/data
+
+http:
+  timeout_s: 30
+  retries: 2
+  user_agent_env: ATLAS_USER_AGENT
+  user_agent_default: "imaginary-languages-atlas/0.1 (research pipeline)"
+  min_delay_per_host_s: 1.5   # politesse envers les serveurs (Wikipédia limite le débit)
+  backoff_s: 10               # attente après un HTTP 429 si Retry-After est absent
+
+corpus:
+  # Les exports Tatoeba peuvent dépasser 800 000 phrases (espéranto). On garde un
+  # échantillon aléatoire déterministe (graine fixe) pour que le dépôt reste léger
+  # et que les corpus aient des tailles comparables ; la taille réelle est consignée.
+  max_sentences_per_source: 5000
+  sample_seed: 20261127
+
+# Bases de référence. Les versions sont figées pour la reproductibilité.
+reference_data:
+  wals:
+    version: "v2020.4"
+    license: "CC-BY-4.0"
+    citation: >-
+      Dryer, Matthew S. & Haspelmath, Martin (eds.) 2013. The World Atlas of Language
+      Structures Online. Leipzig: Max Planck Institute for Evolutionary Anthropology.
+      Données CLDF : https://github.com/cldf-datasets/wals
+    base_url: "https://raw.githubusercontent.com/cldf-datasets/wals/v2020.4/cldf"
+    files: [languages.csv, parameters.csv, codes.csv, values.csv]
+  autotyp:
+    # Le registre AUTOTYP fournit la variable « Area » (aires linguistiques,
+    # Nichols & Bickel), utilisée pour la définition des régions.
+    version: "master"   # pas d'étiquette accessible ; l'empreinte SHA-256 est consignée
+    license: "CC-BY-4.0"
+    citation: >-
+      Bickel, Balthasar, Johanna Nichols, Taras Zakharko, et al. The AUTOTYP database.
+      https://github.com/autotyp/autotyp-data
+    base_url: "https://raw.githubusercontent.com/autotyp/autotyp-data/master/data/csv"
+    files: [Register.csv]
+
+lexicon:
+  mattr_window: 50          # fenêtre de MATTR (tokens)
+  mtld_threshold: 0.72      # seuil standard de McCarthy & Jarvis (2010)
+  hdd_sample: 42            # taille d'échantillon standard de HD-D
+  min_tokens: 100           # en dessous, les indices de diversité valent null
+
+similarity:
+  min_comparable_features: 8   # en dessous, pas de score (null)
+
+regions:
+  scheme: autotyp_area          # voir config/regions.yaml
+  min_languages: 10             # en dessous, la région est marquée « peu robuste »
+  min_genera: 3                 # idem pour le nombre de genres WALS distincts
+  nearest_neighbour_max_km: 500 # rattachement d'une langue WALS absente d'AUTOTYP
+  bootstrap_iterations: 1000
+  random_seed: 20261127

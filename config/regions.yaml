@@ -1,0 +1,26 @@
+# Définition des régions utilisées pour l'agrégation géographique.
+#
+# Choix validé par Gwen (2026-11-27) : chaque langue WALS est placée à ses
+# coordonnées principales (latitude/longitude WALS), et les régions suivent des
+# aires linguistiques plutôt que des frontières politiques.
+#
+# Schéma principal : la variable « Area » du registre AUTOTYP (24 aires environ,
+# définies par Nichols & Bickel à partir de critères de contact et d'histoire
+# des populations). Jointure par Glottocode.
+#
+# Repli documenté : si une langue WALS n'a pas de Glottocode présent dans AUTOTYP,
+# on la rattache à l'aire de la langue AUTOTYP la plus proche (distance
+# orthodromique) si celle-ci est à moins de `nearest_neighbour_max_km`
+# (config/pipeline.yaml). Sinon l'aire reste null et la langue est exclue de
+# l'agrégation régionale. La méthode de rattachement est enregistrée par langue.
+#
+# Schéma secondaire (tableau de synthèse) : les macro-aires WALS/Glottolog.
+schemes:
+  autotyp_area:
+    source: autotyp
+    column: Area
+    join_on: Glottocode
+  macroarea:
+    source: wals
+    column: Macroarea
+    join_on: ID

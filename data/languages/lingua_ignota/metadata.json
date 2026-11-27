@@ -1,0 +1,27 @@
+{
+  "category": "constructed_external",
+  "corpus": {
+    "justification": "les sources récupérées sont des descriptions, pas des corpus d'extraits ; extraction à faire",
+    "status": "absent"
+  },
+  "corpus_type": "glossaire médiéval",
+  "creator": "Hildegarde de Bingen",
+  "description": "Lexique construit médiéval, sans grammaire propre attestée.",
+  "documentation_level": "fragmentary",
+  "id": "lingua_ignota",
+  "metadata_status": "unverified",
+  "name": "Lingua Ignota",
+  "real_language_inspiration_note": null,
+  "real_language_reference": {
+    "glottocode": "lati1261",
+    "name": "latin",
+    "wals_code": null
+  },
+  "scripts": [],
+  "source_ids": [
+    "lingua_ignota-s01"
+  ],
+  "universe": "hors fiction (XIIe siècle)",
+  "year": null,
+  "year_note": "XIIe siècle"
+}

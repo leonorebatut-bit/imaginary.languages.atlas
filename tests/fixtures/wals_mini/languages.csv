@@ -1,0 +1,6 @@
+ID,Name,Macroarea,Latitude,Longitude,Glottocode,ISO639P3code,Family,Subfamily,Genus,GenusIcon,ISO_codes,Samples_100,Samples_200,Country_ID,Source,Parent_ID
+aaa,Langue A,Eurasia,48.0,2.0,aaaa1111,,F1,,G1,,,false,false,FR,,
+bbb,Langue B,Eurasia,48.5,2.5,bbbb2222,,F1,,G1,,,false,false,FR,,
+ccc,Langue C,Africa,0.0,30.0,,,F2,,G2,,,false,false,UG,,
+ddd,Langue D,Papunesia,-60.0,-150.0,,,F3,,G3,,,false,false,,,
+genus-g1,G1,,,,,,F1,,,,,false,false,,,

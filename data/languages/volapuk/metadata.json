@@ -1,0 +1,26 @@
+{
+  "category": "constructed_external",
+  "corpus": {
+    "file": "corpus.txt",
+    "lines": 5000,
+    "redistributable": true,
+    "status": "available"
+  },
+  "corpus_type": "grammaires anciennes du domaine public",
+  "creator": "Johann Martin Schleyer",
+  "description": "Langue auxiliaire du XIXe siècle, antérieure à l'espéranto.",
+  "documentation_level": "medium",
+  "id": "volapuk",
+  "metadata_status": "unverified",
+  "name": "Volapük",
+  "real_language_inspiration_note": null,
+  "real_language_reference": null,
+  "scripts": [],
+  "source_ids": [
+    "volapuk-s01",
+    "volapuk-s02"
+  ],
+  "universe": "hors fiction (langue auxiliaire)",
+  "year": 1879,
+  "year_note": null
+}

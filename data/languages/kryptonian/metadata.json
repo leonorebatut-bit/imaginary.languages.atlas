@@ -1,0 +1,25 @@
+{
+  "category": "constructed_fictional",
+  "corpus": {
+    "justification": "les sources récupérées sont des descriptions, pas des corpus d'extraits ; extraction à faire",
+    "status": "absent"
+  },
+  "corpus_type": "lexique, inscriptions",
+  "creator": "Christine Schreyer",
+  "description": "Langue de Krypton créée pour le film Man of Steel.",
+  "documentation_level": "low",
+  "id": "kryptonian",
+  "metadata_status": "unverified",
+  "name": "Kryptonien",
+  "real_language_inspiration_note": null,
+  "real_language_reference": null,
+  "scripts": [
+    "kryptonian_script"
+  ],
+  "source_ids": [
+    "kryptonian-s01"
+  ],
+  "universe": "DC Comics (Man of Steel)",
+  "year": 2013,
+  "year_note": null
+}

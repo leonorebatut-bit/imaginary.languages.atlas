@@ -1,0 +1,23 @@
+{
+  "category": "constructed_fictional",
+  "corpus": {
+    "justification": "les sources récupérées sont des descriptions, pas des corpus d'extraits ; extraction à faire",
+    "status": "absent"
+  },
+  "corpus_type": "répliques de film, lexique",
+  "creator": "Marc Okrand",
+  "description": "Langue des Atlantes dans le film d'animation de 2001.",
+  "documentation_level": "low",
+  "id": "atlantean",
+  "metadata_status": "unverified",
+  "name": "Atlante",
+  "real_language_inspiration_note": null,
+  "real_language_reference": null,
+  "scripts": [],
+  "source_ids": [
+    "atlantean-s01"
+  ],
+  "universe": "Atlantide, l'empire perdu (Disney)",
+  "year": 2001,
+  "year_note": null
+}

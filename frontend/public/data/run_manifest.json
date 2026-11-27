@@ -1,0 +1,62 @@
+{
+  "n_languages": 30,
+  "n_scripts": 6,
+  "package_version": "0.1.0",
+  "pipeline_version": "0.1.0",
+  "python": "3.13.18",
+  "raw_sha256": {
+    "autotyp/Register.csv": "c7e2257f4dfba52a5913e0905ad53307bd531a415d24c4c44ec61c71ee09e913",
+    "sources/al_bhed/Final_Fantasy_X": "3529f09a8df9d13aa00abc895f87f02262bc4e8d3716f953850442b8e5e54c45",
+    "sources/atlantean/Atlantean_language": "f5ce457c7952e8527d1fe5454f45bc665014c80d9823cd969c7d93e194e8188e",
+    "sources/black_speech/Black_Speech": "fe5d440919778090381a0b34a686fe3215fee152958860d51628f28bf10be83c",
+    "sources/chakobsa/Chakobsa": "c788bca39c5fb70241c48cdf3cd9f7ff4dff61615f8cb9b649b1ec0829f0bd8a",
+    "sources/dothraki/Dothraki_language": "f0967fcdc66edc23a3653aaaa5495024f32ead7cd90706070afabd7af932cfd0",
+    "sources/dovahzul/The_Elder_Scrolls_V:_Skyrim": "966f9bc09d23fa95efa136197176c55e87b47d82537cc79e8b5631bffee396c1",
+    "sources/esperanto/Esperanto": "30f36cf3d3e4e51ca57a358c3a57ad9dbce384b082518ffed0686270a8350075",
+    "sources/esperanto/epo_sentences.tsv.bz2": "c9cf2828a5598557b9e270ae0e6197c494a1a421af0ba29caa1001b076111e1b",
+    "sources/high_valyrian/Valyrian_languages": "146d59eb24faf3644b089cc55c47a01fe44c23e2bb89aed3f11e261e5fb0a2b0",
+    "sources/huttese/Languages_in_Star_Wars": "e681ab699b0de24b29488fc9cef5044ba12d99891b67d4cb26f32cc522a3062a",
+    "sources/ithkuil/Ithkuil": "91f2be09a3a9144e3c000c4e908d82c3e150968d18a4c086aa4b53ec4b7a8452",
+    "sources/kelen/K%C4%93len": "8ab230435173e27ee264adb46d0f8d5395da76bc76be9304dc83b68ff6fdb87d",
+    "sources/khuzdul/Khuzdul": "04dd7b63bed785750f0279456bd6eb78c46a76aa65deb43ec4002720d3b91bff",
+    "sources/klingon/Klingon_language": "6dcb1e8246433a49682a49968e8c3131a745b1f2d17b77dfaa4f96dff0732118",
+    "sources/klingon/tlh_sentences.tsv.bz2": "71c771496a0749404bb443b021229df8dcc42d5d4fc7c4c7e6237d945a955815",
+    "sources/kryptonian/Kryptonian_language": "b52c907085635c7127ad278bde0897078971343d91aef6af07a1abc6d642dcc9",
+    "sources/laadan/L%C3%A1adan": "23bf7fe9628019a47fd3caec2ce68ef36182d1567d47db174f7a20f08e8b2d21",
+    "sources/laadan/ldn_sentences.tsv.bz2": "ccb9f29f186cd95c1fee06ae4b904dc997d140ee952b9eb266ac1b6a0c994fbb",
+    "sources/lapine/Lapine_language": "7a492718450b66eed9cefce65f4e7cc3fab3d9aa467ab7dadb668957cb958592",
+    "sources/lingua_ignota/Lingua_Ignota": "c0565c4f577333f953655371d5380cdfafde085cee45c489fd3e1a82bb12debf",
+    "sources/lojban/Lojban": "4bd92d405c2afa6b3f514751af68d38ab4b8b97284a39c7c4bbf03a8bdfbe971",
+    "sources/lojban/jbo_sentences.tsv.bz2": "d32bf7b2dfcba6d44bc827a8f990e118cd861c2391e03efc756a14e7593800a3",
+    "sources/mandoa/Languages_in_Star_Wars": "e681ab699b0de24b29488fc9cef5044ba12d99891b67d4cb26f32cc522a3062a",
+    "sources/minionese/Minions_(Despicable_Me)": "694b7bdbf91a82f3965188e475e9c2be3a62064e1b8ab2684757634ba556fa8d",
+    "sources/nadsat/Nadsat": "358134dfcc8fe14bf68e093642434f5ede61ca9c1bddc981da5be067000f8f30",
+    "sources/navi/Na%27vi_language": "67863edd008eca522d0515882a6796137af14c4b095f020f47877c43e4fab95b",
+    "sources/newspeak/Newspeak": "0bac176bfd94e1a85dbf688fbffcbe40ef5eb5337a2acef5bc2b904ea3c51aed",
+    "sources/quenya/Quenya": "6c8df4d8a8381c5553eb5ac484c88985618e3e067f1e43bc29c7591813b9cf1d",
+    "sources/quenya/qya_sentences.tsv.bz2": "ae8b9202cf0974e8dc4bc77efccc4efb11f10af833954e86fc5d33f8357d666b",
+    "sources/simlish/Simlish": "873ef672bfafbbfc7fc5a4d0d898767bfec92accb96760ea7bc8d6f2052f4393",
+    "sources/sindarin/Sindarin": "b015a212a63f64bfc786c9c3b362a6ed4cc24ba378cad6191c3013d407e1ec61",
+    "sources/sindarin/sjn_sentences.tsv.bz2": "04ce91cd5061ce0a81918ea091f0f72b40f1205dc5e2eeee7db05d89cace9abf",
+    "sources/toki_pona/Toki_Pona": "0656d2861dac444319e2143ebe5d00e1ed8e2f9eaa4d89faa34d3485388d0491",
+    "sources/toki_pona/tok_sentences.tsv.bz2": "aa4fe3845e13d1901e1003b11c6d870a2f2b78e89a12c62634fb0681af1bf3a3",
+    "sources/trigedasleng/The_100_(TV_series)": "2332c8d237a5969d6efa902fbc4367f108ce9aa328d7195af313babac9f45570",
+    "sources/volapuk/Volap%C3%BCk": "c1ec7a92fe655f88a62dc359d7d333244ca89bdf79e828491008669e78467c56",
+    "sources/volapuk/vol_sentences.tsv.bz2": "9a59f3f8cd2a571d881bf0503981ce75c1baf3046b4ac9ef091666078a8cb131",
+    "sources/yoda/Yoda": "e838476bf778dc9e99d5d6e687b13840638c0e70b3722db3dfd523623b0182d3",
+    "wals/v2020.4/codes.csv": "88c402d840ddeaf08545aea8395b593e9a1c44fe18353306a01dc839ea6a49b9",
+    "wals/v2020.4/languages.csv": "f802b0993bb0769a877e307e14bdb9ae471f06806a96e292e6ad6aec351b3060",
+    "wals/v2020.4/parameters.csv": "8f84ecf07e67ec59a750c52544cc2654e461a1ff6fed44bd4a7259579c7cd894",
+    "wals/v2020.4/values.csv": "2d672f80dbe8cf1839061af0301650bde60c326bbb486835c93ab7304b5b06cd"
+  },
+  "reference_data": {
+    "autotyp": {
+      "license": "CC-BY-4.0",
+      "version": "master"
+    },
+    "wals": {
+      "license": "CC-BY-4.0",
+      "version": "v2020.4"
+    }
+  }
+}

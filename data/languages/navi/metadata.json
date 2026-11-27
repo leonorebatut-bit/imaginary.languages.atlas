@@ -1,0 +1,23 @@
+{
+  "category": "constructed_fictional",
+  "corpus": {
+    "justification": "les sources récupérées sont des descriptions, pas des corpus d'extraits ; extraction à faire",
+    "status": "absent"
+  },
+  "corpus_type": "lexique, articles de blog du créateur, répliques de films",
+  "creator": "Paul Frommer",
+  "description": "Langue du peuple Na'vi de la planète Pandora.",
+  "documentation_level": "medium",
+  "id": "navi",
+  "metadata_status": "unverified",
+  "name": "Na'vi",
+  "real_language_inspiration_note": null,
+  "real_language_reference": null,
+  "scripts": [],
+  "source_ids": [
+    "navi-s01"
+  ],
+  "universe": "Avatar",
+  "year": 2005,
+  "year_note": "travail commencé en 2005, film en 2009"
+}

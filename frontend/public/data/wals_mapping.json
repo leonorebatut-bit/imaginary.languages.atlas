@@ -1,0 +1,327 @@
+[
+  {
+    "domain": "phonology",
+    "justification": "Nombre de consonnes phonémiques documentées par une grammaire, regroupé selon les classes définies au chapitre 1 de WALS. Jamais calculé à partir des seules lettres observées dans un texte.",
+    "possible_values": [
+      "Small",
+      "Moderately small",
+      "Average",
+      "Moderately large",
+      "Large"
+    ],
+    "project_feature": "phonology.consonant_inventory_size",
+    "scale": "ordinal",
+    "transform": "bins",
+    "wals_id": "1A",
+    "wals_name": "Consonant Inventories"
+  },
+  {
+    "domain": "phonology",
+    "justification": "Nombre de qualités vocaliques documentées (sans compter longueur ni nasalité, comme dans WALS).",
+    "possible_values": [
+      "Small (2-4)",
+      "Average (5-6)",
+      "Large (7-14)"
+    ],
+    "project_feature": "phonology.vowel_quality_inventory_size",
+    "scale": "ordinal",
+    "transform": "bins",
+    "wals_id": "2A",
+    "wals_name": "Vowel Quality Inventories"
+  },
+  {
+    "domain": "phonology",
+    "justification": "Complexité syllabique classée selon les trois catégories du chapitre 12.",
+    "possible_values": [
+      "Simple",
+      "Moderately complex",
+      "Complex"
+    ],
+    "project_feature": "phonology.syllable_structure",
+    "scale": "ordinal",
+    "transform": "label",
+    "wals_id": "12A",
+    "wals_name": "Syllable Structure"
+  },
+  {
+    "domain": "phonology",
+    "justification": "Présence et complexité d'un système tonal, catégories du chapitre 13.",
+    "possible_values": [
+      "No tones",
+      "Simple tone system",
+      "Complex tone system"
+    ],
+    "project_feature": "phonology.tone",
+    "scale": "ordinal",
+    "transform": "label",
+    "wals_id": "13A",
+    "wals_name": "Tone"
+  },
+  {
+    "domain": "morphology",
+    "justification": "Préférence de position des affixes flexionnels, catégories du chapitre 26.",
+    "possible_values": [
+      "Little affixation",
+      "Strongly suffixing",
+      "Weakly suffixing",
+      "Equal prefixing and suffixing",
+      "Weakly prefixing",
+      "Strong prefixing"
+    ],
+    "project_feature": "morphology.prefixing_vs_suffixing",
+    "scale": "nominal",
+    "transform": "label",
+    "wals_id": "26A",
+    "wals_name": "Prefixing vs. Suffixing in Inflectional Morphology"
+  },
+  {
+    "domain": "morphology",
+    "justification": "Mode de réalisation des formatifs flexionnels, catégories du chapitre 20.",
+    "possible_values": [
+      "Exclusively concatenative",
+      "Exclusively isolating",
+      "Exclusively tonal",
+      "Tonal/isolating",
+      "Tonal/concatenative",
+      "Ablaut/concatenative",
+      "Isolating/concatenative"
+    ],
+    "project_feature": "morphology.fusion",
+    "scale": "nominal",
+    "transform": "label",
+    "wals_id": "20A",
+    "wals_name": "Fusion of Selected Inflectional Formatives"
+  },
+  {
+    "domain": "morphology",
+    "justification": "Nombre de genres grammaticaux, catégories du chapitre 30.",
+    "possible_values": [
+      "None",
+      "Two",
+      "Three",
+      "Four",
+      "Five or more"
+    ],
+    "project_feature": "morphology.number_of_genders",
+    "scale": "ordinal",
+    "transform": "label",
+    "wals_id": "30A",
+    "wals_name": "Number of Genders"
+  },
+  {
+    "domain": "morphology",
+    "justification": "Nombre de cas morphologiques, catégories du chapitre 49.",
+    "possible_values": [
+      "No morphological case-marking",
+      "2 cases",
+      "3 cases",
+      "4 cases",
+      "5 cases",
+      "6-7 cases",
+      "8-9 cases",
+      "10 or more cases",
+      "Exclusively borderline case-marking"
+    ],
+    "project_feature": "morphology.number_of_cases",
+    "scale": "ordinal",
+    "transform": "label",
+    "wals_id": "49A",
+    "wals_name": "Number of Cases"
+  },
+  {
+    "domain": "morphology",
+    "justification": "Procédé de marquage du pluriel nominal, catégories du chapitre 33.",
+    "possible_values": [
+      "Plural prefix",
+      "Plural suffix",
+      "Plural stem change",
+      "Plural tone",
+      "Plural complete reduplication",
+      "Mixed morphological plural",
+      "Plural word",
+      "Plural clitic",
+      "No plural"
+    ],
+    "project_feature": "morphology.nominal_plurality_coding",
+    "scale": "nominal",
+    "transform": "label",
+    "wals_id": "33A",
+    "wals_name": "Coding of Nominal Plurality"
+  },
+  {
+    "domain": "syntax",
+    "justification": "Ordre dominant sujet-objet-verbe, catégories du chapitre 81.",
+    "possible_values": [
+      "SOV",
+      "SVO",
+      "VSO",
+      "VOS",
+      "OVS",
+      "OSV",
+      "No dominant order"
+    ],
+    "project_feature": "syntax.basic_word_order",
+    "scale": "nominal",
+    "transform": "label",
+    "wals_id": "81A",
+    "wals_name": "Order of Subject, Object and Verb"
+  },
+  {
+    "domain": "syntax",
+    "justification": "Ordre sujet-verbe, catégories du chapitre 82.",
+    "possible_values": [
+      "SV",
+      "VS",
+      "No dominant order"
+    ],
+    "project_feature": "syntax.subject_verb_order",
+    "scale": "nominal",
+    "transform": "label",
+    "wals_id": "82A",
+    "wals_name": "Order of Subject and Verb"
+  },
+  {
+    "domain": "syntax",
+    "justification": "Ordre objet-verbe, catégories du chapitre 83.",
+    "possible_values": [
+      "OV",
+      "VO",
+      "No dominant order"
+    ],
+    "project_feature": "syntax.object_verb_order",
+    "scale": "nominal",
+    "transform": "label",
+    "wals_id": "83A",
+    "wals_name": "Order of Object and Verb"
+  },
+  {
+    "domain": "syntax",
+    "justification": "Prépositions ou postpositions, catégories du chapitre 85.",
+    "possible_values": [
+      "Postpositions",
+      "Prepositions",
+      "Inpositions",
+      "No dominant order",
+      "No adpositions"
+    ],
+    "project_feature": "syntax.adposition_order",
+    "scale": "nominal",
+    "transform": "label",
+    "wals_id": "85A",
+    "wals_name": "Order of Adposition and Noun Phrase"
+  },
+  {
+    "domain": "syntax",
+    "justification": "Ordre génitif-nom, catégories du chapitre 86.",
+    "possible_values": [
+      "Genitive-Noun",
+      "Noun-Genitive",
+      "No dominant order"
+    ],
+    "project_feature": "syntax.genitive_noun_order",
+    "scale": "nominal",
+    "transform": "label",
+    "wals_id": "86A",
+    "wals_name": "Order of Genitive and Noun"
+  },
+  {
+    "domain": "syntax",
+    "justification": "Ordre adjectif-nom, catégories du chapitre 87.",
+    "possible_values": [
+      "Adjective-Noun",
+      "Noun-Adjective",
+      "No dominant order",
+      "Only internally-headed relative clauses"
+    ],
+    "project_feature": "syntax.adjective_noun_order",
+    "scale": "nominal",
+    "transform": "label",
+    "wals_id": "87A",
+    "wals_name": "Order of Adjective and Noun"
+  },
+  {
+    "domain": "syntax",
+    "justification": "Ordre démonstratif-nom, catégories du chapitre 88.",
+    "possible_values": [
+      "Demonstrative-Noun",
+      "Noun-Demonstrative",
+      "Demonstrative prefix",
+      "Demonstrative suffix",
+      "Demonstrative before and after Noun",
+      "Mixed"
+    ],
+    "project_feature": "syntax.demonstrative_noun_order",
+    "scale": "nominal",
+    "transform": "label",
+    "wals_id": "88A",
+    "wals_name": "Order of Demonstrative and Noun"
+  },
+  {
+    "domain": "syntax",
+    "justification": "Ordre numéral-nom, catégories du chapitre 89.",
+    "possible_values": [
+      "Numeral-Noun",
+      "Noun-Numeral",
+      "No dominant order",
+      "Numeral only modifies verb"
+    ],
+    "project_feature": "syntax.numeral_noun_order",
+    "scale": "nominal",
+    "transform": "label",
+    "wals_id": "89A",
+    "wals_name": "Order of Numeral and Noun"
+  },
+  {
+    "domain": "syntax",
+    "justification": "Ordre relative-nom, catégories du chapitre 90.",
+    "possible_values": [
+      "Noun-Relative clause",
+      "Relative clause-Noun",
+      "Internally headed",
+      "Correlative",
+      "Adjoined",
+      "Doubly headed",
+      "Mixed"
+    ],
+    "project_feature": "syntax.relative_clause_noun_order",
+    "scale": "nominal",
+    "transform": "label",
+    "wals_id": "90A",
+    "wals_name": "Order of Relative Clause and Noun"
+  },
+  {
+    "domain": "syntax",
+    "justification": "Stratégie de formation des questions totales, catégories du chapitre 116.",
+    "possible_values": [
+      "Question particle",
+      "Interrogative verb morphology",
+      "Mixture of previous two types",
+      "Interrogative word order",
+      "Absence of declarative morphemes",
+      "Interrogative intonation only",
+      "No interrogative-declarative distinction"
+    ],
+    "project_feature": "syntax.polar_question_strategy",
+    "scale": "nominal",
+    "transform": "label",
+    "wals_id": "116A",
+    "wals_name": "Polar Questions"
+  },
+  {
+    "domain": "syntax",
+    "justification": "Nature du morphème de négation, catégories du chapitre 112.",
+    "possible_values": [
+      "Negative affix",
+      "Negative particle",
+      "Negative auxiliary verb",
+      "Negative word, unclear if verb or particle",
+      "Variation between negative word and affix",
+      "Double negation"
+    ],
+    "project_feature": "syntax.negative_morpheme_type",
+    "scale": "nominal",
+    "transform": "label",
+    "wals_id": "112A",
+    "wals_name": "Negative Morphemes"
+  }
+]

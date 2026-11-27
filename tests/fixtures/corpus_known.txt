@@ -1,0 +1,3 @@
+# Corpus fictif de test : propriétés connues (voir test_lexicon.py)
+ka tomi ka tomi.
+ka  tomi ka tomi!

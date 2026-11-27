@@ -1,0 +1,23 @@
+{
+  "category": "constructed_fictional",
+  "corpus": {
+    "justification": "les sources récupérées sont des descriptions, pas des corpus d'extraits ; extraction à faire",
+    "status": "absent"
+  },
+  "corpus_type": "répliques de films",
+  "creator": "David J. Peterson et Jessie Sams",
+  "description": "Langue des Fremen dans les adaptations cinématographiques de Dune.",
+  "documentation_level": "low",
+  "id": "chakobsa",
+  "metadata_status": "unverified",
+  "name": "Chakobsa (films Dune)",
+  "real_language_inspiration_note": null,
+  "real_language_reference": null,
+  "scripts": [],
+  "source_ids": [
+    "chakobsa-s01"
+  ],
+  "universe": "Dune",
+  "year": 2021,
+  "year_note": "version créée pour le film de 2021 ; le nom vient des romans de Frank Herbert"
+}

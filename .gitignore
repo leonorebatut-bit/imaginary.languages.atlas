@@ -1,0 +1,23 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+.pytest_cache/
+*.egg-info/
+node_modules/
+frontend/dist/
+
+# Données brutes téléchargées : reconstruites par scripts/rebuild_all.py
+data/raw/**
+!data/raw/.gitkeep
+
+# Corpus dont la licence n'autorise pas la redistribution : conservés en local uniquement.
+# Les références précises restent versionnées dans corpus_manifest.csv et sources.csv.
+data/languages/*/corpus_local.txt
+
+# Sorties intermédiaires et marqueurs de reprise
+data/processed/**
+!data/processed/.gitkeep
+outputs/logs/
+outputs/.state/
