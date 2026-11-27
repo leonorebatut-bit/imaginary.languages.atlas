@@ -47,6 +47,14 @@ reference_data:
     base_url: "https://raw.githubusercontent.com/autotyp/autotyp-data/master/data/csv"
     files: [Register.csv]
 
+  natural_earth:
+    # Fond de carte du site uniquement (aucun rôle dans les calculs).
+    version: "master"
+    license: "Public domain"
+    citation: "Natural Earth, 1:110m land. https://www.naturalearthdata.com"
+    url: "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_110m_land.geojson"
+    file: ne_110m_land.geojson
+
 lexicon:
   mattr_window: 50          # fenêtre de MATTR (tokens)
   mtld_threshold: 0.72      # seuil standard de McCarthy & Jarvis (2010)

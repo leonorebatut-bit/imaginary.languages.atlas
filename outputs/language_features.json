@@ -4736,16 +4736,12 @@
         "domain": "writing",
         "examples": [],
         "feature_id": "writing.scripts",
-        "limits": "relation langue-écriture issue du catalogue, métadonnées à vérifier",
-        "method": "writing/1:catalog",
-        "source_ids": [
-          "script:kryptonian_script"
-        ],
-        "status": "documented",
+        "limits": "écriture mentionnée au catalogue (kryptonian_script) mais sans source : non retenue",
+        "method": "writing/1",
+        "source_ids": [],
+        "status": "unavailable",
         "unit": null,
-        "value": [
-          "kryptonian_script"
-        ]
+        "value": null
       }
     ],
     "language": {
@@ -5165,7 +5161,7 @@
         "domain": "writing",
         "examples": [],
         "feature_id": "writing.scripts",
-        "limits": "aucune écriture propre documentée",
+        "limits": "écriture mentionnée au catalogue (aurebesh) mais sans source : non retenue",
         "method": "writing/1",
         "source_ids": [],
         "status": "unavailable",
@@ -5590,7 +5586,7 @@
         "domain": "writing",
         "examples": [],
         "feature_id": "writing.scripts",
-        "limits": "aucune écriture propre documentée",
+        "limits": "écriture mentionnée au catalogue (aurebesh) mais sans source : non retenue",
         "method": "writing/1",
         "source_ids": [],
         "status": "unavailable",
@@ -6015,16 +6011,12 @@
         "domain": "writing",
         "examples": [],
         "feature_id": "writing.scripts",
-        "limits": "relation langue-écriture issue du catalogue, métadonnées à vérifier",
-        "method": "writing/1:catalog",
-        "source_ids": [
-          "script:dovahzul_script"
-        ],
-        "status": "documented",
+        "limits": "écriture mentionnée au catalogue (dovahzul_script) mais sans source : non retenue",
+        "method": "writing/1",
+        "source_ids": [],
+        "status": "unavailable",
         "unit": null,
-        "value": [
-          "dovahzul_script"
-        ]
+        "value": null
       }
     ],
     "language": {

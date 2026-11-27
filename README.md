@@ -15,7 +15,7 @@ langues naturelles de WALS.
 | 2. Constitution du corpus | en cours : catalogue de 30 langues et 6 écritures, collecte automatique opérationnelle |
 | 3. Analyse linguistique | en cours : 11 langues codées (79 valeurs documentées, citations vérifiées automatiquement) |
 | 4. Comparaison WALS | chargeur, correspondances (20 caractéristiques), Gower et agrégation par aire écrits et testés |
-| 5. Site web | à faire |
+| 5. Site web | carte, liste, fiches (10 sections) et comparaison écrites, testées (vitest) et vérifiées dans Chromium ; publication par GitHub Pages |
 | 6. Intégration | API en lecture seule écrite et testée |
 | 7. Documentation et déploiement | documentation méthodologique commencée |
 
@@ -50,7 +50,16 @@ journaux sont dans `outputs/logs/`.
 
 ```bash
 python -m pytest
+cd frontend && npm ci && npm test
 ```
+
+## Site web
+
+```bash
+cd frontend && npm ci && npm run dev    # http://localhost:5173
+```
+
+Voir `frontend/README.md` et `docs/hosting.md` (publication sur GitHub Pages).
 
 ## Résultats
 
@@ -74,7 +83,7 @@ data/scripts/    systèmes d'écriture
 data/geography/  rattachement des langues WALS aux aires linguistiques
 src/atlas/       paquet Python (collecte, prétraitement, linguistique, comparaison)
 backend/api/     API FastAPI en lecture seule
-frontend/        site (étape 5)
+frontend/        site statique React + Leaflet (lit frontend/public/data/)
 tests/           tests pytest et corpus fictifs de contrôle
 docs/            méthodologie, sources, bibliographie, hébergement
 ```

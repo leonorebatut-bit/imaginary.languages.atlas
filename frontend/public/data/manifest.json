@@ -1,11 +1,14 @@
 {
+  "min_comparable_features": 8,
   "n_languages": 30,
   "n_scripts": 6,
+  "nearest_limit": 50,
   "package_version": "0.1.0",
   "pipeline_version": "0.1.0",
   "python": "3.13.18",
   "raw_sha256": {
     "autotyp/Register.csv": "c7e2257f4dfba52a5913e0905ad53307bd531a415d24c4c44ec61c71ee09e913",
+    "geography/ne_110m_land.geojson": "9e0729ee253ca7d7a5c4ae9395fb1902264c5377c52e224d13dd85010e2835d9",
     "sources/al_bhed/Final_Fantasy_X": "3529f09a8df9d13aa00abc895f87f02262bc4e8d3716f953850442b8e5e54c45",
     "sources/atlantean/Atlantean_language": "f5ce457c7952e8527d1fe5454f45bc665014c80d9823cd969c7d93e194e8188e",
     "sources/black_speech/Black_Speech": "fe5d440919778090381a0b34a686fe3215fee152958860d51628f28bf10be83c",
@@ -57,6 +60,10 @@
   "reference_data": {
     "autotyp": {
       "license": "CC-BY-4.0",
+      "version": "master"
+    },
+    "natural_earth": {
+      "license": "Public domain",
       "version": "master"
     },
     "wals": {
