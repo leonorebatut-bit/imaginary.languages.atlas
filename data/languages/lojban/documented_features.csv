@@ -1,0 +1,3 @@
+feature_id,value,source_id,locator,evidence,note,coded_by,coded_on
+phonology.vowel_quality_inventory_size,6,lojban-s01,§ Phonology,Lojban has 6 vowels and 18 consonants .,les deux sources donnent 18 et 21 consonnes : taille de l'inventaire consonantique non codée,"Claude (assistant IA), à relire",2026-11-27
+syntax.basic_word_order,No dominant order,lojban-s03,§ Word order,The word order in Lojban is basically free.,,"Claude (assistant IA), à relire",2026-11-27

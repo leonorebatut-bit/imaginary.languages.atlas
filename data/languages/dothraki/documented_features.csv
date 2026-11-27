@@ -1,0 +1,10 @@
+feature_id,value,source_id,locator,evidence,note,coded_by,coded_on
+phonology.consonant_inventory_size,23,dothraki-s01,§ Consonants,There are 23 consonant phonemes in the Dothraki language.,,"Claude (assistant IA), à relire",2026-11-27
+phonology.vowel_quality_inventory_size,4,dothraki-s01,§ Vowels,Dothraki has a four vowel system shown below:,,"Claude (assistant IA), à relire",2026-11-27
+syntax.basic_word_order,SVO,dothraki-s01,§ Word order,The basic word order is SVO ( subject–verb–object ).,,"Claude (assistant IA), à relire",2026-11-27
+syntax.adposition_order,Prepositions,dothraki-s01,§ Word order,"In prepositional phrases, prepositions always precede their noun complements .",,"Claude (assistant IA), à relire",2026-11-27
+syntax.adjective_noun_order,Noun-Adjective,dothraki-s01,§ Word order,this father very violent of.mine with.a.whip [...] demonstrative noun adverb adjective genitive noun prepositional phrase,ordre relevé dans le syntagme nominal donné en exemple,"Claude (assistant IA), à relire",2026-11-27
+syntax.genitive_noun_order,Noun-Genitive,dothraki-s01,§ Word order,demonstrative noun adverb adjective genitive noun prepositional phrase,ordre relevé dans le syntagme nominal donné en exemple,"Claude (assistant IA), à relire",2026-11-27
+syntax.demonstrative_noun_order,Demonstrative-Noun,dothraki-s01,§ Word order,demonstrative noun adverb adjective genitive noun prepositional phrase,ordre relevé dans le syntagme nominal donné en exemple,"Claude (assistant IA), à relire",2026-11-27
+morphology.number_of_cases,5 cases,dothraki-s01,§ Grammar,"They decline in five cases , nominative , accusative , genitive , allative and ablative .",,"Claude (assistant IA), à relire",2026-11-27
+morphology.number_of_genders,Two,dothraki-s01,§ Grammar,"Nouns divide into two classes, inanimate and animate .","classes fondées sur l'animéité, comptées comme genres au sens de WALS 30A","Claude (assistant IA), à relire",2026-11-27

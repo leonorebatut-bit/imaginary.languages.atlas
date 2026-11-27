@@ -59,9 +59,24 @@ def estimate_constituent_order(sentences: list[str], model: str = "en_core_web_s
                                 "peuvent être mal analysés. Ne remplace pas une valeur documentée."))
 
 
+# Ordre objet-verbe impliqué par l'ordre dominant S/O/V (WALS 81A -> 83A).
+# On ne dérive PAS l'ordre sujet-verbe (82A) : WALS le code aussi d'après les
+# propositions intransitives, que l'ordre transitif ne renseigne pas.
+OV_FROM_BASIC = {"SOV": "OV", "OSV": "OV", "OVS": "OV", "SVO": "VO", "VSO": "VO", "VOS": "VO"}
+
+
 def syntax_features(documented: dict[str, FeatureValue]) -> list[FeatureValue]:
     out = []
+    basic = documented.get("syntax.basic_word_order")
     for f in SYNTAX_FEATURES:
         fid = f"syntax.{f}"
-        out.append(documented.get(fid) or unavailable(fid, "syntax", METHOD_VERSION, "non documenté"))
+        if fid in documented:
+            out.append(documented[fid])
+        elif f == "object_verb_order" and basic is not None and basic.value in OV_FROM_BASIC:
+            out.append(FeatureValue(fid, "syntax", OV_FROM_BASIC[basic.value], Status.COMPUTED,
+                                    f"{METHOD_VERSION}:derived_from_basic_word_order", source_ids=basic.source_ids,
+                                    examples=basic.examples,
+                                    limits="déduit de l'ordre dominant documenté (S, O et V)"))
+        else:
+            out.append(unavailable(fid, "syntax", METHOD_VERSION, "non documenté"))
     return out

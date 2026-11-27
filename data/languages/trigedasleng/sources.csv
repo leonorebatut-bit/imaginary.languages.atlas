@@ -1,2 +1,2 @@
-source_id,url,title,author,published,type,license,nature,retrieved_at,status,error,sha256,redistributable,available_items,kept_items
-trigedasleng-s01,https://en.wikipedia.org/wiki/The_100_(TV_series),The 100 (TV series),null,null,encyclopedia,CC BY-SA 4.0,encyclopedia,2026-11-27T18:33:09+00:00,ok,null,2332c8d237a5969d6efa902fbc4367f108ce9aa328d7195af313babac9f45570,True,null,null
+source_id,url,title,author,published,type,license,nature,retrieved_at,status,error,sha256,redistributable,available_items,kept_items,raw_file
+trigedasleng-s01,https://en.wikipedia.org/wiki/The_100_(TV_series),The 100 (TV series),null,null,encyclopedia,CC BY-SA 4.0,encyclopedia,2026-11-27T18:33:09+00:00,ok,null,2332c8d237a5969d6efa902fbc4367f108ce9aa328d7195af313babac9f45570,True,null,null,sources/trigedasleng/The_100_(TV_series)

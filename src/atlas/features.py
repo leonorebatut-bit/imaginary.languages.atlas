@@ -33,12 +33,13 @@ def read_glossed(ldir: Path) -> list[dict]:
         return [r for r in csv.DictReader(fh, delimiter="\t") if (r.get("segmented") or "").strip()]
 
 
-def language_features(lang: dict, ldir: Path, source_ids: set[str], scripts: dict[str, dict], cfg: dict) -> list[FeatureValue]:
+def language_features(lang: dict, ldir: Path, source_ids: set[str], scripts: dict[str, dict], cfg: dict,
+                      source_texts: dict[str, str] | None = None) -> list[FeatureValue]:
     ortho = lang.get("orthography") or {}
     text = clean_corpus(read_corpus(ldir))
     tokens = tokenize(text, apostrophe_is_letter=ortho.get("apostrophe_is_letter", False),
                       case_sensitive=ortho.get("case_sensitive", False))
-    documented = load_documented(ldir / "documented_features.csv", source_ids)
+    documented = load_documented(ldir / "documented_features.csv", source_ids, source_texts)
     glossed = [g for g in read_glossed(ldir) if g.get("source_id") in source_ids]
 
     feats: list[FeatureValue] = []

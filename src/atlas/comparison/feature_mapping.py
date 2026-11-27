@@ -35,15 +35,22 @@ class Mapping:
             v = str(value).strip()
             return v if v in self.possible_values else None
         if self.transform == "bins":
+            # Une fourchette documentée (« 22-24 ») n'est convertie que si ses deux
+            # bornes tombent dans la même classe WALS.
+            parts = str(value).split("-") if isinstance(value, str) else [value]
             try:
-                x = float(value)
+                nums = [float(p) for p in parts]
             except (TypeError, ValueError):
                 return None
-            for b in self.bins:
-                if x >= b["min"] and (b["max"] is None or x <= b["max"]):
-                    return b["label"]
-            return None
+            labels = {self._bin(x) for x in nums}
+            return labels.pop() if len(labels) == 1 else None
         raise ValueError(f"transformation inconnue : {self.transform}")
+
+    def _bin(self, x: float) -> str | None:
+        for b in self.bins:
+            if x >= b["min"] and (b["max"] is None or x <= b["max"]):
+                return b["label"]
+        return None
 
 
 def load_mappings(config: dict | None = None) -> list[Mapping]:

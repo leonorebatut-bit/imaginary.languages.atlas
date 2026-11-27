@@ -1,0 +1,10 @@
+feature_id,value,source_id,locator,evidence,note,coded_by,coded_on
+phonology.consonant_inventory_size,20,navi-s01,§ Consonants,There are 20 consonants.,,"Claude (assistant IA), à relire",2026-11-27
+phonology.vowel_quality_inventory_size,7,navi-s01,§ Phonology,"There are seven vowels, a ä e i ì o u .",,"Claude (assistant IA), à relire",2026-11-27
+phonology.tone,No tones,navi-s01,§ Vowels,Naʼvi does not have vowel length or tone,,"Claude (assistant IA), à relire",2026-11-27
+phonology.syllable_template,CCVC,navi-s01,§ Phonology,"Naʼvi syllables may be as simple as a single vowel, or as complex as skxawng ""moron"" or fngap above (both C C V C).","attaques complexes limitées à f, ts, s + consonne","Claude (assistant IA), à relire",2026-11-27
+syntax.basic_word_order,No dominant order,navi-s01,§ Grammar,It has free word order .,,"Claude (assistant IA), à relire",2026-11-27
+syntax.adjective_noun_order,No dominant order,navi-s01,§ Grammar,"as long as it follows or precedes the noun, the sentence is fine.",,"Claude (assistant IA), à relire",2026-11-27
+syntax.adposition_order,No dominant order,navi-s01,§ Nouns,"Any adposition may occur as either as a preposition before the noun, or as an enclitic after the noun",,"Claude (assistant IA), à relire",2026-11-27
+morphology.nominal_plurality_coding,Plural prefix,navi-s01,§ Nouns,The plural prefix is ay+,,"Claude (assistant IA), à relire",2026-11-27
+typology.morphological_type,agglutinative,navi-s01,§ Grammar,"Naʼvi is a tripartite , primarily affixing agglutinative language.",,"Claude (assistant IA), à relire",2026-11-27

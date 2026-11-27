@@ -103,11 +103,41 @@ Un module indépendant par domaine (`src/atlas/linguistics/`).
 
 ### 5.1 Caractéristiques documentées
 
-Fichier `data/languages/<id>/documented_features.csv` (colonnes `feature_id,
-value, source_id, locator, note, coded_by, coded_on`). Une ligne sans source,
-ou dont la source n'est pas dans `sources.csv`, fait échouer le chargement.
-À ce stade (PR 1), **aucune caractéristique documentée n'a encore été codée** :
-ce travail commence à l'étape 3 à partir des sources collectées.
+Fichier `data/languages/<id>/documented_features.csv`, colonnes :
+
+| Colonne | Contenu |
+|---|---|
+| `feature_id` | identifiant de la caractéristique (ex. `syntax.basic_word_order`) |
+| `value` | valeur ; pour les traits comparés à WALS, libellé exact du code WALS |
+| `source_id` | source citée, présente dans `sources.csv` |
+| `locator` | section (ou page) de la source |
+| `evidence` | citation **littérale et courte** de la source qui justifie la valeur ; plusieurs extraits sont séparés par ` [...] ` |
+| `note` | précision ou limite du codage |
+| `coded_by`, `coded_on` | auteur et date du codage |
+
+**Contrôle automatique.** Au chargement, chaque citation est recherchée dans
+le texte de la source téléchargée (normalisation des espaces, guillemets,
+tirets et de la casse). Pour un inventaire relevé dans un tableau
+(`*_inventory`), chaque symbole doit aussi figurer dans la source. Une citation
+introuvable, une source inconnue ou une ligne sans citation arrêtent le
+pipeline. Toute valeur documentée est donc vérifiable par un lecteur.
+
+**Règles de codage.**
+1. Une valeur n'est codée que si la source l'énonce ; aucune déduction de
+   l'auteur du codage. Exemple : une source qui dit « primarily suffixing » ne
+   suffit pas à coder WALS 26A (« Strongly » ou « Weakly suffixing »), qui
+   exige un comptage.
+2. Quand deux sources se contredisent, la caractéristique n'est pas codée et la
+   contradiction est notée (ex. lojban : 18 ou 21 consonnes).
+3. Une fourchette (« 22 to 24 consonants ») n'est convertie en code WALS que si
+   ses deux bornes tombent dans la même classe.
+4. Une valeur qui ne correspond à aucun code WALS est consignée dans
+   `data/processed/harmonise_rejected.json`, jamais devinée.
+
+État au 2026-11-27 : 11 langues codées (79 valeurs) à partir des articles de
+Wikipédia en anglais (CC BY-SA 4.0) téléchargés par la collecte. Le codage a
+été fait par un assistant IA (Claude) et **doit être relu** par une personne ;
+les citations rendent cette relecture rapide.
 
 ### 5.2 Phonologie (`phonology.py`)
 
@@ -143,6 +173,9 @@ locator, segmented, gloss, translation`).
 ### 5.4 Syntaxe (`syntax.py`)
 
 Ordres des constituants, adpositions, génitif, adjectif, etc. : documentés.
+L'ordre objet-verbe (WALS 83A) est **déduit** de l'ordre dominant documenté
+(ex. OVS → OV), avec le statut `computed`. L'ordre sujet-verbe (82A) n'est pas
+déduit, car WALS le code aussi d'après les propositions intransitives.
 Pour les seules variétés fondées sur l'anglais, une estimation par spaCy est
 disponible (`estimate_constituent_order`, extra `[nlp]`) : elle donne la
 distribution des ordres S/V/O observés dans les propositions où un sujet et un
@@ -257,8 +290,15 @@ Pour une langue imaginaire et une aire, parmi les langues WALS qui ont un score 
   œuvres protégées ; à surveiller lors de la relecture.
 - Les tailles de corpus vont de quelques centaines à plusieurs milliers de
   phrases ; seuls MATTR, MTLD et HD-D sont comparables entre corpus.
-- Tant qu'aucune caractéristique documentée n'est codée, aucun score de
-  proximité n'est calculable : `pairwise_similarity.csv` et
-  `regional_similarity.csv` sont vides. C'est l'état attendu de la PR 1.
+- Les caractéristiques documentées viennent pour l'instant d'articles
+  encyclopédiques. Elles devront être confrontées aux grammaires de référence
+  (Okrand pour le klingon, Peterson pour le dothraki, etc.) lorsque celles-ci
+  seront accessibles.
+- Seules 5 langues sur 11 atteignent le seuil de 8 caractéristiques
+  comparables (voir `docs/results.md`). Les scores reposent sur 8 à 11
+  caractéristiques : ils restent indicatifs.
+- Biais d'échantillon WALS : les langues comparées sont celles qui ont au moins
+  8 des 20 caractéristiques codées, surtout celles de l'échantillon de 200
+  langues de WALS.
 - Les données WALS sont lacunaires : la plupart des langues n'ont qu'une partie
   des 20 caractéristiques utilisées, d'où le seuil de 8.

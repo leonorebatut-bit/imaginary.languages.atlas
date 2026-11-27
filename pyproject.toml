@@ -15,6 +15,7 @@ dependencies = [
   "regex>=2023.0",
   "pyyaml>=6.0",
   "requests>=2.31",
+  "beautifulsoup4>=4.12",  # lecture des sources HTML pour la vérification des citations
 ]
 
 [project.optional-dependencies]

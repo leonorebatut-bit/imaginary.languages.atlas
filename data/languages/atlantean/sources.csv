@@ -1,2 +1,2 @@
-source_id,url,title,author,published,type,license,nature,retrieved_at,status,error,sha256,redistributable,available_items,kept_items
-atlantean-s01,https://en.wikipedia.org/wiki/Atlantean_language,Atlantean language,null,null,encyclopedia,CC BY-SA 4.0,encyclopedia,2026-11-27T18:33:06+00:00,ok,null,f5ce457c7952e8527d1fe5454f45bc665014c80d9823cd969c7d93e194e8188e,True,null,null
+source_id,url,title,author,published,type,license,nature,retrieved_at,status,error,sha256,redistributable,available_items,kept_items,raw_file
+atlantean-s01,https://en.wikipedia.org/wiki/Atlantean_language,Atlantean language,null,null,encyclopedia,CC BY-SA 4.0,encyclopedia,2026-11-27T18:33:06+00:00,ok,null,f5ce457c7952e8527d1fe5454f45bc665014c80d9823cd969c7d93e194e8188e,True,null,null,sources/atlantean/Atlantean_language

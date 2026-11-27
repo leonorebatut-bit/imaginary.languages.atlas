@@ -1,0 +1,9 @@
+feature_id,value,source_id,locator,evidence,note,coded_by,coded_on
+phonology.consonant_inventory,p t k s m n l j w,toki_pona-s01,§ Phonology,"Toki Pona has nine consonants ( /p, t, k, s, m, n, l, j, w/ ) and five vowels ( /a, e, i, o, u/ ).",,"Claude (assistant IA), à relire",2026-11-27
+phonology.vowel_quality_inventory_size,5,toki_pona-s01,§ Phonology,"Toki Pona has nine consonants ( /p, t, k, s, m, n, l, j, w/ ) and five vowels",,"Claude (assistant IA), à relire",2026-11-27
+phonology.tone,No tones,toki_pona-s01,§ Phonology,"There are no diphthongs , vowel hiatus , contrasting vowel length , consonant clusters (except those starting with the nasal coda ), or tones .",,"Claude (assistant IA), à relire",2026-11-27
+phonology.syllable_template,(C)V(C),toki_pona-s01,§ Phonotactics,"The first syllable of a word follows the form (C)V(N), i.e. an optional consonant, a vowel, and an optional final nasal.",la coda est obligatoirement une nasale,"Claude (assistant IA), à relire",2026-11-27
+syntax.basic_word_order,SVO,toki_pona-s01,§ Syntax,Toki Pona's word order is subject–verb–object .,,"Claude (assistant IA), à relire",2026-11-27
+syntax.adjective_noun_order,Noun-Adjective,toki_pona-s01,§ Syntax,Toki Pona is head-initial : a noun or verb is followed by its modifiers .,les mots de contenu ne forment pas de classe adjectivale distincte,"Claude (assistant IA), à relire",2026-11-27
+syntax.adposition_order,Prepositions,toki_pona-s01,§ Syntax,There are closed classes of content words that can act as preverbs and prepositions,,"Claude (assistant IA), à relire",2026-11-27
+typology.morphological_type,isolating,toki_pona-s01,§ (introduction),Toki Pona is an isolating language,,"Claude (assistant IA), à relire",2026-11-27

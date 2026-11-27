@@ -1,0 +1,12 @@
+feature_id,value,source_id,locator,evidence,note,coded_by,coded_on
+phonology.consonant_inventory_size,22-24,esperanto-s01,§ Phonology,"Esperanto typically has 22 to 24 consonants (depending on the phonemic analysis and individual speaker), five vowels",fourchette selon l'analyse phonémique,"Claude (assistant IA), à relire",2026-11-27
+phonology.vowel_quality_inventory_size,5,esperanto-s01,§ Vowels,Since there are only five vowel qualities,,"Claude (assistant IA), à relire",2026-11-27
+phonology.tone,No tones,esperanto-s04,§ Prosody,Lexical tone is not phonemic.,,"Claude (assistant IA), à relire",2026-11-27
+phonology.syllable_template,CCCVCC,esperanto-s04,§ Phonotactics,A syllable in Esperanto is generally of the form (s/ŝ)(C)(C)V(C)(C).,gabarit maximal ; coda de deux consonnes occasionnelle,"Claude (assistant IA), à relire",2026-11-27
+syntax.basic_word_order,SVO,esperanto-s01,§ Linguistic properties,a pragmatic word order that by default is subject–verb–object (SVO),,"Claude (assistant IA), à relire",2026-11-27
+syntax.adposition_order,Prepositions,esperanto-s01,§ Linguistic properties,"Typologically , Esperanto has prepositions",,"Claude (assistant IA), à relire",2026-11-27
+syntax.demonstrative_noun_order,Demonstrative-Noun,esperanto-s01,§ Linguistic properties,"demonstratives such as tiu ""that"" and prepositions (such as ĉe ""at"") must come before their related nouns.",,"Claude (assistant IA), à relire",2026-11-27
+morphology.number_of_genders,None,esperanto-s03,§ (introduction),"Esperanto has an agglutinative morphology , no grammatical gender",,"Claude (assistant IA), à relire",2026-11-27
+morphology.nominal_plurality_coding,Plural suffix,esperanto-s03,§ Nouns and adjectives,"To make a word plural, the suffix -j is added to the -o .",,"Claude (assistant IA), à relire",2026-11-27
+morphology.number_of_cases,2 cases,esperanto-s03,§ Nouns and adjectives ; § Prepositions,Direct objects take an accusative case suffix -n [...] in Esperanto all prepositions govern the nominative,nominatif et accusatif,"Claude (assistant IA), à relire",2026-11-27
+typology.morphological_type,agglutinative,esperanto-s03,§ (introduction),Esperanto has an agglutinative morphology,,"Claude (assistant IA), à relire",2026-11-27
