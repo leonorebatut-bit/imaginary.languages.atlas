@@ -1,0 +1,7 @@
+feature_id,value,source_id,locator,evidence,note,coded_by,coded_on
+phonology.consonant_inventory,m n ɲ ŋ p t c k ɸ θ s ʃ ç x l ʎ r,kelen-s01,§ Consonants (tableau),Sylvia Sotomayor analyses the voiceless alveolar fricative / s / as a stop,inventaire relevé dans le tableau ; géminées non comptées,"Claude (assistant IA), à relire",2026-11-27
+phonology.vowel_quality_inventory_size,5,kelen-s01,§ Vowels,Kēlen has the same five monophthongs as in Spanish,certains dialectes ont une voyelle centrale brève en plus,"Claude (assistant IA), à relire",2026-11-27
+phonology.syllable_template,CVC,kelen-s01,§ Syllable structure,Kēlen uses a (C)V(C) syllable structure .,,"Claude (assistant IA), à relire",2026-11-27
+syntax.adjective_noun_order,Noun-Adjective,kelen-s01,§ Syntax,"However, adjectives always come after nouns.",langue sans verbes : l'ordre des constituants (81A) ne s'applique pas,"Claude (assistant IA), à relire",2026-11-27
+syntax.demonstrative_noun_order,Noun-Demonstrative,kelen-s01,§ Pronouns,"generally follow the noun they modify, but can immediately precede it.",,"Claude (assistant IA), à relire",2026-11-27
+morphology.nominal_plurality_coding,Plural suffix,kelen-s01,§ Number,"Kēlen's nouns are suffixed for grammatical number , distinguishing between the singular and the plural .",,"Claude (assistant IA), à relire",2026-11-27

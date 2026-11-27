@@ -18,7 +18,7 @@ Ce fichier liste les sources récupérées par la collecte du 2026-11-27 (état 
 | al_bhed | al_bhed-s01 | [Final Fantasy X](https://en.wikipedia.org/wiki/Final_Fantasy_X) | encyclopedia | CC BY-SA 4.0 | ok |  |
 | atlantean | atlantean-s01 | [Atlantean language](https://en.wikipedia.org/wiki/Atlantean_language) | encyclopedia | CC BY-SA 4.0 | ok |  |
 | black_speech | black_speech-s01 | [Black Speech](https://en.wikipedia.org/wiki/Black_Speech) | encyclopedia | CC BY-SA 4.0 | ok |  |
-| chakobsa | chakobsa-s01 | [Chakobsa](https://en.wikipedia.org/wiki/Chakobsa) | encyclopedia | CC BY-SA 4.0 | ok |  |
+| chakobsa | chakobsa-s01 | [Chakobsa](https://en.wikipedia.org/wiki/Chakobsa) | encyclopedia | CC BY-SA 4.0 | ok | décrit la langue secrète circassienne homonyme, pas la langue des films Dune : à remplacer |
 | dothraki | dothraki-s01 | [Dothraki language](https://en.wikipedia.org/wiki/Dothraki_language) | encyclopedia | CC BY-SA 4.0 | ok |  |
 | dovahzul | dovahzul-s01 | [The Elder Scrolls V: Skyrim](https://en.wikipedia.org/wiki/The_Elder_Scrolls_V:_Skyrim) | encyclopedia | CC BY-SA 4.0 | ok |  |
 | esperanto | esperanto-s01 | [Esperanto](https://en.wikipedia.org/wiki/Esperanto) | encyclopedia | CC BY-SA 4.0 | ok |  |
@@ -58,6 +58,7 @@ Ce fichier liste les sources récupérées par la collecte du 2026-11-27 (état 
 | volapuk | volapuk-s01 | [Volapük](https://en.wikipedia.org/wiki/Volap%C3%BCk) | encyclopedia | CC BY-SA 4.0 | ok |  |
 | volapuk | volapuk-s02 | [Tatoeba — phrases en volapük](https://downloads.tatoeba.org/exports/per_language/vol/vol_sentences.tsv.bz2) | sentence_corpus | CC BY 2.0 FR | ok | 6621 / 5000 |
 | yoda | yoda-s01 | [Yoda](https://en.wikipedia.org/wiki/Yoda) | encyclopedia | CC BY-SA 4.0 | ok |  |
+| yoda | yoda-s02 | [Languages in Star Wars](https://en.wikipedia.org/wiki/Languages_in_Star_Wars) | encyclopedia | CC BY-SA 4.0 | ok |  |
 
 ## Attribution
 

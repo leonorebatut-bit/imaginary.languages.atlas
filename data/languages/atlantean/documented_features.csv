@@ -1,0 +1,10 @@
+feature_id,value,source_id,locator,evidence,note,coded_by,coded_on
+phonology.consonant_inventory,m n p t k b d ɡ s ʃ x w l j r,atlantean-s01,§ Consonants (tableau),Atlantean's phonetic inventory includes a vowel system with five phonemes .,inventaire relevé dans le tableau des consonnes ; la citation porte sur la section Phonology,"Claude (assistant IA), à relire",2026-11-27
+phonology.vowel_quality_inventory_size,5,atlantean-s01,§ Vowels,Atlantean's phonetic inventory includes a vowel system with five phonemes .,variantes tendues et relâchées = allophones,"Claude (assistant IA), à relire",2026-11-27
+syntax.basic_word_order,SOV,atlantean-s01,§ Grammar,"Atlantean has a strict subject–object–verb word order, with no deviations from this pattern attested.",,"Claude (assistant IA), à relire",2026-11-27
+syntax.adjective_noun_order,Noun-Adjective,atlantean-s01,§ Grammar,Adjectives and nouns in the genitive case follow the nouns they modify,,"Claude (assistant IA), à relire",2026-11-27
+syntax.genitive_noun_order,Noun-Genitive,atlantean-s01,§ Grammar,Adjectives and nouns in the genitive case follow the nouns they modify,,"Claude (assistant IA), à relire",2026-11-27
+syntax.adposition_order,Postpositions,atlantean-s01,§ Grammar,adpositions appear only in the form of postpositions,,"Claude (assistant IA), à relire",2026-11-27
+syntax.polar_question_strategy,Question particle,atlantean-s01,§ Grammar,The language includes the use of an interrogative particle to form questions with no variation in word order.,,"Claude (assistant IA), à relire",2026-11-27
+morphology.number_of_cases,6-7 cases,atlantean-s01,§ Nouns,"Atlantean has seven cases for nouns, five for pronouns and two for numbers .",,"Claude (assistant IA), à relire",2026-11-27
+morphology.nominal_plurality_coding,Plural suffix,atlantean-s01,§ Other suffixes,Nouns are marked as plural with the suffix -en .,,"Claude (assistant IA), à relire",2026-11-27
