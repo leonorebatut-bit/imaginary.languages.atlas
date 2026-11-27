@@ -40,17 +40,17 @@ def read_csv(p: Path) -> list[dict]:
         return list(csv.DictReader(fh))
 
 
-def main() -> None:
+def render() -> str:
     cfg = pipeline_config()
     threshold = cfg["similarity"]["min_comparable_features"]
     out = ROOT / "outputs"
     manifest = json.loads((out / "run_manifest.json").read_text(encoding="utf-8"))
     site_manifest = json.loads((SITE / "manifest.json").read_text(encoding="utf-8"))
     if site_manifest.get("raw_sha256") != manifest.get("raw_sha256"):
-        sys.exit("outputs/ et frontend/public/data/ ne viennent pas de la même exécution : relancer rebuild_all.py")
+        raise SystemExit("outputs/ et frontend/public/data/ ne viennent pas de la même exécution : relancer rebuild_all.py")
     weights = manifest.get("weights_profile", "equal")
     if weights != "equal":
-        sys.exit(f"outputs/ produits avec le profil de poids « {weights} » : le rapport ne décrit que le profil equal")
+        raise SystemExit(f"outputs/ produits avec le profil de poids « {weights} » : le rapport ne décrit que le profil equal")
     site_langs = json.loads((SITE / "languages.json").read_text(encoding="utf-8"))
     profiles = {l["id"]: l["wals_profile"] for l in site_langs}
     names = {l["id"]: l["name"] for l in site_langs}
@@ -116,7 +116,11 @@ def main() -> None:
               "toujours significativement distinctes.",
               f"- Avec {threshold} à 11 caractéristiques, un seul trait modifie sensiblement le score ; un score de 1,000 "
               "peut reposer sur 8 traits concordants seulement.", ""]
-    (ROOT / "docs/results.md").write_text("\n".join(lines), encoding="utf-8")
+    return "\n".join(lines)
+
+
+def main() -> None:
+    (ROOT / "docs/results.md").write_text(render(), encoding="utf-8")
     print("docs/results.md écrit")
 
 

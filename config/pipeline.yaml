@@ -17,6 +17,12 @@ http:
   user_agent_default: "imaginary-languages-atlas/0.1 (research pipeline)"
   min_delay_per_host_s: 1.5   # politesse envers les serveurs (Wikipédia limite le débit)
   backoff_s: 10               # attente après un HTTP 429 si Retry-After est absent
+  # Seuls ces hôtes peuvent être contactés (HTTPS uniquement, redirections comprises).
+  # Ajouter une source sur un autre site demande de l'ajouter ici, explicitement.
+  allowed_hosts:
+    - en.wikipedia.org
+    - downloads.tatoeba.org
+    - raw.githubusercontent.com
 
 corpus:
   # Les exports Tatoeba peuvent dépasser 800 000 phrases (espéranto). On garde un

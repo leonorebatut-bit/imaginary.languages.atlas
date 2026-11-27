@@ -74,7 +74,10 @@ def collect_language(lang: dict, languages_dir: Path, raw_dir: Path, fetcher=fet
     for i, src in enumerate(lang.get("sources", []), start=1):
         sid = _source_id(lang["id"], i)
         fname = src["url"].rstrip("/").split("/")[-1] or "index"
-        res: FetchResult = fetcher(src["url"], raw_dir / "sources" / lang["id"] / fname)
+        dest = raw_dir / "sources" / lang["id"] / fname
+        if fname in (".", "..") or not dest.resolve().is_relative_to((raw_dir / "sources").resolve()):
+            raise ValueError(f"{lang['id']}: chemin de destination refusé pour {src['url']}")
+        res: FetchResult = fetcher(src["url"], dest)
         redistrib = is_redistributable(src.get("license"))
         rows.append({
             "source_id": sid, "url": src["url"], "title": src.get("title"), "author": src.get("author"),

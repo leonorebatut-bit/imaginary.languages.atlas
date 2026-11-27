@@ -303,11 +303,29 @@ Pour une langue imaginaire et une aire, parmi les langues WALS qui ont un score 
   encyclopédiques. Elles devront être confrontées aux grammaires de référence
   (Okrand pour le klingon, Peterson pour le dothraki, etc.) lorsque celles-ci
   seront accessibles.
-- Seules 5 langues sur 11 atteignent le seuil de 8 caractéristiques
-  comparables (voir `docs/results.md`). Les scores reposent sur 8 à 11
+- Seules 6 langues sur 30 atteignent le seuil de 8 caractéristiques
+  comparables (voir `docs/results.md`) ; 9 langues n'ont aucune valeur, faute
+  de description dans les sources actuelles. Les scores reposent sur 8 à 11
   caractéristiques : ils restent indicatifs.
+- Les catégories de langues sont représentées de façon très inégale : les
+  langues construites bien documentées concentrent presque tous les scores,
+  tandis que les idiolectes, pseudo-langues et variétés transformées n'en ont
+  aucun. Aucune conclusion ne doit donc être tirée par catégorie.
 - Biais d'échantillon WALS : les langues comparées sont celles qui ont au moins
   8 des 20 caractéristiques codées, surtout celles de l'échantillon de 200
   langues de WALS.
 - Les données WALS sont lacunaires : la plupart des langues n'ont qu'une partie
   des 20 caractéristiques utilisées, d'où le seuil de 8.
+
+## 9. Reproductibilité et vérifications
+
+- `python scripts/rebuild_all.py --force --offline` sur un clone neuf, avec le
+  cache des données brutes (`data/raw/`), redonne des fichiers identiques octet
+  pour octet à ceux du dépôt (vérifié le 2026-11-27). Les empreintes SHA-256 des
+  données brutes sont consignées dans `outputs/run_manifest.json`.
+- Sans cache, la collecte retélécharge les sources. Les pages Wikipédia évoluent :
+  une nouvelle collecte peut changer leur texte, et une citation qui n'y figure
+  plus fait échouer le pipeline au lieu d'être acceptée en silence.
+- `tests/test_integration.py` vérifie que les exports (`outputs/`), l'API et les
+  données du site décrivent la même exécution, et que `docs/results.md` est à jour.
+

@@ -71,6 +71,9 @@ class Runner:
                 self.status[name] = "skipped"
                 return
         log.info("[%s] début", name)
+        # Le marqueur est retiré avant l'exécution : une étape qui échoue en cours de route
+        # (même avec --force) ne peut pas passer pour terminée au lancement suivant.
+        marker.unlink(missing_ok=True)
         try:
             fn()
         except Exception:
