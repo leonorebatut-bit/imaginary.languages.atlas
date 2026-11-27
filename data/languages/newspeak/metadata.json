@@ -1,0 +1,27 @@
+{
+  "category": "transformed_variety",
+  "corpus": {
+    "justification": "les sources récupérées sont des descriptions, pas des corpus d'extraits ; extraction à faire",
+    "status": "absent"
+  },
+  "corpus_type": "appendice du roman, mots isolés",
+  "creator": "George Orwell",
+  "description": "Anglais appauvri planifié par le régime, décrit dans l'appendice du roman.",
+  "documentation_level": "medium",
+  "id": "newspeak",
+  "metadata_status": "unverified",
+  "name": "Novlangue (Newspeak)",
+  "real_language_inspiration_note": null,
+  "real_language_reference": {
+    "glottocode": "stan1293",
+    "name": "anglais",
+    "wals_code": "eng"
+  },
+  "scripts": [],
+  "source_ids": [
+    "newspeak-s01"
+  ],
+  "universe": "1984 (George Orwell)",
+  "year": 1949,
+  "year_note": null
+}

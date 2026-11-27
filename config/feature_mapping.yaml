@@ -1,0 +1,159 @@
+# Correspondances entre les caractéristiques du projet et les caractéristiques WALS.
+#
+# Règle : une caractéristique du projet n'est comparée à WALS que si sa
+# définition reprend celle du chapitre WALS. Les valeurs du projet sont soit
+# les libellés exacts des codes WALS (`transform: label`), soit un nombre
+# converti selon les seuils du chapitre (`transform: bins`).
+#
+# `scale` indique comment la similarité de Gower traite la variable :
+#   nominal  : 1 si valeurs identiques, 0 sinon
+#   ordinal  : 1 - |rang_a - rang_b| / (nb_rangs - 1)
+#
+# Les libellés et valeurs possibles sont revérifiés contre codes.csv de WALS au
+# chargement (src/atlas/comparison/feature_mapping.py) : toute divergence fait
+# échouer le pipeline plutôt que de produire une comparaison fausse.
+#
+# Caractéristiques du projet SANS équivalent WALS (exclues du calcul) :
+# diversité lexicale (MATTR, MTLD, HD-D), longueur moyenne des mots, ratio
+# morphèmes/mots mesuré sur gloses, inventaire de graphèmes observés.
+
+mappings:
+  - project_feature: phonology.consonant_inventory_size
+    wals_id: 1A
+    transform: bins
+    # Seuils du chapitre 1 (Maddieson) : Small 6-14, Moderately small 15-18,
+    # Average 19-25, Moderately large 26-33, Large 34+
+    bins:
+      - {min: 6, max: 14, label: Small}
+      - {min: 15, max: 18, label: Moderately small}
+      - {min: 19, max: 25, label: Average}
+      - {min: 26, max: 33, label: Moderately large}
+      - {min: 34, max: null, label: Large}
+    scale: ordinal
+    justification: >-
+      Nombre de consonnes phonémiques documentées par une grammaire, regroupé
+      selon les classes définies au chapitre 1 de WALS. Jamais calculé à partir
+      des seules lettres observées dans un texte.
+
+  - project_feature: phonology.vowel_quality_inventory_size
+    wals_id: 2A
+    transform: bins
+    # Seuils du chapitre 2 : Small 2-4, Average 5-6, Large 7-14
+    bins:
+      - {min: 2, max: 4, label: "Small (2-4)"}
+      - {min: 5, max: 6, label: "Average (5-6)"}
+      - {min: 7, max: 14, label: "Large (7-14)"}
+    scale: ordinal
+    justification: >-
+      Nombre de qualités vocaliques documentées (sans compter longueur ni
+      nasalité, comme dans WALS).
+
+  - project_feature: phonology.syllable_structure
+    wals_id: 12A
+    transform: label
+    scale: ordinal
+    justification: Complexité syllabique classée selon les trois catégories du chapitre 12.
+
+  - project_feature: phonology.tone
+    wals_id: 13A
+    transform: label
+    scale: ordinal
+    justification: Présence et complexité d'un système tonal, catégories du chapitre 13.
+
+  - project_feature: morphology.prefixing_vs_suffixing
+    wals_id: 26A
+    transform: label
+    scale: nominal
+    justification: Préférence de position des affixes flexionnels, catégories du chapitre 26.
+
+  - project_feature: morphology.fusion
+    wals_id: 20A
+    transform: label
+    scale: nominal
+    justification: Mode de réalisation des formatifs flexionnels, catégories du chapitre 20.
+
+  - project_feature: morphology.number_of_genders
+    wals_id: 30A
+    transform: label
+    scale: ordinal
+    justification: Nombre de genres grammaticaux, catégories du chapitre 30.
+
+  - project_feature: morphology.number_of_cases
+    wals_id: 49A
+    transform: label
+    scale: ordinal
+    # Ce code n'est pas un degré de l'échelle : traité comme nominal (égal ou différent).
+    non_ordinal_labels: ["Exclusively borderline case-marking"]
+    justification: Nombre de cas morphologiques, catégories du chapitre 49.
+
+  - project_feature: morphology.nominal_plurality_coding
+    wals_id: 33A
+    transform: label
+    scale: nominal
+    justification: Procédé de marquage du pluriel nominal, catégories du chapitre 33.
+
+  - project_feature: syntax.basic_word_order
+    wals_id: 81A
+    transform: label
+    scale: nominal
+    justification: Ordre dominant sujet-objet-verbe, catégories du chapitre 81.
+
+  - project_feature: syntax.subject_verb_order
+    wals_id: 82A
+    transform: label
+    scale: nominal
+    justification: Ordre sujet-verbe, catégories du chapitre 82.
+
+  - project_feature: syntax.object_verb_order
+    wals_id: 83A
+    transform: label
+    scale: nominal
+    justification: Ordre objet-verbe, catégories du chapitre 83.
+
+  - project_feature: syntax.adposition_order
+    wals_id: 85A
+    transform: label
+    scale: nominal
+    justification: Prépositions ou postpositions, catégories du chapitre 85.
+
+  - project_feature: syntax.genitive_noun_order
+    wals_id: 86A
+    transform: label
+    scale: nominal
+    justification: Ordre génitif-nom, catégories du chapitre 86.
+
+  - project_feature: syntax.adjective_noun_order
+    wals_id: 87A
+    transform: label
+    scale: nominal
+    justification: Ordre adjectif-nom, catégories du chapitre 87.
+
+  - project_feature: syntax.demonstrative_noun_order
+    wals_id: 88A
+    transform: label
+    scale: nominal
+    justification: Ordre démonstratif-nom, catégories du chapitre 88.
+
+  - project_feature: syntax.numeral_noun_order
+    wals_id: 89A
+    transform: label
+    scale: nominal
+    justification: Ordre numéral-nom, catégories du chapitre 89.
+
+  - project_feature: syntax.relative_clause_noun_order
+    wals_id: 90A
+    transform: label
+    scale: nominal
+    justification: Ordre relative-nom, catégories du chapitre 90.
+
+  - project_feature: syntax.polar_question_strategy
+    wals_id: 116A
+    transform: label
+    scale: nominal
+    justification: Stratégie de formation des questions totales, catégories du chapitre 116.
+
+  - project_feature: syntax.negative_morpheme_type
+    wals_id: 112A
+    transform: label
+    scale: nominal
+    justification: Nature du morphème de négation, catégories du chapitre 112.

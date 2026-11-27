@@ -1,0 +1,1 @@
+"""Voir docs/methodology.md."""

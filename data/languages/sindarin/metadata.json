@@ -1,0 +1,29 @@
+{
+  "category": "constructed_fictional",
+  "corpus": {
+    "file": "corpus.txt",
+    "lines": 232,
+    "redistributable": true,
+    "status": "available"
+  },
+  "corpus_type": "textes littéraires courts, lexiques posthumes",
+  "creator": "J. R. R. Tolkien",
+  "description": "Langue des Elfes Gris du légendaire de Tolkien.",
+  "documentation_level": "medium",
+  "id": "sindarin",
+  "metadata_status": "unverified",
+  "name": "Sindarin",
+  "real_language_inspiration_note": "influence du gallois souvent citée ; à sourcer",
+  "real_language_reference": null,
+  "scripts": [
+    "tengwar",
+    "cirth"
+  ],
+  "source_ids": [
+    "sindarin-s01",
+    "sindarin-s02"
+  ],
+  "universe": "Tolkien (légendaire)",
+  "year": 1917,
+  "year_note": "forme ancienne « Goldogrin » (Gnomish Lexicon, vers 1917)"
+}

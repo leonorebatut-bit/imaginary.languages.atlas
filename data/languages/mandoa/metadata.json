@@ -1,0 +1,25 @@
+{
+  "category": "constructed_fictional",
+  "corpus": {
+    "justification": "les sources récupérées sont des descriptions, pas des corpus d'extraits ; extraction à faire",
+    "status": "absent"
+  },
+  "corpus_type": "lexique, chansons, extraits de romans",
+  "creator": "Karen Traviss",
+  "description": "Langue des Mandaloriens, développée dans des romans dérivés.",
+  "documentation_level": "low",
+  "id": "mandoa",
+  "metadata_status": "unverified",
+  "name": "Mando'a",
+  "real_language_inspiration_note": null,
+  "real_language_reference": null,
+  "scripts": [
+    "aurebesh"
+  ],
+  "source_ids": [
+    "mandoa-s01"
+  ],
+  "universe": "Star Wars",
+  "year": 2004,
+  "year_note": null
+}

@@ -1,0 +1,7 @@
+# Dépendances minimales du pipeline (versions testées). Installation complète :
+#   pip install -e ".[dev,api]"
+pandas>=2.1
+numpy>=1.26
+regex>=2023.0
+pyyaml>=6.0
+requests>=2.31

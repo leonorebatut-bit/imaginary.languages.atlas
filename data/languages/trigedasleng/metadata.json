@@ -1,0 +1,27 @@
+{
+  "category": "transformed_variety",
+  "corpus": {
+    "justification": "les sources récupérées sont des descriptions, pas des corpus d'extraits ; extraction à faire",
+    "status": "absent"
+  },
+  "corpus_type": "répliques de série, lexique",
+  "creator": "David J. Peterson",
+  "description": "Langue issue d'une évolution fictive de l'anglais après une catastrophe.",
+  "documentation_level": "low",
+  "id": "trigedasleng",
+  "metadata_status": "unverified",
+  "name": "Trigedasleng",
+  "real_language_inspiration_note": null,
+  "real_language_reference": {
+    "glottocode": "stan1293",
+    "name": "anglais",
+    "wals_code": "eng"
+  },
+  "scripts": [],
+  "source_ids": [
+    "trigedasleng-s01"
+  ],
+  "universe": "Les 100 (The 100)",
+  "year": 2014,
+  "year_note": null
+}

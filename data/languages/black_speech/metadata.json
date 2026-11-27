@@ -1,0 +1,25 @@
+{
+  "category": "fragmentary",
+  "corpus": {
+    "justification": "les sources récupérées sont des descriptions, pas des corpus d'extraits ; extraction à faire",
+    "status": "absent"
+  },
+  "corpus_type": "inscription unique et quelques mots",
+  "creator": "J. R. R. Tolkien",
+  "description": "Langue créée par Sauron, attestée principalement par l'inscription de l'Anneau.",
+  "documentation_level": "fragmentary",
+  "id": "black_speech",
+  "metadata_status": "unverified",
+  "name": "Noir Parler (Black Speech)",
+  "real_language_inspiration_note": null,
+  "real_language_reference": null,
+  "scripts": [
+    "tengwar"
+  ],
+  "source_ids": [
+    "black_speech-s01"
+  ],
+  "universe": "Tolkien (légendaire)",
+  "year": null,
+  "year_note": null
+}

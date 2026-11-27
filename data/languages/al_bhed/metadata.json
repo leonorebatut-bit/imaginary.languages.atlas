@@ -1,0 +1,27 @@
+{
+  "category": "transformed_variety",
+  "corpus": {
+    "justification": "les sources récupérées sont des descriptions, pas des corpus d'extraits ; extraction à faire",
+    "status": "absent"
+  },
+  "corpus_type": "table de substitution, répliques du jeu",
+  "creator": "Square",
+  "description": "Chiffrement par substitution de lettres appliqué au japonais et à l'anglais selon les versions.",
+  "documentation_level": "high",
+  "id": "al_bhed",
+  "metadata_status": "unverified",
+  "name": "Al Bhed",
+  "real_language_inspiration_note": null,
+  "real_language_reference": {
+    "glottocode": "stan1293",
+    "name": "anglais (version anglaise)",
+    "wals_code": "eng"
+  },
+  "scripts": [],
+  "source_ids": [
+    "al_bhed-s01"
+  ],
+  "universe": "Final Fantasy X (jeu vidéo)",
+  "year": 2001,
+  "year_note": null
+}

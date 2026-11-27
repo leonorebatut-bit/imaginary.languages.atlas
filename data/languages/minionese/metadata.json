@@ -1,0 +1,23 @@
+{
+  "category": "pseudo_language",
+  "corpus": {
+    "justification": "les sources récupérées sont des descriptions, pas des corpus d'extraits ; extraction à faire",
+    "status": "absent"
+  },
+  "corpus_type": "répliques de films (protégées)",
+  "creator": "Pierre Coffin",
+  "description": "Mélange de mots de plusieurs langues et de syllabes sans sens, sans grammaire stable.",
+  "documentation_level": "fragmentary",
+  "id": "minionese",
+  "metadata_status": "unverified",
+  "name": "Langage des Minions",
+  "real_language_inspiration_note": null,
+  "real_language_reference": null,
+  "scripts": [],
+  "source_ids": [
+    "minionese-s01"
+  ],
+  "universe": "Moi, moche et méchant / Les Minions (Illumination)",
+  "year": 2010,
+  "year_note": null
+}

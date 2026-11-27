@@ -1,0 +1,115 @@
+[
+  {
+    "creator": "J. R. R. Tolkien",
+    "direction": null,
+    "id": "tengwar",
+    "metadata_status": "unverified",
+    "name": "Tengwar",
+    "represents": [
+      "quenya",
+      "sindarin",
+      "black_speech"
+    ],
+    "sources": [
+      {
+        "license": "CC BY-SA 4.0",
+        "title": "Tengwar",
+        "type": "encyclopedia",
+        "url": "https://en.wikipedia.org/wiki/Tengwar"
+      }
+    ],
+    "type": null,
+    "type_note": "fonctionne comme alphabet ou de manière proche d'un abugida selon le « mode » ; à documenter par mode",
+    "universe": "Tolkien (légendaire)"
+  },
+  {
+    "creator": "J. R. R. Tolkien",
+    "direction": null,
+    "id": "cirth",
+    "metadata_status": "unverified",
+    "name": "Cirth",
+    "represents": [
+      "sindarin",
+      "khuzdul"
+    ],
+    "sources": [
+      {
+        "license": "CC BY-SA 4.0",
+        "title": "Cirth",
+        "type": "encyclopedia",
+        "url": "https://en.wikipedia.org/wiki/Cirth"
+      }
+    ],
+    "type": null,
+    "type_note": null,
+    "universe": "Tolkien (légendaire)"
+  },
+  {
+    "creator": null,
+    "direction": null,
+    "id": "aurebesh",
+    "metadata_status": "unverified",
+    "name": "Aurebesh",
+    "represents": [],
+    "sources": [
+      {
+        "license": "CC BY-SA 4.0",
+        "title": "Aurebesh",
+        "type": "encyclopedia",
+        "url": "https://en.wikipedia.org/wiki/Aurebesh"
+      }
+    ],
+    "type": null,
+    "type_note": "souvent décrit comme une transposition lettre à lettre de l'alphabet latin ; à vérifier",
+    "universe": "Star Wars"
+  },
+  {
+    "creator": null,
+    "direction": null,
+    "id": "piqad",
+    "metadata_status": "unverified",
+    "name": "pIqaD",
+    "represents": [
+      "klingon"
+    ],
+    "sources": [
+      {
+        "license": "CC BY-SA 4.0",
+        "title": "Klingon scripts",
+        "type": "encyclopedia",
+        "url": "https://en.wikipedia.org/wiki/Klingon_scripts"
+      }
+    ],
+    "type": null,
+    "type_note": null,
+    "universe": "Star Trek"
+  },
+  {
+    "creator": "Bethesda Game Studios",
+    "direction": null,
+    "id": "dovahzul_script",
+    "metadata_status": "unverified",
+    "name": "Écriture draconique (Skyrim)",
+    "represents": [
+      "dovahzul"
+    ],
+    "sources": [],
+    "type": null,
+    "type_note": null,
+    "universe": "The Elder Scrolls V — Skyrim"
+  },
+  {
+    "creator": null,
+    "direction": null,
+    "id": "kryptonian_script",
+    "metadata_status": "unverified",
+    "name": "Écriture kryptonienne (Man of Steel)",
+    "represents": [
+      "kryptonian"
+    ],
+    "sources": [],
+    "type": null,
+    "type_note": null,
+    "universe": "DC Comics (Man of Steel)"
+  }
+]

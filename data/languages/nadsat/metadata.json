@@ -1,0 +1,27 @@
+{
+  "category": "sociolect",
+  "corpus": {
+    "justification": "les sources récupérées sont des descriptions, pas des corpus d'extraits ; extraction à faire",
+    "status": "absent"
+  },
+  "corpus_type": "roman (protégé), glossaires",
+  "creator": "Anthony Burgess",
+  "description": "Argot de jeunes délinquants mêlant à l'anglais un lexique d'origine russe.",
+  "documentation_level": "medium",
+  "id": "nadsat",
+  "metadata_status": "unverified",
+  "name": "Nadsat",
+  "real_language_inspiration_note": null,
+  "real_language_reference": {
+    "glottocode": "stan1293",
+    "name": "anglais",
+    "wals_code": "eng"
+  },
+  "scripts": [],
+  "source_ids": [
+    "nadsat-s01"
+  ],
+  "universe": "L'Orange mécanique (Anthony Burgess)",
+  "year": 1962,
+  "year_note": null
+}

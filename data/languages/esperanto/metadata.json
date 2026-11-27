@@ -1,0 +1,26 @@
+{
+  "category": "constructed_external",
+  "corpus": {
+    "file": "corpus.txt",
+    "lines": 5000,
+    "redistributable": true,
+    "status": "available"
+  },
+  "corpus_type": "corpus libres abondants",
+  "creator": "L. L. Zamenhof",
+  "description": "Langue auxiliaire internationale ; point de comparaison bien documenté.",
+  "documentation_level": "high",
+  "id": "esperanto",
+  "metadata_status": "unverified",
+  "name": "Espéranto",
+  "real_language_inspiration_note": null,
+  "real_language_reference": null,
+  "scripts": [],
+  "source_ids": [
+    "esperanto-s01",
+    "esperanto-s02"
+  ],
+  "universe": "hors fiction (langue auxiliaire)",
+  "year": 1887,
+  "year_note": null
+}

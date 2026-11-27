@@ -1,0 +1,565 @@
+# Catalogue initial des langues et variétés étudiées (étape 2 : sélection provisoire).
+#
+# AVERTISSEMENT MÉTHODOLOGIQUE
+# Les métadonnées ci-dessous (créateur, année, description) proviennent de
+# connaissances générales et n'ont PAS encore été vérifiées contre une source
+# accessible depuis le pipeline. Chaque entrée porte donc
+# `metadata_status: unverified`. Elles passeront à `verified` lorsque la collecte
+# aura récupéré une source citée dans `sources` et qu'une personne l'aura relue.
+# Une valeur inconnue vaut null : elle n'est jamais devinée.
+#
+# Le niveau de documentation est une estimation initiale de l'équipe
+# (high / medium / low / fragmentary), à réviser après la collecte.
+#
+# Catégories (définitions dans docs/methodology.md §2) :
+#   constructed_fictional   langue construite pour une œuvre de fiction, grammaire publiée
+#   constructed_external    langue construite hors fiction (auxiliaire, philosophique,
+#                           artistique), incluse comme point de comparaison
+#   fragmentary             langue fictive attestée par un lexique ou quelques phrases
+#   idiolect                manière de parler propre à un personnage
+#   sociolect               variété propre à un groupe social fictif
+#   transformed_variety     langue réelle transformée par un procédé (chiffrement,
+#                           substitution lexicale, simplification planifiée)
+#   pseudo_language         suite sonore sans grammaire ni lexique stables
+#
+# Les systèmes d'écriture sont décrits séparément (bloc `scripts`).
+
+wikipedia_license: &wplicense "CC BY-SA 4.0"
+tatoeba_license: &tatoebalicense "CC BY 2.0 FR"
+
+languages:
+  - id: quenya
+    name: Quenya
+    category: constructed_fictional
+    universe: Tolkien (légendaire)
+    creator: J. R. R. Tolkien
+    year: 1915
+    year_note: "travail commencé vers 1915 (Qenya Lexicon), poursuivi jusqu'en 1973"
+    description: Langue des Hauts-Elfes du légendaire de Tolkien.
+    documentation_level: medium
+    corpus_type: textes littéraires courts, lexiques posthumes
+    real_language_reference: null
+    real_language_inspiration_note: "influence du finnois souvent citée ; à sourcer"
+    scripts: [tengwar]
+    metadata_status: unverified
+    sources:
+      - {url: "https://en.wikipedia.org/wiki/Quenya", title: "Quenya", type: encyclopedia, license: *wplicense}
+      - {url: "https://downloads.tatoeba.org/exports/per_language/qya/qya_sentences.tsv.bz2", title: "Tatoeba — phrases en quenya", type: sentence_corpus, license: *tatoebalicense}
+
+  - id: sindarin
+    name: Sindarin
+    category: constructed_fictional
+    universe: Tolkien (légendaire)
+    creator: J. R. R. Tolkien
+    year: 1917
+    year_note: "forme ancienne « Goldogrin » (Gnomish Lexicon, vers 1917)"
+    description: Langue des Elfes Gris du légendaire de Tolkien.
+    documentation_level: medium
+    corpus_type: textes littéraires courts, lexiques posthumes
+    real_language_reference: null
+    real_language_inspiration_note: "influence du gallois souvent citée ; à sourcer"
+    scripts: [tengwar, cirth]
+    metadata_status: unverified
+    sources:
+      - {url: "https://en.wikipedia.org/wiki/Sindarin", title: "Sindarin", type: encyclopedia, license: *wplicense}
+      - {url: "https://downloads.tatoeba.org/exports/per_language/sjn/sjn_sentences.tsv.bz2", title: "Tatoeba — phrases en sindarin", type: sentence_corpus, license: *tatoebalicense}
+
+  - id: khuzdul
+    name: Khuzdul
+    category: fragmentary
+    universe: Tolkien (légendaire)
+    creator: J. R. R. Tolkien
+    year: null
+    description: Langue secrète des Nains, attestée par quelques mots et inscriptions.
+    documentation_level: fragmentary
+    corpus_type: noms propres et inscriptions
+    real_language_reference: null
+    scripts: [cirth]
+    metadata_status: unverified
+    sources:
+      - {url: "https://en.wikipedia.org/wiki/Khuzdul", title: "Khuzdul", type: encyclopedia, license: *wplicense}
+
+  - id: black_speech
+    name: Noir Parler (Black Speech)
+    category: fragmentary
+    universe: Tolkien (légendaire)
+    creator: J. R. R. Tolkien
+    year: null
+    description: Langue créée par Sauron, attestée principalement par l'inscription de l'Anneau.
+    documentation_level: fragmentary
+    corpus_type: inscription unique et quelques mots
+    real_language_reference: null
+    scripts: [tengwar]
+    metadata_status: unverified
+    sources:
+      - {url: "https://en.wikipedia.org/wiki/Black_Speech", title: "Black Speech", type: encyclopedia, license: *wplicense}
+
+  - id: klingon
+    name: Klingon (tlhIngan Hol)
+    category: constructed_fictional
+    universe: Star Trek
+    creator: Marc Okrand
+    year: 1984
+    year_note: "Star Trek III (1984) ; The Klingon Dictionary (1985)"
+    description: Langue de l'espèce klingonne, dotée d'une grammaire et d'un dictionnaire publiés.
+    documentation_level: high
+    corpus_type: dictionnaire, grammaire, traductions, phrases d'apprenants
+    real_language_reference: null
+    scripts: [piqad]
+    orthography: {apostrophe_is_letter: true, case_sensitive: true}  # q/Q distincts ; ' = coup de glotte
+    metadata_status: unverified
+    sources:
+      - {url: "https://en.wikipedia.org/wiki/Klingon_language", title: "Klingon language", type: encyclopedia, license: *wplicense}
+      - {url: "https://downloads.tatoeba.org/exports/per_language/tlh/tlh_sentences.tsv.bz2", title: "Tatoeba — phrases en klingon", type: sentence_corpus, license: *tatoebalicense}
+
+  - id: navi
+    name: Na'vi
+    category: constructed_fictional
+    universe: Avatar
+    creator: Paul Frommer
+    year: 2005
+    year_note: "travail commencé en 2005, film en 2009"
+    description: Langue du peuple Na'vi de la planète Pandora.
+    documentation_level: medium
+    corpus_type: lexique, articles de blog du créateur, répliques de films
+    real_language_reference: null
+    scripts: []
+    orthography: {apostrophe_is_letter: true, case_sensitive: false}  # ' = coup de glotte
+    metadata_status: unverified
+    sources:
+      - {url: "https://en.wikipedia.org/wiki/Na%27vi_language", title: "Na'vi language", type: encyclopedia, license: *wplicense}
+
+  - id: dothraki
+    name: Dothraki
+    category: constructed_fictional
+    universe: Le Trône de fer / Game of Thrones
+    creator: David J. Peterson
+    year: 2009
+    year_note: "développée pour la série HBO à partir de mots de G. R. R. Martin"
+    description: Langue des nomades dothrakis.
+    documentation_level: medium
+    corpus_type: lexique, répliques de série, manuel d'apprentissage
+    real_language_reference: null
+    scripts: []
+    metadata_status: unverified
+    sources:
+      - {url: "https://en.wikipedia.org/wiki/Dothraki_language", title: "Dothraki language", type: encyclopedia, license: *wplicense}
+
+  - id: high_valyrian
+    name: Haut valyrien
+    category: constructed_fictional
+    universe: Le Trône de fer / Game of Thrones
+    creator: David J. Peterson
+    year: 2013
+    year_note: "première apparition dans la saison 3 (2013)"
+    description: Langue classique de l'ancien empire valyrien.
+    documentation_level: medium
+    corpus_type: lexique, répliques de série, cours en ligne
+    real_language_reference: null
+    scripts: []
+    metadata_status: unverified
+    sources:
+      - {url: "https://en.wikipedia.org/wiki/Valyrian_languages", title: "Valyrian languages", type: encyclopedia, license: *wplicense}
+
+  - id: atlantean
+    name: Atlante
+    category: constructed_fictional
+    universe: Atlantide, l'empire perdu (Disney)
+    creator: Marc Okrand
+    year: 2001
+    description: Langue des Atlantes dans le film d'animation de 2001.
+    documentation_level: low
+    corpus_type: répliques de film, lexique
+    real_language_reference: null
+    scripts: []
+    metadata_status: unverified
+    sources:
+      - {url: "https://en.wikipedia.org/wiki/Atlantean_language", title: "Atlantean language", type: encyclopedia, license: *wplicense}
+
+  - id: kryptonian
+    name: Kryptonien
+    category: constructed_fictional
+    universe: DC Comics (Man of Steel)
+    creator: Christine Schreyer
+    year: 2013
+    description: Langue de Krypton créée pour le film Man of Steel.
+    documentation_level: low
+    corpus_type: lexique, inscriptions
+    real_language_reference: null
+    scripts: [kryptonian_script]
+    metadata_status: unverified
+    sources:
+      - {url: "https://en.wikipedia.org/wiki/Kryptonian_language", title: "Kryptonian language", type: encyclopedia, license: *wplicense}
+
+  - id: huttese
+    name: Huttese
+    category: fragmentary
+    universe: Star Wars
+    creator: Ben Burtt
+    year: 1983
+    description: Langue des Hutts, conçue surtout pour son effet sonore à l'écran.
+    documentation_level: fragmentary
+    corpus_type: répliques de films, lexiques d'amateurs
+    real_language_reference: null
+    scripts: [aurebesh]
+    metadata_status: unverified
+    sources:
+      - {url: "https://en.wikipedia.org/wiki/Languages_in_Star_Wars", title: "Languages in Star Wars", type: encyclopedia, license: *wplicense}
+
+  - id: mandoa
+    name: Mando'a
+    category: constructed_fictional
+    universe: Star Wars
+    creator: Karen Traviss
+    year: 2004
+    description: Langue des Mandaloriens, développée dans des romans dérivés.
+    documentation_level: low
+    corpus_type: lexique, chansons, extraits de romans
+    real_language_reference: null
+    scripts: [aurebesh]
+    orthography: {apostrophe_is_letter: true, case_sensitive: false}
+    metadata_status: unverified
+    sources:
+      - {url: "https://en.wikipedia.org/wiki/Languages_in_Star_Wars", title: "Languages in Star Wars", type: encyclopedia, license: *wplicense}
+
+  - id: dovahzul
+    name: Dovahzul (langue des dragons)
+    category: constructed_fictional
+    universe: The Elder Scrolls V — Skyrim (jeu vidéo)
+    creator: Bethesda Game Studios
+    year: 2011
+    description: Langue des dragons du jeu Skyrim, aussi notée par une écriture propre.
+    documentation_level: low
+    corpus_type: inscriptions et chants du jeu
+    real_language_reference: null
+    scripts: [dovahzul_script]
+    metadata_status: unverified
+    sources:
+      - {url: "https://en.wikipedia.org/wiki/The_Elder_Scrolls_V:_Skyrim", title: "The Elder Scrolls V: Skyrim", type: encyclopedia, license: *wplicense}
+
+  - id: chakobsa
+    name: Chakobsa (films Dune)
+    category: constructed_fictional
+    universe: Dune
+    creator: David J. Peterson et Jessie Sams
+    year: 2021
+    year_note: "version créée pour le film de 2021 ; le nom vient des romans de Frank Herbert"
+    description: Langue des Fremen dans les adaptations cinématographiques de Dune.
+    documentation_level: low
+    corpus_type: répliques de films
+    real_language_reference: null
+    scripts: []
+    metadata_status: unverified
+    sources:
+      - {url: "https://en.wikipedia.org/wiki/Chakobsa", title: "Chakobsa", type: encyclopedia, license: *wplicense}
+
+  - id: trigedasleng
+    name: Trigedasleng
+    category: transformed_variety
+    universe: Les 100 (The 100)
+    creator: David J. Peterson
+    year: 2014
+    description: Langue issue d'une évolution fictive de l'anglais après une catastrophe.
+    documentation_level: low
+    corpus_type: répliques de série, lexique
+    real_language_reference: {name: anglais, glottocode: stan1293, wals_code: eng}
+    scripts: []
+    metadata_status: unverified
+    sources:
+      - {url: "https://en.wikipedia.org/wiki/The_100_(TV_series)", title: "The 100 (TV series)", type: encyclopedia, license: *wplicense}
+
+  - id: al_bhed
+    name: Al Bhed
+    category: transformed_variety
+    universe: Final Fantasy X (jeu vidéo)
+    creator: Square
+    year: 2001
+    description: Chiffrement par substitution de lettres appliqué au japonais et à l'anglais selon les versions.
+    documentation_level: high
+    corpus_type: table de substitution, répliques du jeu
+    real_language_reference: {name: anglais (version anglaise), glottocode: stan1293, wals_code: eng}
+    scripts: []
+    metadata_status: unverified
+    sources:
+      - {url: "https://en.wikipedia.org/wiki/Final_Fantasy_X", title: "Final Fantasy X", type: encyclopedia, license: *wplicense}
+
+  - id: newspeak
+    name: Novlangue (Newspeak)
+    category: transformed_variety
+    universe: 1984 (George Orwell)
+    creator: George Orwell
+    year: 1949
+    description: Anglais appauvri planifié par le régime, décrit dans l'appendice du roman.
+    documentation_level: medium
+    corpus_type: appendice du roman, mots isolés
+    real_language_reference: {name: anglais, glottocode: stan1293, wals_code: eng}
+    scripts: []
+    metadata_status: unverified
+    sources:
+      - {url: "https://en.wikipedia.org/wiki/Newspeak", title: "Newspeak", type: encyclopedia, license: *wplicense}
+
+  - id: nadsat
+    name: Nadsat
+    category: sociolect
+    universe: L'Orange mécanique (Anthony Burgess)
+    creator: Anthony Burgess
+    year: 1962
+    description: Argot de jeunes délinquants mêlant à l'anglais un lexique d'origine russe.
+    documentation_level: medium
+    corpus_type: roman (protégé), glossaires
+    real_language_reference: {name: anglais, glottocode: stan1293, wals_code: eng}
+    scripts: []
+    metadata_status: unverified
+    sources:
+      - {url: "https://en.wikipedia.org/wiki/Nadsat", title: "Nadsat", type: encyclopedia, license: *wplicense}
+
+  - id: yoda
+    name: Parler de Yoda
+    category: idiolect
+    universe: Star Wars
+    creator: Lucasfilm
+    year: 1980
+    description: Anglais (ou traduction) à ordre des constituants inhabituel, propre au personnage de Yoda.
+    documentation_level: low
+    corpus_type: répliques de films (protégées)
+    real_language_reference: {name: anglais, glottocode: stan1293, wals_code: eng}
+    scripts: []
+    metadata_status: unverified
+    sources:
+      - {url: "https://en.wikipedia.org/wiki/Yoda", title: "Yoda", type: encyclopedia, license: *wplicense}
+
+  - id: minionese
+    name: Langage des Minions
+    category: pseudo_language
+    universe: Moi, moche et méchant / Les Minions (Illumination)
+    creator: Pierre Coffin
+    year: 2010
+    description: Mélange de mots de plusieurs langues et de syllabes sans sens, sans grammaire stable.
+    documentation_level: fragmentary
+    corpus_type: répliques de films (protégées)
+    real_language_reference: null
+    scripts: []
+    metadata_status: unverified
+    sources:
+      - {url: "https://en.wikipedia.org/wiki/Minions_(Despicable_Me)", title: "Minions (Despicable Me)", type: encyclopedia, license: *wplicense}
+
+  - id: simlish
+    name: Simlish
+    category: pseudo_language
+    universe: Les Sims (jeu vidéo)
+    creator: Maxis
+    year: 2000
+    description: Langage improvisé des personnages des Sims, conçu pour ne pas être compris.
+    documentation_level: fragmentary
+    corpus_type: enregistrements audio, quelques mots
+    real_language_reference: null
+    scripts: []
+    metadata_status: unverified
+    sources:
+      - {url: "https://en.wikipedia.org/wiki/Simlish", title: "Simlish", type: encyclopedia, license: *wplicense}
+
+  - id: lapine
+    name: Lapine
+    category: fragmentary
+    universe: Les Garennes de Watership Down (Richard Adams)
+    creator: Richard Adams
+    year: 1972
+    description: Langue des lapins du roman, attestée par un lexique d'une cinquantaine de mots.
+    documentation_level: fragmentary
+    corpus_type: glossaire du roman
+    real_language_reference: null
+    scripts: []
+    metadata_status: unverified
+    sources:
+      - {url: "https://en.wikipedia.org/wiki/Lapine_language", title: "Lapine language", type: encyclopedia, license: *wplicense}
+
+  - id: laadan
+    name: Láadan
+    category: constructed_fictional
+    universe: Native Tongue (Suzette Haden Elgin)
+    creator: Suzette Haden Elgin
+    year: 1982
+    description: Langue construite pour exprimer le point de vue des femmes, utilisée dans un cycle de romans.
+    documentation_level: medium
+    corpus_type: grammaire et dictionnaire publiés, phrases
+    real_language_reference: null
+    scripts: []
+    metadata_status: unverified
+    sources:
+      - {url: "https://en.wikipedia.org/wiki/L%C3%A1adan", title: "Láadan", type: encyclopedia, license: *wplicense}
+      - {url: "https://downloads.tatoeba.org/exports/per_language/ldn/ldn_sentences.tsv.bz2", title: "Tatoeba — phrases en láadan", type: sentence_corpus, license: *tatoebalicense}
+
+  - id: lingua_ignota
+    name: Lingua Ignota
+    category: constructed_external
+    universe: hors fiction (XIIe siècle)
+    creator: Hildegarde de Bingen
+    year: null
+    year_note: "XIIe siècle"
+    description: Lexique construit médiéval, sans grammaire propre attestée.
+    documentation_level: fragmentary
+    corpus_type: glossaire médiéval
+    real_language_reference: {name: latin, glottocode: lati1261, wals_code: null}
+    scripts: []
+    metadata_status: unverified
+    sources:
+      - {url: "https://en.wikipedia.org/wiki/Lingua_Ignota", title: "Lingua Ignota", type: encyclopedia, license: *wplicense}
+
+  - id: kelen
+    name: Kēlen
+    category: constructed_external
+    universe: hors fiction (langue artistique)
+    creator: Sylvia Sotomayor
+    year: null
+    description: Langue artistique connue pour son absence de verbes.
+    documentation_level: medium
+    corpus_type: grammaire en ligne, textes
+    real_language_reference: null
+    scripts: []
+    metadata_status: unverified
+    sources:
+      - {url: "https://en.wikipedia.org/wiki/K%C4%93len", title: "Kēlen", type: encyclopedia, license: *wplicense}
+
+  - id: esperanto
+    name: Espéranto
+    category: constructed_external
+    universe: hors fiction (langue auxiliaire)
+    creator: L. L. Zamenhof
+    year: 1887
+    description: Langue auxiliaire internationale ; point de comparaison bien documenté.
+    documentation_level: high
+    corpus_type: corpus libres abondants
+    real_language_reference: null
+    scripts: []
+    metadata_status: unverified
+    sources:
+      - {url: "https://en.wikipedia.org/wiki/Esperanto", title: "Esperanto", type: encyclopedia, license: *wplicense}
+      - {url: "https://downloads.tatoeba.org/exports/per_language/epo/epo_sentences.tsv.bz2", title: "Tatoeba — phrases en espéranto", type: sentence_corpus, license: *tatoebalicense}
+
+  - id: volapuk
+    name: Volapük
+    category: constructed_external
+    universe: hors fiction (langue auxiliaire)
+    creator: Johann Martin Schleyer
+    year: 1879
+    description: Langue auxiliaire du XIXe siècle, antérieure à l'espéranto.
+    documentation_level: medium
+    corpus_type: grammaires anciennes du domaine public
+    real_language_reference: null
+    scripts: []
+    metadata_status: unverified
+    sources:
+      - {url: "https://en.wikipedia.org/wiki/Volap%C3%BCk", title: "Volapük", type: encyclopedia, license: *wplicense}
+      - {url: "https://downloads.tatoeba.org/exports/per_language/vol/vol_sentences.tsv.bz2", title: "Tatoeba — phrases en volapük", type: sentence_corpus, license: *tatoebalicense}
+
+  - id: toki_pona
+    name: Toki pona
+    category: constructed_external
+    universe: hors fiction (langue minimaliste)
+    creator: Sonja Lang
+    year: 2001
+    description: Langue minimaliste d'environ 120 à 140 mots racines.
+    documentation_level: high
+    corpus_type: corpus libres, phrases
+    real_language_reference: null
+    scripts: []
+    metadata_status: unverified
+    sources:
+      - {url: "https://en.wikipedia.org/wiki/Toki_Pona", title: "Toki Pona", type: encyclopedia, license: *wplicense}
+      - {url: "https://downloads.tatoeba.org/exports/per_language/tok/tok_sentences.tsv.bz2", title: "Tatoeba — phrases en toki pona", type: sentence_corpus, license: *tatoebalicense}
+
+  - id: lojban
+    name: Lojban
+    category: constructed_external
+    universe: hors fiction (langue logique)
+    creator: Logical Language Group
+    year: 1987
+    description: Langue logique à grammaire non ambiguë formellement spécifiée.
+    documentation_level: high
+    corpus_type: grammaire de référence, corpus libres
+    real_language_reference: null
+    scripts: []
+    metadata_status: unverified
+    sources:
+      - {url: "https://en.wikipedia.org/wiki/Lojban", title: "Lojban", type: encyclopedia, license: *wplicense}
+      - {url: "https://downloads.tatoeba.org/exports/per_language/jbo/jbo_sentences.tsv.bz2", title: "Tatoeba — phrases en lojban", type: sentence_corpus, license: *tatoebalicense}
+
+  - id: ithkuil
+    name: Ithkuil
+    category: constructed_external
+    universe: hors fiction (langue philosophique)
+    creator: John Quijada
+    year: 2004
+    description: Langue philosophique à morphologie extrêmement riche.
+    documentation_level: high
+    corpus_type: grammaire en ligne, exemples glosés
+    real_language_reference: null
+    scripts: []
+    metadata_status: unverified
+    sources:
+      - {url: "https://en.wikipedia.org/wiki/Ithkuil", title: "Ithkuil", type: encyclopedia, license: *wplicense}
+
+# Systèmes d'écriture : objets distincts des langues. Le lien vers une langue
+# n'est établi que s'il est documenté (`represents`).
+scripts:
+  - id: tengwar
+    name: Tengwar
+    universe: Tolkien (légendaire)
+    creator: J. R. R. Tolkien
+    type: null
+    type_note: "fonctionne comme alphabet ou de manière proche d'un abugida selon le « mode » ; à documenter par mode"
+    direction: null
+    represents: [quenya, sindarin, black_speech]
+    metadata_status: unverified
+    sources:
+      - {url: "https://en.wikipedia.org/wiki/Tengwar", title: "Tengwar", type: encyclopedia, license: *wplicense}
+  - id: cirth
+    name: Cirth
+    universe: Tolkien (légendaire)
+    creator: J. R. R. Tolkien
+    type: null
+    direction: null
+    represents: [sindarin, khuzdul]
+    metadata_status: unverified
+    sources:
+      - {url: "https://en.wikipedia.org/wiki/Cirth", title: "Cirth", type: encyclopedia, license: *wplicense}
+  - id: aurebesh
+    name: Aurebesh
+    universe: Star Wars
+    creator: null
+    type: null
+    type_note: "souvent décrit comme une transposition lettre à lettre de l'alphabet latin ; à vérifier"
+    direction: null
+    represents: []
+    represents_note: "sert à noter le « basique » (anglais diégétique) ; lien avec Huttese/Mando'a à documenter"
+    metadata_status: unverified
+    sources:
+      - {url: "https://en.wikipedia.org/wiki/Aurebesh", title: "Aurebesh", type: encyclopedia, license: *wplicense}
+  - id: piqad
+    name: pIqaD
+    universe: Star Trek
+    creator: null
+    type: null
+    direction: null
+    represents: [klingon]
+    metadata_status: unverified
+    sources:
+      - {url: "https://en.wikipedia.org/wiki/Klingon_scripts", title: "Klingon scripts", type: encyclopedia, license: *wplicense}
+  - id: dovahzul_script
+    name: Écriture draconique (Skyrim)
+    universe: The Elder Scrolls V — Skyrim
+    creator: Bethesda Game Studios
+    type: null
+    direction: null
+    represents: [dovahzul]
+    metadata_status: unverified
+    sources: []
+  - id: kryptonian_script
+    name: Écriture kryptonienne (Man of Steel)
+    universe: DC Comics (Man of Steel)
+    creator: null
+    type: null
+    direction: null
+    represents: [kryptonian]
+    metadata_status: unverified
+    sources: []

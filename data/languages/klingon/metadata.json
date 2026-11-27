@@ -1,0 +1,28 @@
+{
+  "category": "constructed_fictional",
+  "corpus": {
+    "file": "corpus.txt",
+    "lines": 5000,
+    "redistributable": true,
+    "status": "available"
+  },
+  "corpus_type": "dictionnaire, grammaire, traductions, phrases d'apprenants",
+  "creator": "Marc Okrand",
+  "description": "Langue de l'espèce klingonne, dotée d'une grammaire et d'un dictionnaire publiés.",
+  "documentation_level": "high",
+  "id": "klingon",
+  "metadata_status": "unverified",
+  "name": "Klingon (tlhIngan Hol)",
+  "real_language_inspiration_note": null,
+  "real_language_reference": null,
+  "scripts": [
+    "piqad"
+  ],
+  "source_ids": [
+    "klingon-s01",
+    "klingon-s02"
+  ],
+  "universe": "Star Trek",
+  "year": 1984,
+  "year_note": "Star Trek III (1984) ; The Klingon Dictionary (1985)"
+}

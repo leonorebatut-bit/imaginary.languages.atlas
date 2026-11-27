@@ -1,0 +1,26 @@
+{
+  "category": "constructed_external",
+  "corpus": {
+    "file": "corpus.txt",
+    "lines": 5000,
+    "redistributable": true,
+    "status": "available"
+  },
+  "corpus_type": "corpus libres, phrases",
+  "creator": "Sonja Lang",
+  "description": "Langue minimaliste d'environ 120 à 140 mots racines.",
+  "documentation_level": "high",
+  "id": "toki_pona",
+  "metadata_status": "unverified",
+  "name": "Toki pona",
+  "real_language_inspiration_note": null,
+  "real_language_reference": null,
+  "scripts": [],
+  "source_ids": [
+    "toki_pona-s01",
+    "toki_pona-s02"
+  ],
+  "universe": "hors fiction (langue minimaliste)",
+  "year": 2001,
+  "year_note": null
+}

@@ -1,0 +1,27 @@
+{
+  "category": "idiolect",
+  "corpus": {
+    "justification": "les sources récupérées sont des descriptions, pas des corpus d'extraits ; extraction à faire",
+    "status": "absent"
+  },
+  "corpus_type": "répliques de films (protégées)",
+  "creator": "Lucasfilm",
+  "description": "Anglais (ou traduction) à ordre des constituants inhabituel, propre au personnage de Yoda.",
+  "documentation_level": "low",
+  "id": "yoda",
+  "metadata_status": "unverified",
+  "name": "Parler de Yoda",
+  "real_language_inspiration_note": null,
+  "real_language_reference": {
+    "glottocode": "stan1293",
+    "name": "anglais",
+    "wals_code": "eng"
+  },
+  "scripts": [],
+  "source_ids": [
+    "yoda-s01"
+  ],
+  "universe": "Star Wars",
+  "year": 1980,
+  "year_note": null
+}

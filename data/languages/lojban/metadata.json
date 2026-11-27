@@ -1,0 +1,26 @@
+{
+  "category": "constructed_external",
+  "corpus": {
+    "file": "corpus.txt",
+    "lines": 5000,
+    "redistributable": true,
+    "status": "available"
+  },
+  "corpus_type": "grammaire de référence, corpus libres",
+  "creator": "Logical Language Group",
+  "description": "Langue logique à grammaire non ambiguë formellement spécifiée.",
+  "documentation_level": "high",
+  "id": "lojban",
+  "metadata_status": "unverified",
+  "name": "Lojban",
+  "real_language_inspiration_note": null,
+  "real_language_reference": null,
+  "scripts": [],
+  "source_ids": [
+    "lojban-s01",
+    "lojban-s02"
+  ],
+  "universe": "hors fiction (langue logique)",
+  "year": 1987,
+  "year_note": null
+}

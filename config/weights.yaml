@@ -1,0 +1,21 @@
+# Poids des caractéristiques dans la similarité de Gower.
+# Profil par défaut : poids égaux (1.0 pour toute caractéristique comparable).
+# Les autres profils permettent de tester la sensibilité des résultats.
+default_profile: equal
+
+profiles:
+  equal: {}            # vide = 1.0 partout
+
+  word_order_heavy:    # exemple de test de sensibilité : ordre des mots renforcé
+    81A: 2.0
+    82A: 1.5
+    83A: 1.5
+    85A: 1.5
+    86A: 1.5
+    87A: 1.5
+
+  no_phonology:        # exclut la phonologie (poids 0 = exclu du calcul)
+    1A: 0.0
+    2A: 0.0
+    12A: 0.0
+    13A: 0.0

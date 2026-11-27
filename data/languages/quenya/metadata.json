@@ -1,0 +1,28 @@
+{
+  "category": "constructed_fictional",
+  "corpus": {
+    "file": "corpus.txt",
+    "lines": 291,
+    "redistributable": true,
+    "status": "available"
+  },
+  "corpus_type": "textes littéraires courts, lexiques posthumes",
+  "creator": "J. R. R. Tolkien",
+  "description": "Langue des Hauts-Elfes du légendaire de Tolkien.",
+  "documentation_level": "medium",
+  "id": "quenya",
+  "metadata_status": "unverified",
+  "name": "Quenya",
+  "real_language_inspiration_note": "influence du finnois souvent citée ; à sourcer",
+  "real_language_reference": null,
+  "scripts": [
+    "tengwar"
+  ],
+  "source_ids": [
+    "quenya-s01",
+    "quenya-s02"
+  ],
+  "universe": "Tolkien (légendaire)",
+  "year": 1915,
+  "year_note": "travail commencé vers 1915 (Qenya Lexicon), poursuivi jusqu'en 1973"
+}

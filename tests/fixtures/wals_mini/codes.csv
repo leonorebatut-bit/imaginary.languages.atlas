@@ -1,0 +1,9 @@
+ID,Parameter_ID,Name,Description,Number,icon
+1A-1,1A,Small,Small,1,
+1A-2,1A,Moderately small,Moderately small,2,
+1A-3,1A,Average,Average,3,
+1A-4,1A,Moderately large,Moderately large,4,
+1A-5,1A,Large,Large,5,
+81A-1,81A,SOV,SOV,1,
+81A-2,81A,SVO,SVO,2,
+81A-5,81A,OVS,OVS,5,

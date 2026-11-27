@@ -1,0 +1,23 @@
+{
+  "category": "constructed_external",
+  "corpus": {
+    "justification": "les sources récupérées sont des descriptions, pas des corpus d'extraits ; extraction à faire",
+    "status": "absent"
+  },
+  "corpus_type": "grammaire en ligne, exemples glosés",
+  "creator": "John Quijada",
+  "description": "Langue philosophique à morphologie extrêmement riche.",
+  "documentation_level": "high",
+  "id": "ithkuil",
+  "metadata_status": "unverified",
+  "name": "Ithkuil",
+  "real_language_inspiration_note": null,
+  "real_language_reference": null,
+  "scripts": [],
+  "source_ids": [
+    "ithkuil-s01"
+  ],
+  "universe": "hors fiction (langue philosophique)",
+  "year": 2004,
+  "year_note": null
+}
